@@ -1,0 +1,30 @@
+{
+  "name": "embedded-iot",
+  "description": "Firmware, device, sensor, edge, embedded, or cyber-physical project.",
+  "signals": {
+    "domains": [
+      "embedded_iot"
+    ],
+    "platforms": [
+      "embedded_or_iot"
+    ]
+  },
+  "required_skills": [
+    25,
+    27,
+    34,
+    50,
+    55,
+    63,
+    73
+  ],
+  "recommended_skills": [
+    7,
+    26,
+    28,
+    36,
+    47,
+    57,
+    76
+  ]
+}

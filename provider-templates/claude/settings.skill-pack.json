@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell|Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python -S .engineering/skill-pack/scripts/v2/claude_pretool.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

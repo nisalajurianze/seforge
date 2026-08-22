@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEPack v2 Skill Manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project",
+    "skills",
+    "matched_profiles"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "project": {
+      "type": "string"
+    },
+    "matched_profiles": {
+      "type": "array"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "tier",
+          "skill_path",
+          "status",
+          "confidence",
+          "owner",
+          "evidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 80
+          },
+          "status": {
+            "enum": [
+              "active",
+              "recommended",
+              "candidate",
+              "skipped",
+              "complete"
+            ]
+          },
+          "confidence": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "owner": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array"
+          },
+          "required_artifacts": {
+            "type": "array"
+          },
+          "quality_gates": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  }
+}

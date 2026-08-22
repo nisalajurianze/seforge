@@ -1,0 +1,42 @@
+{
+  "pack_version": "2.0.1",
+  "executed_on": "2026-08-22",
+  "result": "pass",
+  "scenario": "All-provider workflow-default installation, hook integration, project discovery, task routing, isolated syntax checking, reviewed project test execution, evidence and release gates, all-mode upgrade, workflow pruning, provider removal, and pre-first-install baseline restoration.",
+  "checks": {
+    "initial_install": true,
+    "workflow_skill_counts": {
+      ".agents": 12,
+      ".github": 12,
+      ".claude": 12
+    },
+    "existing_instructions_and_hook_preserved": true,
+    "provider_content_isolated_from_discovery": true,
+    "pack_integrity_before_work": true,
+    "doctor_healthy": true,
+    "task_id": "TSK-b5a11a3e23d7",
+    "task_context_words": 3012,
+    "task_selected_skills": [
+      2,
+      8,
+      17,
+      22
+    ],
+    "review_and_per_invocation_trust_enforced": true,
+    "real_project_verification_passed": true,
+    "no_bytecode_mutation": true,
+    "task_gate_passed": true,
+    "release_gate_passed": true,
+    "evidence_chain_valid": true,
+    "upgrade_all_and_prune_to_workflow": true,
+    "managed_block_count_after_upgrades": 1,
+    "provider_removal_pruned_managed_files": true,
+    "baseline_restore_after_multi_upgrade": true,
+    "provider_clients_launched": false
+  },
+  "limitations": [
+    "Provider client applications were not launched; generated provider files, policies, skill counts, hooks, and lifecycle behavior were tested.",
+    "Project-defined commands execute as local processes without an OS filesystem or network sandbox; review and per-invocation trust are required.",
+    "The scenario exercises Python and all provider installers, not every supported programming ecosystem."
+  ]
+}

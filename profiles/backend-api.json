@@ -1,0 +1,25 @@
+{
+  "name": "backend-api",
+  "description": "Backend service, API, or integration layer.",
+  "signals": {
+    "platforms": [
+      "backend_or_library"
+    ],
+    "api_spec": true
+  },
+  "required_skills": [
+    13,
+    35,
+    37,
+    63
+  ],
+  "recommended_skills": [
+    5,
+    6,
+    7,
+    15,
+    38,
+    40,
+    49
+  ]
+}

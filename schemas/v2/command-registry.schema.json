@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEPack v2 Command Registry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "commands",
+    "policy"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "category",
+          "argv",
+          "rendered",
+          "cwd",
+          "source",
+          "trust",
+          "network",
+          "risk",
+          "reviewed",
+          "enabled"
+        ],
+        "properties": {
+          "risk": {
+            "enum": [
+              "R0",
+              "R1",
+              "R2",
+              "R3",
+              "R4"
+            ]
+          },
+          "trust": {
+            "enum": [
+              "project_defined",
+              "pack_defined",
+              "external_reviewed"
+            ]
+          },
+          "argv": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+name: Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Validate distribution
+        run: python -S schemas/validate_pack.py
+
+      - name: Run unit and regression tests
+        run: python -S -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Run behavioral evals
+        run: python -S evals/run_evals.py --output /tmp/sepack-eval-results.json
+
+      - name: Verify pack integrity
+        run: python -S sepack.py integrity
+
+      - name: Upload eval results
+        if: always()
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: eval-results-python-${{ matrix.python-version }}
+          path: /tmp/sepack-eval-results.json
+          if-no-files-found: ignore

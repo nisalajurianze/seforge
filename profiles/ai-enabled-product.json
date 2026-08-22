@@ -1,0 +1,30 @@
+{
+  "name": "ai-enabled-product",
+  "description": "Product or workflow using LLMs, agents, ML, embeddings, or AI tools.",
+  "signals": {
+    "domains": [
+      "ai_enabled"
+    ]
+  },
+  "required_skills": [
+    8,
+    9,
+    12,
+    21,
+    43,
+    45,
+    57,
+    64,
+    66
+  ],
+  "recommended_skills": [
+    5,
+    6,
+    7,
+    28,
+    44,
+    47,
+    49,
+    65
+  ]
+}

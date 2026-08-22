@@ -1,0 +1,1979 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-22T09:21:47.518705+00:00",
+  "algorithm": "sha256",
+  "file_count": 394,
+  "files": [
+    {
+      "path": ".editorconfig",
+      "sha256": "942beb9a4bf6131ea124de396b1a753c28784b9830a01348a8939b396c0e7c3c",
+      "size": 202
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "af67d4d9c61fa8a914915c792d346afa83109e0dfbeadbbcd18fe2a539129484",
+      "size": 185
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "sha256": "59c6e8308b3c39edf22b97fd2a04774ca9057dfe94200aaf4afcdfd79bbacec2",
+      "size": 1631
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
+      "size": 28
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "sha256": "8cd793a594c942b224e6adf426c89b3c6d7507490f088d9f18b601a86a0eca9b",
+      "size": 1141
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "5e54c7e473646e7b15345ac8dc7749922495be1cac57135cdf3cde5e4d20911f",
+      "size": 144
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "4b1332f837f1218011546265045c9e8c411be8310b5cf8ef4fd7d004155e6d40",
+      "size": 813
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "sha256": "bfa570a5e81554d2ec276a5162c44295c7277f3b3f7875bd5fb3e843e27f2472",
+      "size": 1253
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "sha256": "4eae94cee2ca30cd96be9e30055c43b66a47f92bdce992f81262730b40bcf63b",
+      "size": 1227
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6c4720a891fc3e463926353bad5d771158fb9af4bdd735a187945d8a412492a7",
+      "size": 315
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "579ffda78ffddbc0ed53d3099a04cf13f9d279448dca73d9dade3f325810c1d1",
+      "size": 1606
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "6910731bd4676042bcb8442e40d9785fc62e6438c7f7b4a9f9604e34e4638023",
+      "size": 5727
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "5344db51bfe372cb26b2b006334d66bc234e86fa4a5f6dc38e82b4cf2637b8dd",
+      "size": 644
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "95916273a79be8cb2b460ed2a7c089866e2efb6c03d0ef819f188d66dda7204f",
+      "size": 1068
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "6de63334705082979e0d3ae54de28874708ff279f51142e82a7e7518188a5da6",
+      "size": 1729
+    },
+    {
+      "path": "COVERAGE-MATRIX.md",
+      "sha256": "d78e38cc89a1e05e220a21b625a28b910e7694f8332026fb3230e8e95870d5f8",
+      "size": 21990
+    },
+    {
+      "path": "GITHUB-READY-REPORT.md",
+      "sha256": "c45604daa480a2bb7f051018f31b8e6c43b9ed70c9b8824a06a256f71b584cdb",
+      "size": 1641
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "sha256": "34f40bfdc90841ce910ae06ead29ddc98e8c0a9d55f0727ae9fdb69967f4c419",
+      "size": 817
+    },
+    {
+      "path": "INSTALL.md",
+      "sha256": "5229dac75bbddb805eb403967ebbc22f5a9f98da01747c49a8099df4c92b07d3",
+      "size": 4363
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "f4036403b7fa4997b586e3ed45a2d6e44af1134ff2a01e67236ce5f304803296",
+      "size": 1077
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "179641f7632d1ef6b6f6fbbc67d7aea53115a5483fc40afefb6f39bc7722507b",
+      "size": 824
+    },
+    {
+      "path": "PLANS.md",
+      "sha256": "c348f993dd92f2b3d21ac4c91facfcf495663cc27fd3575300303b204ee79c89",
+      "size": 1711
+    },
+    {
+      "path": "PUBLISHING.md",
+      "sha256": "6d4ff9b409c9b132db22f2335de1eaa357a842ddce36f19907fe95cd3002055c",
+      "size": 1379
+    },
+    {
+      "path": "RE-AUDIT-REPORT.md",
+      "sha256": "be9ded1e09a1d1fa83d1a77b6950522433a3dd47ff463666d77a97391b1a66c4",
+      "size": 11026
+    },
+    {
+      "path": "README.md",
+      "sha256": "b9c306502608be91c4345159a34a83a1de02ba8dc4d1d7b55f34529a51eb5dca",
+      "size": 13196
+    },
+    {
+      "path": "RESEARCH-GAP-ANALYSIS.md",
+      "sha256": "2f0f9bd85c43c1b76995d585f37e19a291bfe6845143d585e1d1ea18563a6464",
+      "size": 11491
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "2624b1852000a68f2779946da1b08f30f65982804b1f617aea505bc92eec91cf",
+      "size": 740
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "926cce2f3780f70b8da65e8bf5f21fb1c455778eb7fbed54ff5b9dd1defde51b",
+      "size": 1239
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "84d87814ceea6d1256da618badd591254d56d13a426502e56d00b5ee6bb8c5f9",
+      "size": 1510
+    },
+    {
+      "path": "SOURCE-MAP.md",
+      "sha256": "8680d087ae092ce9324fdfc18016cf3c033b9bf87f04b37c2cb5cdcadb335600",
+      "size": 6125
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "3ecfbecdea56d7933a6ff5f490bb4f404af58f22f706535a95230cdfaf6c417f",
+      "size": 579
+    },
+    {
+      "path": "USER-GUIDE.md",
+      "sha256": "2746c3b0a93bbebf49095a0f51746b78afe896a6c2104c038dcfc5a2fef97baa",
+      "size": 1056
+    },
+    {
+      "path": "VALIDATION-REPORT.md",
+      "sha256": "329d2d4decf4830a3fab9f657defc030a9ab71dfd783c1b142efa8232a0efd34",
+      "size": 4806
+    },
+    {
+      "path": "agent-skills/se-01-swebok-and-lifecycle-alignment/SKILL.md",
+      "sha256": "64b9ba6de5b576b81c9e3679253327b055c382d4ba63a2a474d70c09187decf4",
+      "size": 4045
+    },
+    {
+      "path": "agent-skills/se-01-swebok-and-lifecycle-alignment/assets/checklist.md",
+      "sha256": "25be86b55f2b54615fdea251673ed41286380f473723c292697102f2754b92d5",
+      "size": 231
+    },
+    {
+      "path": "agent-skills/se-01-swebok-and-lifecycle-alignment/references/detailed-guide.md",
+      "sha256": "eef908b563f92063595805ca486a38fb65b7828c93eac17472b8258903222fd4",
+      "size": 11863
+    },
+    {
+      "path": "agent-skills/se-02-software-construction-engineering/SKILL.md",
+      "sha256": "3a2802483c0f40876bc135e744b9f02259a82fe7641ea1d2a36a2626037689a1",
+      "size": 4089
+    },
+    {
+      "path": "agent-skills/se-02-software-construction-engineering/assets/checklist.md",
+      "sha256": "815808b1decfffcc66409bf53fe54c29ab24d0aec8bb11a9a9eb403458d27c42",
+      "size": 249
+    },
+    {
+      "path": "agent-skills/se-02-software-construction-engineering/references/detailed-guide.md",
+      "sha256": "4a658ca451f461f3f15ccfe0aa4e5a2f1cc3ec2f1d0b93f9265a248f7c24cd42",
+      "size": 12752
+    },
+    {
+      "path": "agent-skills/se-03-architecture-engineering-and-governance/SKILL.md",
+      "sha256": "c20e876374badc32e8472e916ac4d23d09fa6168902f6d17fc742903a0372208",
+      "size": 4174
+    },
+    {
+      "path": "agent-skills/se-03-architecture-engineering-and-governance/assets/checklist.md",
+      "sha256": "4d1e2bc3686bb46442cd1e21042500a4764919f45d4a3fbf31b22d1652f495ca",
+      "size": 232
+    },
+    {
+      "path": "agent-skills/se-03-architecture-engineering-and-governance/references/detailed-guide.md",
+      "sha256": "adc9484be723d5625913552e7b44ec9254edd81a3ea9eae268ae84e7ddaa3639",
+      "size": 12874
+    },
+    {
+      "path": "agent-skills/se-04-software-configuration-management/SKILL.md",
+      "sha256": "53ce10000695941f2fa6e0685c2094dfc15d1b64c819e6b37102df078cc871da",
+      "size": 4150
+    },
+    {
+      "path": "agent-skills/se-04-software-configuration-management/assets/checklist.md",
+      "sha256": "81e51743a023da3cea6a2d3f124c45a618c2c73e909758e8fb76cfa86f1ed553",
+      "size": 228
+    },
+    {
+      "path": "agent-skills/se-04-software-configuration-management/references/detailed-guide.md",
+      "sha256": "ab7de25c744898a9633ac076d54a741694bf9cf01ea935332f3fcc9e11d5592f",
+      "size": 13080
+    },
+    {
+      "path": "agent-skills/se-05-software-engineering-operations-and-sre/SKILL.md",
+      "sha256": "522b9b40c265018da5223316a75df313efdf164fcdd6546b93bc0cc0172d976d",
+      "size": 4057
+    },
+    {
+      "path": "agent-skills/se-05-software-engineering-operations-and-sre/assets/checklist.md",
+      "sha256": "5e10bee861f9049748952ad107af8cce0d9cf3c21d01b830e4300c44481401f6",
+      "size": 189
+    },
+    {
+      "path": "agent-skills/se-05-software-engineering-operations-and-sre/references/detailed-guide.md",
+      "sha256": "94673ad383b7dbaeea6e4e6b03ca3dd722a30d3dbc4e6d912c9a137acd4e741b",
+      "size": 13327
+    },
+    {
+      "path": "agent-skills/se-06-observability-engineering/SKILL.md",
+      "sha256": "0f4f9a3ea6da0c0612f5eb7591166a17e3fb93299c9f41aea023d9f407b09359",
+      "size": 4045
+    },
+    {
+      "path": "agent-skills/se-06-observability-engineering/assets/checklist.md",
+      "sha256": "e8b0911d17e4e119f4ca3c939788da9ed6509e2884141f14f97e834b297c04f7",
+      "size": 219
+    },
+    {
+      "path": "agent-skills/se-06-observability-engineering/references/detailed-guide.md",
+      "sha256": "824aca8be6def1543ab634fbaada246d00cead58549c057a2e515c5819e05581",
+      "size": 13472
+    },
+    {
+      "path": "agent-skills/se-07-reliability-and-resilience-engineering/SKILL.md",
+      "sha256": "6b76fe3663f9d9ef58436521a29abecec3b1c833b8ec7269a0cea887a172a28e",
+      "size": 4123
+    },
+    {
+      "path": "agent-skills/se-07-reliability-and-resilience-engineering/assets/checklist.md",
+      "sha256": "224f1875f720651618379202b990cab004bd7056905a18de38faa9611384d4ab",
+      "size": 223
+    },
+    {
+      "path": "agent-skills/se-07-reliability-and-resilience-engineering/references/detailed-guide.md",
+      "sha256": "2eff4ef8db4d8c9c1609c256ee630210134d7e559a245d13f329f3074b6ba162",
+      "size": 13620
+    },
+    {
+      "path": "agent-skills/se-08-modern-software-security-engineering/SKILL.md",
+      "sha256": "f8e64c5299156caa13829b3d8b07e7d55e22016531c5362991aa20846ee732c9",
+      "size": 4140
+    },
+    {
+      "path": "agent-skills/se-08-modern-software-security-engineering/assets/checklist.md",
+      "sha256": "ffff1bbda2df52de225aa7826c59e672393b4db0ec7a95ff1da8ffef505838a8",
+      "size": 242
+    },
+    {
+      "path": "agent-skills/se-08-modern-software-security-engineering/references/detailed-guide.md",
+      "sha256": "d79be47b8a6945b477227a33ce2cb8e208a4e60cfcf3f29a4d87af97af81af58",
+      "size": 14082
+    },
+    {
+      "path": "agent-skills/se-09-software-supply-chain-engineering/SKILL.md",
+      "sha256": "16f18c4d82c24a94e63a524343b3c12882a7870cd9bc693a295db3429ea735bd",
+      "size": 4046
+    },
+    {
+      "path": "agent-skills/se-09-software-supply-chain-engineering/assets/checklist.md",
+      "sha256": "74af4aaa051a4592c75458d2d0c48e91fcb8d89bd773bb2635138e5e5f0c2575",
+      "size": 206
+    },
+    {
+      "path": "agent-skills/se-09-software-supply-chain-engineering/references/detailed-guide.md",
+      "sha256": "81a2073a8daf8d32c330b81c7b2b7d153498271d2b8bbece27f8a23919323335",
+      "size": 13468
+    },
+    {
+      "path": "agent-skills/se-10-product-engineering-and-discovery/SKILL.md",
+      "sha256": "b67739f377728c223f653162a10715642e2b77edc0d71778c2238f858ab8294c",
+      "size": 4021
+    },
+    {
+      "path": "agent-skills/se-10-product-engineering-and-discovery/assets/checklist.md",
+      "sha256": "afed031f11b88fc7ed404b6a40304c66a4e87b960df205ebc4f439e6fa770e02",
+      "size": 192
+    },
+    {
+      "path": "agent-skills/se-10-product-engineering-and-discovery/references/detailed-guide.md",
+      "sha256": "b9784a17648d6db76d7f95482b15fdd76fe48fe5b415f8f64a32966feae10441",
+      "size": 13739
+    },
+    {
+      "path": "agent-skills/se-11-ux-interaction-and-accessibility-engineering/SKILL.md",
+      "sha256": "1b0f744813ba0dc78930533372410419c852c7c586ce058201ed099a99eae755",
+      "size": 4208
+    },
+    {
+      "path": "agent-skills/se-11-ux-interaction-and-accessibility-engineering/assets/checklist.md",
+      "sha256": "19e257001570b938b04e60fa12739126f53e657aa0ae74eee28570095db0f9e4",
+      "size": 209
+    },
+    {
+      "path": "agent-skills/se-11-ux-interaction-and-accessibility-engineering/references/detailed-guide.md",
+      "sha256": "e213c539de4a75193c07d9b4a7e8b671c1622aed40ad3104280edb33c32fbc15",
+      "size": 14657
+    },
+    {
+      "path": "agent-skills/se-12-privacy-engineering-and-data-governance/SKILL.md",
+      "sha256": "f2fa10c7dd2308f4b78e862a5f9bd62a29f58efb750c3e3b63d32f0d9156a528",
+      "size": 4133
+    },
+    {
+      "path": "agent-skills/se-12-privacy-engineering-and-data-governance/assets/checklist.md",
+      "sha256": "6ba2e484dbeec78591cf3f8dd52003aeb33d53e15ea9b071695a00d8272b4cbb",
+      "size": 233
+    },
+    {
+      "path": "agent-skills/se-12-privacy-engineering-and-data-governance/references/detailed-guide.md",
+      "sha256": "1fbd0ed061901083b531abab5224ede3806be66b1ce80634741ace4d10822dd4",
+      "size": 14587
+    },
+    {
+      "path": "agent-skills/se-13-api-and-integration-engineering/SKILL.md",
+      "sha256": "ce27f1cc17c28ab73efd5b817828725387b44170f89e6cd7e07013dbb7dd9422",
+      "size": 4126
+    },
+    {
+      "path": "agent-skills/se-13-api-and-integration-engineering/assets/checklist.md",
+      "sha256": "8b63c1458ba9b53c28f6c73dea6ebec4299876c3dc38d4ed62904bab2c958bf4",
+      "size": 222
+    },
+    {
+      "path": "agent-skills/se-13-api-and-integration-engineering/references/detailed-guide.md",
+      "sha256": "18da000ee9980d67b37f3aea588e2fb14d094c3f4373c113a27dc2409b961274",
+      "size": 14527
+    },
+    {
+      "path": "agent-skills/se-14-data-intensive-software-engineering/SKILL.md",
+      "sha256": "1ea6788e11e436f392757a0eb020c2fd480bf8834176706c35905c57918703c9",
+      "size": 4039
+    },
+    {
+      "path": "agent-skills/se-14-data-intensive-software-engineering/assets/checklist.md",
+      "sha256": "01b3093cb829c2cd4730b174ba835055c0ca4c87b5b74ebd1930788fafb9d7e1",
+      "size": 214
+    },
+    {
+      "path": "agent-skills/se-14-data-intensive-software-engineering/references/detailed-guide.md",
+      "sha256": "9586279d892675b5f9032452722b4caf9988c171f100fa7a7e446aa6f399325d",
+      "size": 14180
+    },
+    {
+      "path": "agent-skills/se-15-cloud-native-and-distributed-systems-engineering/SKILL.md",
+      "sha256": "bc1fd2bb9340a74bb9e000a676c6cf75b420dd8220cce7dcc0b1ba453510bdd9",
+      "size": 4114
+    },
+    {
+      "path": "agent-skills/se-15-cloud-native-and-distributed-systems-engineering/assets/checklist.md",
+      "sha256": "3ed30c4f364f2fe787191c6f4b099296f126d4916d6e3dd6f658b338e29dee09",
+      "size": 182
+    },
+    {
+      "path": "agent-skills/se-15-cloud-native-and-distributed-systems-engineering/references/detailed-guide.md",
+      "sha256": "0aa112ffbc19a9e8d693687b74b8a30fa2a213d847bca8176e302ce91f8aa747",
+      "size": 13960
+    },
+    {
+      "path": "agent-skills/se-16-platform-engineering-and-developer-experience/SKILL.md",
+      "sha256": "1b10a341ce0b2751b47ce4cd78e7069b25ff853827838c8defcc8ac44eb0980a",
+      "size": 4150
+    },
+    {
+      "path": "agent-skills/se-16-platform-engineering-and-developer-experience/assets/checklist.md",
+      "sha256": "0c4af7e29f089f3cecca88be3ef885b86b3bbc0d2e9b5257455a200c7155dc2e",
+      "size": 200
+    },
+    {
+      "path": "agent-skills/se-16-platform-engineering-and-developer-experience/references/detailed-guide.md",
+      "sha256": "37267d1b8ec1c6dcf43e5ee685c968f2c49807af89069cb9a42a11c1fb340e6b",
+      "size": 13553
+    },
+    {
+      "path": "agent-skills/se-17-release-engineering-and-progressive-delivery/SKILL.md",
+      "sha256": "ddf858a3eb654321b90a3ff070491f3d6c5161ca4387a7ff4c3efb6f71e0f4a2",
+      "size": 4114
+    },
+    {
+      "path": "agent-skills/se-17-release-engineering-and-progressive-delivery/assets/checklist.md",
+      "sha256": "e274571da4a4435eb9f03925ea2cf3f50c55d75fac3f18ceaa346d7db3728d23",
+      "size": 201
+    },
+    {
+      "path": "agent-skills/se-17-release-engineering-and-progressive-delivery/references/detailed-guide.md",
+      "sha256": "ceef8b00258dc8cfa4676313825f8b057fd900e9e8a1c44150f63b0b47e5c6ae",
+      "size": 13625
+    },
+    {
+      "path": "agent-skills/se-18-engineering-measurement-and-improvement/SKILL.md",
+      "sha256": "8659c5d54dfda87d7ceceef9fab2a0908b25f1d52da7cea2cfe84cbac057bff6",
+      "size": 4126
+    },
+    {
+      "path": "agent-skills/se-18-engineering-measurement-and-improvement/assets/checklist.md",
+      "sha256": "e616e24d1531e83908803b90a86f37677890ec4da7b10e6f16e012bae08a483e",
+      "size": 217
+    },
+    {
+      "path": "agent-skills/se-18-engineering-measurement-and-improvement/references/detailed-guide.md",
+      "sha256": "2c5fcb975bc63a0bc241f40a19f221441421856140ec4065f633f56452493cf6",
+      "size": 14461
+    },
+    {
+      "path": "agent-skills/se-19-software-engineering-economics-and-finops/SKILL.md",
+      "sha256": "939636ac6cdbeaa706e12202a63b0658b3b05ea74d3e409744db3d3f0806adef",
+      "size": 4077
+    },
+    {
+      "path": "agent-skills/se-19-software-engineering-economics-and-finops/assets/checklist.md",
+      "sha256": "3a9f2315742cdfcea96ae21d4d4bd1b871d58d3f3798b425de512ba5f286e6fb",
+      "size": 216
+    },
+    {
+      "path": "agent-skills/se-19-software-engineering-economics-and-finops/references/detailed-guide.md",
+      "sha256": "8b71d81a70e10ca130e9de67537765dac260b748293a61f2460c388be0f0bc51",
+      "size": 13529
+    },
+    {
+      "path": "agent-skills/se-20-sustainable-software-engineering/SKILL.md",
+      "sha256": "e8be7d3119bc5669aad06b9d53a84b5d8d5097252a3ecf89f0a20aae3c161fcf",
+      "size": 4032
+    },
+    {
+      "path": "agent-skills/se-20-sustainable-software-engineering/assets/checklist.md",
+      "sha256": "9072ec9104b55f11ff291d586cd30f964f376c047776e71e4afe4524b1a7d417",
+      "size": 221
+    },
+    {
+      "path": "agent-skills/se-20-sustainable-software-engineering/references/detailed-guide.md",
+      "sha256": "a12ffbb695204483aa04a1af03f1fe317b4b4fd9d7fdcd0f5fe15c123abd8b2b",
+      "size": 12652
+    },
+    {
+      "path": "agent-skills/se-21-professional-practice-law-and-governance/SKILL.md",
+      "sha256": "504a5e4a842740cc4aad07a5812a88e9bad807d87b5133115c0f8e9e325b244d",
+      "size": 4094
+    },
+    {
+      "path": "agent-skills/se-21-professional-practice-law-and-governance/assets/checklist.md",
+      "sha256": "dbe1a6545d2821e828a43418f283fc3aee403157e51f1506a01e39f246a20287",
+      "size": 202
+    },
+    {
+      "path": "agent-skills/se-21-professional-practice-law-and-governance/references/detailed-guide.md",
+      "sha256": "d5e319aa2f54324dae1f96c03146d0a7fc998b055e32a40e59b5d7707399c3d1",
+      "size": 13600
+    },
+    {
+      "path": "agent-skills/se-22-documentation-engineering/SKILL.md",
+      "sha256": "648d026a41643b850cd3ab7f5db97cad084f8fedb2331542fe77e75c95115a42",
+      "size": 3967
+    },
+    {
+      "path": "agent-skills/se-22-documentation-engineering/assets/checklist.md",
+      "sha256": "bc4b9072f77944a6b9027277fd2ca7f2e63330053834cc90a825c70d58914713",
+      "size": 205
+    },
+    {
+      "path": "agent-skills/se-22-documentation-engineering/references/detailed-guide.md",
+      "sha256": "034af15e52fb07340edb28c969e316ccbb2b2aca3d59f1eda6e3ca5f2051eb11",
+      "size": 13790
+    },
+    {
+      "path": "agent-skills/se-23-legacy-modernization-and-retirement/SKILL.md",
+      "sha256": "9c7f0c47917ee589a425f9ce9005209073737c5ab74fe6ddd856eef9a6f36b02",
+      "size": 4169
+    },
+    {
+      "path": "agent-skills/se-23-legacy-modernization-and-retirement/assets/checklist.md",
+      "sha256": "bd9a3e4e2b72ea996e19bd3359320fa8873f55bb1cdce4e6b5e04b578286d20d",
+      "size": 215
+    },
+    {
+      "path": "agent-skills/se-23-legacy-modernization-and-retirement/references/detailed-guide.md",
+      "sha256": "afc71ce372efbd737e59986e9154b6c65c29f55457c14f1c6b6066e3489afba9",
+      "size": 13741
+    },
+    {
+      "path": "agent-skills/se-24-specialized-project-profile-routing/SKILL.md",
+      "sha256": "e9e878c9fda03e604d680fd69b142c096bf4b3a6c44284711ab4673ebd0a94b5",
+      "size": 4096
+    },
+    {
+      "path": "agent-skills/se-24-specialized-project-profile-routing/assets/checklist.md",
+      "sha256": "f05d71714ce91d386a0e11058be9cfc20fee73ae1791165cbbc91490d41cfbb9",
+      "size": 236
+    },
+    {
+      "path": "agent-skills/se-24-specialized-project-profile-routing/references/detailed-guide.md",
+      "sha256": "fd99c5f0cf533048660acc09563a81d1030819f43b7bb960c0ce352eb02c8cf8",
+      "size": 13294
+    },
+    {
+      "path": "agent-skills/se-25-systems-and-system-of-systems-engineering/SKILL.md",
+      "sha256": "e4fdabcab473d93850914c056465c293698411f74b9f11092b787032b1957549",
+      "size": 4148
+    },
+    {
+      "path": "agent-skills/se-25-systems-and-system-of-systems-engineering/assets/checklist.md",
+      "sha256": "2e660469834f7dfd71acc05b22434eed135c43b81a16367cafe3ac3535794b1f",
+      "size": 208
+    },
+    {
+      "path": "agent-skills/se-25-systems-and-system-of-systems-engineering/references/detailed-guide.md",
+      "sha256": "0673beae3d2b95e065a412f7f46b4dfc5cd4a9bb39955aaa0a319b4c8a27e191",
+      "size": 12581
+    },
+    {
+      "path": "agent-skills/se-26-formal-methods-and-mathematical-verification/SKILL.md",
+      "sha256": "7b63f2d16f0ff34e92a692f01e7d57e39989da1dca153339a840b85e992e3f73",
+      "size": 4104
+    },
+    {
+      "path": "agent-skills/se-26-formal-methods-and-mathematical-verification/assets/checklist.md",
+      "sha256": "06532ac328df84d61a89af166d7eebcbab1b83810790400038ee6ccb28bfa09f",
+      "size": 208
+    },
+    {
+      "path": "agent-skills/se-26-formal-methods-and-mathematical-verification/references/detailed-guide.md",
+      "sha256": "7becc28da9eab29f8495c41838ecc3724ec177a661d9056a9a755cadf5dbf400",
+      "size": 13102
+    },
+    {
+      "path": "agent-skills/se-27-software-safety-engineering/SKILL.md",
+      "sha256": "7b3f2710f3ef464aa9190e38786d61e5e3a35d41fb1cfb0ca6ab799125932cae",
+      "size": 4084
+    },
+    {
+      "path": "agent-skills/se-27-software-safety-engineering/assets/checklist.md",
+      "sha256": "938ce3f7ad154151383c58d746d2818384344009abab4499af7fc5b2258c0e14",
+      "size": 226
+    },
+    {
+      "path": "agent-skills/se-27-software-safety-engineering/references/detailed-guide.md",
+      "sha256": "7741d26941ea0c76852479bd98d5fade88d17cded0969d8a33d668bae7a18a95",
+      "size": 13701
+    },
+    {
+      "path": "agent-skills/se-28-assurance-cases-integrity-levels-and-independent-v-v/SKILL.md",
+      "sha256": "53066ddd975aec3e3713de6f282212f2b29b8eda3801a742bc5f7d70b6e966de",
+      "size": 4078
+    },
+    {
+      "path": "agent-skills/se-28-assurance-cases-integrity-levels-and-independent-v-v/assets/checklist.md",
+      "sha256": "30bd40e409ea0d04d4230e9d76eb3c2189df4b0214b678e4c0edc95b1df97287",
+      "size": 198
+    },
+    {
+      "path": "agent-skills/se-28-assurance-cases-integrity-levels-and-independent-v-v/references/detailed-guide.md",
+      "sha256": "57d6fa7d7b589d16e1c006a0598e2e1af80e0c4faff836745a8a09e0d63348dc",
+      "size": 13289
+    },
+    {
+      "path": "agent-skills/se-29-human-factors-and-socio-technical-engineering/SKILL.md",
+      "sha256": "cb4dfa5b36622caa4ea67dfa3bf8164afa10bde79ef3958003d500e32f9a9745",
+      "size": 4137
+    },
+    {
+      "path": "agent-skills/se-29-human-factors-and-socio-technical-engineering/assets/checklist.md",
+      "sha256": "1bab1455771fcece114d70c9f63d00b685cefda3f34f33589f37278a1491d005",
+      "size": 207
+    },
+    {
+      "path": "agent-skills/se-29-human-factors-and-socio-technical-engineering/references/detailed-guide.md",
+      "sha256": "e7ce3cb334541821996cc9b29ca22fc6f838e43a103280e0a78d14b16466e4a7",
+      "size": 13918
+    },
+    {
+      "path": "agent-skills/se-30-internationalization-localization-and-culturalization/SKILL.md",
+      "sha256": "3f574ee067e3ec1fd1ff20f70781ff74340fb1d75d68d099cb3bcb9226fc8643",
+      "size": 4197
+    },
+    {
+      "path": "agent-skills/se-30-internationalization-localization-and-culturalization/assets/checklist.md",
+      "sha256": "a7f6e7e8dfd91fe690bc2dba004cda67fe8cafce606268a07b59149c02f6e449",
+      "size": 219
+    },
+    {
+      "path": "agent-skills/se-30-internationalization-localization-and-culturalization/references/detailed-guide.md",
+      "sha256": "f2f5a1d211fba0b447492f795a5c864e7854c88d07ec69e0bf56f07228d12934",
+      "size": 13913
+    },
+    {
+      "path": "agent-skills/se-31-interoperability-and-standards-conformance-engineering/SKILL.md",
+      "sha256": "ce0a01b4bc1b09330adf4b133e5ba65f9c7f0fb5653d57e226a2ea9120b7374d",
+      "size": 4193
+    },
+    {
+      "path": "agent-skills/se-31-interoperability-and-standards-conformance-engineering/assets/checklist.md",
+      "sha256": "b944041b0e9634394df1b734db1e9db51681e8cfd6ab2e9b098741ed9ef01125",
+      "size": 210
+    },
+    {
+      "path": "agent-skills/se-31-interoperability-and-standards-conformance-engineering/references/detailed-guide.md",
+      "sha256": "45ad8979d3dfc99699deb5f774abe561c673ed6a3e2ce5ccaa1cc3ef972809a7",
+      "size": 13547
+    },
+    {
+      "path": "agent-skills/se-32-software-product-line-and-variability-engineering/SKILL.md",
+      "sha256": "1f644f1f48e501b3428e36f681df05d55e95cdb96d410a6058f1e1f340a47451",
+      "size": 4168
+    },
+    {
+      "path": "agent-skills/se-32-software-product-line-and-variability-engineering/assets/checklist.md",
+      "sha256": "f078e8fce2363ba782ebac7d294ab4cf913c1aee92d0ff68e066d046a9952428",
+      "size": 211
+    },
+    {
+      "path": "agent-skills/se-32-software-product-line-and-variability-engineering/references/detailed-guide.md",
+      "sha256": "9e9eeeb41f0200f43c29afc3121df0c0821fabf858e9a0514f538e877a318dd0",
+      "size": 13940
+    },
+    {
+      "path": "agent-skills/se-33-domain-engineering-and-bounded-context-design/SKILL.md",
+      "sha256": "bcef46d693bcb3e141e9d481d155441338ad77ce1fa36a0d425552527efb970c",
+      "size": 4115
+    },
+    {
+      "path": "agent-skills/se-33-domain-engineering-and-bounded-context-design/assets/checklist.md",
+      "sha256": "43466802171d6b6befba73000816abf0a00a9360450a599455943cdfa7f77b6c",
+      "size": 231
+    },
+    {
+      "path": "agent-skills/se-33-domain-engineering-and-bounded-context-design/references/detailed-guide.md",
+      "sha256": "5ccf12c28594068f567fce67458a0a8dd0ce92066b8b9ead4fdbfcd1d8ed4cb7",
+      "size": 13681
+    },
+    {
+      "path": "agent-skills/se-34-real-time-embedded-and-cyber-physical-systems-engineering/SKILL.md",
+      "sha256": "01ec3492c31094c6f9628832189acfe5ca6a7ccbc9c280afc2af8590708e0e03",
+      "size": 4126
+    },
+    {
+      "path": "agent-skills/se-34-real-time-embedded-and-cyber-physical-systems-engineering/assets/checklist.md",
+      "sha256": "1158de84347c2ebb19c51e30e26037e627836d6a7b3ad678b6b8708238209932",
+      "size": 194
+    },
+    {
+      "path": "agent-skills/se-34-real-time-embedded-and-cyber-physical-systems-engineering/references/detailed-guide.md",
+      "sha256": "17b6e8ec6b6f6db257af4331e28767558f5836402c44d69711b1786d6203fd0b",
+      "size": 14521
+    },
+    {
+      "path": "agent-skills/se-35-protocol-state-machine-and-workflow-correctness/SKILL.md",
+      "sha256": "b7514c171973a8e8894d48fac86abefd62ffce29522b57b915938c5320efad74",
+      "size": 4087
+    },
+    {
+      "path": "agent-skills/se-35-protocol-state-machine-and-workflow-correctness/assets/checklist.md",
+      "sha256": "8eb2fb3831e980a0f297375d7b53262ec531ab687bc7f265c2dc8e8278328ddf",
+      "size": 206
+    },
+    {
+      "path": "agent-skills/se-35-protocol-state-machine-and-workflow-correctness/references/detailed-guide.md",
+      "sha256": "ef0bba2599a6723a90407cdb9cc925299db308722b6b9a9ca738fbb3bd657326",
+      "size": 14714
+    },
+    {
+      "path": "agent-skills/se-36-concurrency-parallelism-and-memory-model-engineering/SKILL.md",
+      "sha256": "2506a3cf2cee60443e77f8b082a23597866d032f42b964f4381c785c870cae5b",
+      "size": 4143
+    },
+    {
+      "path": "agent-skills/se-36-concurrency-parallelism-and-memory-model-engineering/assets/checklist.md",
+      "sha256": "74904599f08f671b69df8a6261a0b396100fc9f2c2c178753b3300ba1edf00f7",
+      "size": 208
+    },
+    {
+      "path": "agent-skills/se-36-concurrency-parallelism-and-memory-model-engineering/references/detailed-guide.md",
+      "sha256": "3062954618eaa59d4d8e8a3dab3ab87b62b6bb0d13b140a787dc5c3700101cd1",
+      "size": 14533
+    },
+    {
+      "path": "agent-skills/se-37-transaction-consistency-and-data-integrity-engineering/SKILL.md",
+      "sha256": "94e2631c9cafaa8896727213b3b2e1cf1b649ceea678c7bfd38f998ff6ca512e",
+      "size": 4156
+    },
+    {
+      "path": "agent-skills/se-37-transaction-consistency-and-data-integrity-engineering/assets/checklist.md",
+      "sha256": "8d9581e1cc20e6a51df887383ae28f60f6d0142a7db5f7600c2bc36a1f91b92b",
+      "size": 201
+    },
+    {
+      "path": "agent-skills/se-37-transaction-consistency-and-data-integrity-engineering/references/detailed-guide.md",
+      "sha256": "b22341c9c019462309c2307e68715fb4aded1a8f509693c2df2d720d85ea8fd2",
+      "size": 13967
+    },
+    {
+      "path": "agent-skills/se-38-event-driven-messaging-and-streaming-engineering/SKILL.md",
+      "sha256": "901dd33bc2ded325ba9b7aaf88b36e7e3c22a73fd82ea6108ab4ec816e75333e",
+      "size": 4138
+    },
+    {
+      "path": "agent-skills/se-38-event-driven-messaging-and-streaming-engineering/assets/checklist.md",
+      "sha256": "f76aaeebfa7b027279cfb4492e5342c0941909207cff75d6daa1ab922105ec83",
+      "size": 201
+    },
+    {
+      "path": "agent-skills/se-38-event-driven-messaging-and-streaming-engineering/references/detailed-guide.md",
+      "sha256": "dc75b09412bd9e805d73f4ae970df607d2e4bd7580639e0377aae0aa80cefe87",
+      "size": 14730
+    },
+    {
+      "path": "agent-skills/se-39-data-migration-conversion-and-reconciliation-engineering/SKILL.md",
+      "sha256": "7d90836c0d373295c31e168c233011dfce5f92417537662b616af5aa96d5563c",
+      "size": 4198
+    },
+    {
+      "path": "agent-skills/se-39-data-migration-conversion-and-reconciliation-engineering/assets/checklist.md",
+      "sha256": "de4390ff56c16576c136d65613fd3d19adb8f5225a07a448a0e9b092bde5b855",
+      "size": 212
+    },
+    {
+      "path": "agent-skills/se-39-data-migration-conversion-and-reconciliation-engineering/references/detailed-guide.md",
+      "sha256": "0544e9aaa76e0c9d036686dfe1755f4b42dd67cd90e8b35aac8ff90bfadb22cc",
+      "size": 14818
+    },
+    {
+      "path": "agent-skills/se-40-performance-modelling-capacity-scalability-and-compatibility/SKILL.md",
+      "sha256": "f66e418e94733ee0365f17101b7291818bf7d1d5ea7c0a6f65a1883055dc351c",
+      "size": 4173
+    },
+    {
+      "path": "agent-skills/se-40-performance-modelling-capacity-scalability-and-compatibility/assets/checklist.md",
+      "sha256": "31e95fd78e7efdf6844dd9f95fc5746f390d2aefb041511748ebc78028736a92",
+      "size": 209
+    },
+    {
+      "path": "agent-skills/se-40-performance-modelling-capacity-scalability-and-compatibility/references/detailed-guide.md",
+      "sha256": "9c530f96423f842f37807f774f9c972847048dd554ba3233525d94d4ed56c4d2",
+      "size": 14528
+    },
+    {
+      "path": "agent-skills/se-41-software-acquisition-supplier-and-third-party-service-engineering/SKILL.md",
+      "sha256": "402f1f39ed3914c98b4fe2c22f0badd50258f8053ca67b86ba6b02023258b397",
+      "size": 4256
+    },
+    {
+      "path": "agent-skills/se-41-software-acquisition-supplier-and-third-party-service-engineering/assets/checklist.md",
+      "sha256": "6a3123d088a8ffbfae69b0f6deb0dd4215630f16cb10380452988902009b7586",
+      "size": 209
+    },
+    {
+      "path": "agent-skills/se-41-software-acquisition-supplier-and-third-party-service-engineering/references/detailed-guide.md",
+      "sha256": "b941655c3ac60b2ae687388060a5fc28f8a5090d9e9a3bf5059f0410ee77dd08",
+      "size": 14381
+    },
+    {
+      "path": "agent-skills/se-42-open-source-program-governance-and-community-sustainability/SKILL.md",
+      "sha256": "acded8628f91cd0d43a4d4280253d3fd08bd67b10108f09dc3124c8ed9721e58",
+      "size": 4143
+    },
+    {
+      "path": "agent-skills/se-42-open-source-program-governance-and-community-sustainability/assets/checklist.md",
+      "sha256": "681510a417a4c782fa916a48a14956c8a176ff556120e59498eeb830c19bef6d",
+      "size": 194
+    },
+    {
+      "path": "agent-skills/se-42-open-source-program-governance-and-community-sustainability/references/detailed-guide.md",
+      "sha256": "9e66afb4f7d24c593528df44f74a72b0bb2cf9063e211f06d97535fcf9e94c6f",
+      "size": 14171
+    },
+    {
+      "path": "agent-skills/se-43-compliance-engineering-and-continuous-audit-evidence/SKILL.md",
+      "sha256": "d6fbdff8dc16a2d297f8b2fd9e4bfaa1af438fefa70e6a3684d6f2a4e2d6d8a3",
+      "size": 4152
+    },
+    {
+      "path": "agent-skills/se-43-compliance-engineering-and-continuous-audit-evidence/assets/checklist.md",
+      "sha256": "4a48d8dfb6263adad0181e74e318e54ac29f6dd90bd141a7509e28f61711cf63",
+      "size": 203
+    },
+    {
+      "path": "agent-skills/se-43-compliance-engineering-and-continuous-audit-evidence/references/detailed-guide.md",
+      "sha256": "7fbd04fb123031aff0a64b4cc71e476266d4681b92479b10cfa968045be74155",
+      "size": 14007
+    },
+    {
+      "path": "agent-skills/se-44-experimentation-feature-lifecycle-and-product-analytics-governance/SKILL.md",
+      "sha256": "f1d56e32985c4a32e20c101506654fb920216560acad628799c1f4f7404190c0",
+      "size": 4180
+    },
+    {
+      "path": "agent-skills/se-44-experimentation-feature-lifecycle-and-product-analytics-governance/assets/checklist.md",
+      "sha256": "6df0991b582c3adce0ffffea2a8ba25fd0f36809c0c4f0f66b26801457e81f4f",
+      "size": 213
+    },
+    {
+      "path": "agent-skills/se-44-experimentation-feature-lifecycle-and-product-analytics-governance/references/detailed-guide.md",
+      "sha256": "f7e26dcd39819c90090959c1297e07243154dcee6cd67f63f231eb8d99d8ca24",
+      "size": 13890
+    },
+    {
+      "path": "agent-skills/se-45-ai-assisted-software-development-governance/SKILL.md",
+      "sha256": "85b6054804bfa52521b4f24da77fa5154b570392b006b41f49584d926c15676f",
+      "size": 4146
+    },
+    {
+      "path": "agent-skills/se-45-ai-assisted-software-development-governance/assets/checklist.md",
+      "sha256": "5b00b2821d37b3e0e1629bcfdbfa51ac124056b78a49c217ae5b11ff97014067",
+      "size": 200
+    },
+    {
+      "path": "agent-skills/se-45-ai-assisted-software-development-governance/references/detailed-guide.md",
+      "sha256": "e21ec2d5d141069746ac388e5005bc718a9525839740e55102217d21f5b3cb9e",
+      "size": 13717
+    },
+    {
+      "path": "agent-skills/se-46-engineering-knowledge-management-onboarding-and-bus-factor-reduction/SKILL.md",
+      "sha256": "4396bc64ae2c6b26764c1d70ae085b9fecad0e52ec03485f975c0b080f531d8d",
+      "size": 4146
+    },
+    {
+      "path": "agent-skills/se-46-engineering-knowledge-management-onboarding-and-bus-factor-reduction/assets/checklist.md",
+      "sha256": "7595580d2c9437de1587f54465f8fea2c785405027304c69bd2c0eb0f5208672",
+      "size": 204
+    },
+    {
+      "path": "agent-skills/se-46-engineering-knowledge-management-onboarding-and-bus-factor-reduction/references/detailed-guide.md",
+      "sha256": "3dbdc19f04b06866b0ac90acd0764d89c990bbd317fb19a8b1026ec18d01813d",
+      "size": 14242
+    },
+    {
+      "path": "agent-skills/se-47-reproducibility-hermetic-builds-and-deterministic-environments/SKILL.md",
+      "sha256": "5f60be60523f99e629f0c00af6eb0ecfcc7b3c8554ffb0c9b6b4e5bd0e68bee2",
+      "size": 4165
+    },
+    {
+      "path": "agent-skills/se-47-reproducibility-hermetic-builds-and-deterministic-environments/assets/checklist.md",
+      "sha256": "15e323a6af4456d2e593253ade7aab38c5662661bac199522530effc6a088e31",
+      "size": 205
+    },
+    {
+      "path": "agent-skills/se-47-reproducibility-hermetic-builds-and-deterministic-environments/references/detailed-guide.md",
+      "sha256": "040cbb33d489c445866ba0e977eea65d73084be806f15399d3af36dd7fe8f141",
+      "size": 13666
+    },
+    {
+      "path": "agent-skills/se-48-engineering-tools-and-case-automation-governance/SKILL.md",
+      "sha256": "6631ed14845ae92a3088eaef567e022356938d0570a2da1da1fc5bba5d54f188",
+      "size": 4121
+    },
+    {
+      "path": "agent-skills/se-48-engineering-tools-and-case-automation-governance/assets/checklist.md",
+      "sha256": "8d5c990af53aebddd61131f1a28b61e94adc1ed27db6d2d0c593777792e99411",
+      "size": 206
+    },
+    {
+      "path": "agent-skills/se-48-engineering-tools-and-case-automation-governance/references/detailed-guide.md",
+      "sha256": "0b11d2007a37e3853c724ca09c492e43e1680c388d8d5bbfd6a7c506b04100c1",
+      "size": 14028
+    },
+    {
+      "path": "agent-skills/se-49-digital-identity-and-access-lifecycle-engineering/SKILL.md",
+      "sha256": "3dd89648a86756e3be0057fee9cd7c09751da2674ce0fe95e73fdb2909505c74",
+      "size": 4138
+    },
+    {
+      "path": "agent-skills/se-49-digital-identity-and-access-lifecycle-engineering/assets/checklist.md",
+      "sha256": "0f8783a7ac5cbe6c3a4ac423d88a08c57277bce5773c24eab7962e9dab9534f1",
+      "size": 217
+    },
+    {
+      "path": "agent-skills/se-49-digital-identity-and-access-lifecycle-engineering/references/detailed-guide.md",
+      "sha256": "2b5c81bf02ade0a66f02b1269ac0040de0755a478aa11eb1bb10bd62f54e754a",
+      "size": 14248
+    },
+    {
+      "path": "agent-skills/se-50-cryptographic-engineering-agility-and-post-quantum-migration/SKILL.md",
+      "sha256": "02e2dd81815b012ea9a04937fcc4c446f8096ad0868a355103fba3668117f57b",
+      "size": 4186
+    },
+    {
+      "path": "agent-skills/se-50-cryptographic-engineering-agility-and-post-quantum-migration/assets/checklist.md",
+      "sha256": "0992cc989555aa46961e61190ed8bce2d413f96d28f2c9979030133f8785d973",
+      "size": 199
+    },
+    {
+      "path": "agent-skills/se-50-cryptographic-engineering-agility-and-post-quantum-migration/references/detailed-guide.md",
+      "sha256": "55d7c60eeef205021297bf80799eb21c697e107a0c13da1dd3ee8b7cb04ff667",
+      "size": 13387
+    },
+    {
+      "path": "agent-skills/se-51-multi-tenant-saas-isolation-engineering/SKILL.md",
+      "sha256": "508f996e591cdcb7657cf77e9275386a85d85706cd0b23a4c5699c7c62368691",
+      "size": 4141
+    },
+    {
+      "path": "agent-skills/se-51-multi-tenant-saas-isolation-engineering/assets/checklist.md",
+      "sha256": "536a2aefe5c6fed7b08213b5fe83681bd4e1bc36a83dcfa4d897657149629d67",
+      "size": 194
+    },
+    {
+      "path": "agent-skills/se-51-multi-tenant-saas-isolation-engineering/references/detailed-guide.md",
+      "sha256": "5c5bf4408a0fd0a1830cb284025696992cdb5cf024fe1b247006635aef2dceb1",
+      "size": 13447
+    },
+    {
+      "path": "agent-skills/se-52-offline-first-replication-and-conflict-resolution-engineering/SKILL.md",
+      "sha256": "b6ea8a19a1c385d84d3774da9d77eb1c89b87628bda05a681303ead87bb7e842",
+      "size": 4171
+    },
+    {
+      "path": "agent-skills/se-52-offline-first-replication-and-conflict-resolution-engineering/assets/checklist.md",
+      "sha256": "88a6113b07f849f63408077bd0f628f0705a42f52aac5899a0382e3d1d18acfe",
+      "size": 198
+    },
+    {
+      "path": "agent-skills/se-52-offline-first-replication-and-conflict-resolution-engineering/references/detailed-guide.md",
+      "sha256": "d7a4d2d075c7f906496cb213e0d5f5bfc648bd49117992612c933eaa30da4527",
+      "size": 14443
+    },
+    {
+      "path": "agent-skills/se-53-temporal-calendar-and-timezone-correctness-engineering/SKILL.md",
+      "sha256": "7c1e72c2b0d632f7a10a90152f12cd3f65a4ce22e3945df1667e2d283ab4b594",
+      "size": 4124
+    },
+    {
+      "path": "agent-skills/se-53-temporal-calendar-and-timezone-correctness-engineering/assets/checklist.md",
+      "sha256": "6a7e759edb9ca832e7db839ffce175f8ccd89abe1de65f5ef5bccea101da7208",
+      "size": 202
+    },
+    {
+      "path": "agent-skills/se-53-temporal-calendar-and-timezone-correctness-engineering/references/detailed-guide.md",
+      "sha256": "05ed4397bbead2318a341e516766dbb14b9e1af9c25b1f4a333c96bc2aa789f2",
+      "size": 14211
+    },
+    {
+      "path": "agent-skills/se-54-numerical-and-scientific-correctness-engineering/SKILL.md",
+      "sha256": "b327a7a3022e682d4e9183f040f899c034e35596d5a560e6426a2e8e739adfe8",
+      "size": 4134
+    },
+    {
+      "path": "agent-skills/se-54-numerical-and-scientific-correctness-engineering/assets/checklist.md",
+      "sha256": "0eaa845ab18fe3bcc403659667b7cd3f45224d363bf3e6203a4b16dac91bd159",
+      "size": 199
+    },
+    {
+      "path": "agent-skills/se-54-numerical-and-scientific-correctness-engineering/references/detailed-guide.md",
+      "sha256": "755b86c32d35ee119897befab16175b7f3f1346b1b0e04e6b63539ff092ec413",
+      "size": 13977
+    },
+    {
+      "path": "agent-skills/se-55-secure-software-update-patch-and-firmware-delivery/SKILL.md",
+      "sha256": "c7bdc774b5e77d344796ebb61fc885422f74befdb115f91811cbe2b9a734d1bc",
+      "size": 4163
+    },
+    {
+      "path": "agent-skills/se-55-secure-software-update-patch-and-firmware-delivery/assets/checklist.md",
+      "sha256": "f8e9edab3a9585f1d78b68e2c2c0502420a5a235e273c7baca2c2eb4cd86132b",
+      "size": 202
+    },
+    {
+      "path": "agent-skills/se-55-secure-software-update-patch-and-firmware-delivery/references/detailed-guide.md",
+      "sha256": "cbd02ab2a724688cb0911fc8648c61b0d5670ba219e481d1882fb9c815905826",
+      "size": 14791
+    },
+    {
+      "path": "agent-skills/se-56-records-retention-archival-and-legal-hold-engineering/SKILL.md",
+      "sha256": "10f196df5f57713d0c985d92da87c6b2f3855087a200c4f4da1a8b984dd0b7ed",
+      "size": 4137
+    },
+    {
+      "path": "agent-skills/se-56-records-retention-archival-and-legal-hold-engineering/assets/checklist.md",
+      "sha256": "3ef59b607981bd46bacc7fbe4eea106a3edabf7461e35f1f310df5b4d5ed9be5",
+      "size": 214
+    },
+    {
+      "path": "agent-skills/se-56-records-retention-archival-and-legal-hold-engineering/references/detailed-guide.md",
+      "sha256": "208ce185ff9f812ae5e16021f38206b71fc1c10a49eb5cabf9eed9c57200f729",
+      "size": 14818
+    },
+    {
+      "path": "agent-skills/se-57-digital-forensics-and-evidence-readiness-engineering/SKILL.md",
+      "sha256": "56c7655ee90739f69a95d325f3ab010d8c5d215d503e2ed3b98e6db30c140ece",
+      "size": 4159
+    },
+    {
+      "path": "agent-skills/se-57-digital-forensics-and-evidence-readiness-engineering/assets/checklist.md",
+      "sha256": "c1f90bd1a437fac682e8a86fae926ae8e93ce66ebecda57ad0f1322f22b91883",
+      "size": 203
+    },
+    {
+      "path": "agent-skills/se-57-digital-forensics-and-evidence-readiness-engineering/references/detailed-guide.md",
+      "sha256": "0339ce03eb9dceb578abaeafaaf3f45f50e8006075602b2914092d86916c771e",
+      "size": 13637
+    },
+    {
+      "path": "agent-skills/se-58-it-service-management-and-supportability-engineering/SKILL.md",
+      "sha256": "c640674672f7639b40842d751acace9193a7322e9ddf3da1e53ce0b2199c9a8c",
+      "size": 4199
+    },
+    {
+      "path": "agent-skills/se-58-it-service-management-and-supportability-engineering/assets/checklist.md",
+      "sha256": "ad9e9c006df73abf8d45fe28eb1268fde582a18215aae303e1228dfdd50b8a0f",
+      "size": 224
+    },
+    {
+      "path": "agent-skills/se-58-it-service-management-and-supportability-engineering/references/detailed-guide.md",
+      "sha256": "81460c3f7b0df13b6ded2a5d7a8183ffd2ea5966426224517e1d79acc1a68b37",
+      "size": 14240
+    },
+    {
+      "path": "agent-skills/se-59-it-asset-software-inventory-and-end-of-life-governance/SKILL.md",
+      "sha256": "5c825b5b8ce4249b9b11c9cc61448ea4d63b24713d8146045094731f35608151",
+      "size": 4151
+    },
+    {
+      "path": "agent-skills/se-59-it-asset-software-inventory-and-end-of-life-governance/assets/checklist.md",
+      "sha256": "fcff88b8f6015fd635e2578045cf88f5d55b3c25cc30a71f48f94b4b0b5b70ff",
+      "size": 208
+    },
+    {
+      "path": "agent-skills/se-59-it-asset-software-inventory-and-end-of-life-governance/references/detailed-guide.md",
+      "sha256": "f898b8c81739e59c64ea21e64fba50959996b0cde6a29e24a8f2c7909802aa32",
+      "size": 14342
+    },
+    {
+      "path": "agent-skills/se-60-data-erasure-media-sanitization-and-secure-disposal/SKILL.md",
+      "sha256": "58ae1423d3adc15d428803ab522327a62fa39bee2fa70a1a49ea5706ad2c2e3a",
+      "size": 4147
+    },
+    {
+      "path": "agent-skills/se-60-data-erasure-media-sanitization-and-secure-disposal/assets/checklist.md",
+      "sha256": "565464da8dda23eef72158856420e0e65aed2050b25054c5a934eaa25dc35ad9",
+      "size": 189
+    },
+    {
+      "path": "agent-skills/se-60-data-erasure-media-sanitization-and-secure-disposal/references/detailed-guide.md",
+      "sha256": "8301c244ac4f0ba42e093b85658deac604cdd9f814d925a2c179270c0ecd7d40",
+      "size": 14300
+    },
+    {
+      "path": "agent-skills/se-61-web-platform-and-browser-conformance-engineering/SKILL.md",
+      "sha256": "5716e5051bda9f39455d7c8f31e5a36726a6d320de52e46fc94273750a274efc",
+      "size": 4180
+    },
+    {
+      "path": "agent-skills/se-61-web-platform-and-browser-conformance-engineering/assets/checklist.md",
+      "sha256": "da70f267a44ff8f71c6d75871944dd62fd9b54f8f861f805745443364b0f3ad0",
+      "size": 209
+    },
+    {
+      "path": "agent-skills/se-61-web-platform-and-browser-conformance-engineering/references/detailed-guide.md",
+      "sha256": "b1809990a1bf6e86a44469e12fc58ee9450e4deb870a5d670a47964f3af0a8fc",
+      "size": 15370
+    },
+    {
+      "path": "agent-skills/se-62-mobile-device-ecosystem-engineering/SKILL.md",
+      "sha256": "5dea4f527ae028d40cf8bb7e77f7e02b91bc50e9ae2e318889138780feeb0eaf",
+      "size": 4184
+    },
+    {
+      "path": "agent-skills/se-62-mobile-device-ecosystem-engineering/assets/checklist.md",
+      "sha256": "2898f65ae6ed6be41cf4b1cfedbb39cafba7b78766b29b4c20a04489002b47e5",
+      "size": 219
+    },
+    {
+      "path": "agent-skills/se-62-mobile-device-ecosystem-engineering/references/detailed-guide.md",
+      "sha256": "4230e6b62003d9eac160025a4ce2f63a0bd6f3ca0621fccec66c9db6a6dda362",
+      "size": 15423
+    },
+    {
+      "path": "agent-skills/se-63-network-and-transport-protocol-engineering/SKILL.md",
+      "sha256": "5691b62004304e7a1a7f9d2fb8e58239103187b17f4eacc3884e12641c2828e7",
+      "size": 4105
+    },
+    {
+      "path": "agent-skills/se-63-network-and-transport-protocol-engineering/assets/checklist.md",
+      "sha256": "9291d4755241cd0c4ecd124b429062289ac80611856ba270effce25f1f01c357",
+      "size": 194
+    },
+    {
+      "path": "agent-skills/se-63-network-and-transport-protocol-engineering/references/detailed-guide.md",
+      "sha256": "27bf7bc87d6fcdeb749b9f0ef58b86a0cd53c6cf28042769ce3b62f3f6fedc2c",
+      "size": 15380
+    },
+    {
+      "path": "agent-skills/se-64-data-provenance-lineage-and-origin-tracking-engineering/SKILL.md",
+      "sha256": "5fd69d0c96075811cc80f3245d9ee0dc6d9e07390aa78b6d9122eada0b6df303",
+      "size": 4176
+    },
+    {
+      "path": "agent-skills/se-64-data-provenance-lineage-and-origin-tracking-engineering/assets/checklist.md",
+      "sha256": "6526981f7de28f1cef5c0af5e37c687786d575f0aa3bcdcb89743126cffcb221",
+      "size": 185
+    },
+    {
+      "path": "agent-skills/se-64-data-provenance-lineage-and-origin-tracking-engineering/references/detailed-guide.md",
+      "sha256": "a36f56ce51392d49e76fe3f1492f6c87643838cf52bbb50d622a2c69bed7e10a",
+      "size": 14658
+    },
+    {
+      "path": "agent-skills/se-65-privacy-enhancing-technology-and-confidential-computing-engineering/SKILL.md",
+      "sha256": "cfac44a344ae9bab01eb4ba7ed8d49503eafe2258c54907b5f74ae40fbe22b30",
+      "size": 4281
+    },
+    {
+      "path": "agent-skills/se-65-privacy-enhancing-technology-and-confidential-computing-engineering/assets/checklist.md",
+      "sha256": "8e33a234cc60cae9fd874b8e696a8796d1922642b77120527e9a65393a932a0f",
+      "size": 194
+    },
+    {
+      "path": "agent-skills/se-65-privacy-enhancing-technology-and-confidential-computing-engineering/references/detailed-guide.md",
+      "sha256": "d266e00cd2c50e4b4e938a042d6a82073f1427a9f5572bfb3460b5a9caac84ab",
+      "size": 13695
+    },
+    {
+      "path": "agent-skills/se-66-trust-safety-abuse-and-fraud-resistance-engineering/SKILL.md",
+      "sha256": "d3770fbcc5d3a305a34e1680d99641d0fc7b3a905d91390e4ab0b5638c4a859c",
+      "size": 4144
+    },
+    {
+      "path": "agent-skills/se-66-trust-safety-abuse-and-fraud-resistance-engineering/assets/checklist.md",
+      "sha256": "e7e637464a7f3a7c47dff8e5a8071e89d63e07f039eed5baad92c8ffcad43d24",
+      "size": 216
+    },
+    {
+      "path": "agent-skills/se-66-trust-safety-abuse-and-fraud-resistance-engineering/references/detailed-guide.md",
+      "sha256": "7c095cb82ff0917b53d494cd179b79f16949b757e2c9bb06bcc8f867cba53e06",
+      "size": 14303
+    },
+    {
+      "path": "agent-skills/se-67-digital-content-authenticity-and-media-provenance-engineering/SKILL.md",
+      "sha256": "4ead8d2e4756eefe712443b0191beb13b8dfbaabf6d6f73610a825d4d2e61ed4",
+      "size": 4199
+    },
+    {
+      "path": "agent-skills/se-67-digital-content-authenticity-and-media-provenance-engineering/assets/checklist.md",
+      "sha256": "2074969de779d0a842f2612d00b71760bf8b9f0f85da2fb71d7da26729806f93",
+      "size": 211
+    },
+    {
+      "path": "agent-skills/se-67-digital-content-authenticity-and-media-provenance-engineering/references/detailed-guide.md",
+      "sha256": "c0ed3fbbdf6ab8664d6cf0a00514bc54ef3eb32008ab9951212da134fafd2ff6",
+      "size": 13652
+    },
+    {
+      "path": "agent-skills/se-68-blockchain-distributed-ledger-and-smart-contract-engineering/SKILL.md",
+      "sha256": "e820c7af287bca33cc3f53f41d88f31c35c9c28f968ee78a7b83ac8bbe7e7dd9",
+      "size": 4287
+    },
+    {
+      "path": "agent-skills/se-68-blockchain-distributed-ledger-and-smart-contract-engineering/assets/checklist.md",
+      "sha256": "f85dad0cf4a4ac151e1c94e14a6f54d158a31d699cf1d0c8e33f17fe456fa895",
+      "size": 226
+    },
+    {
+      "path": "agent-skills/se-68-blockchain-distributed-ledger-and-smart-contract-engineering/references/detailed-guide.md",
+      "sha256": "8ffc7945284414dc7b82db325bb198a14833848c4dfd40ee3a649d88dea18a62",
+      "size": 14432
+    },
+    {
+      "path": "agent-skills/se-69-quantum-software-engineering/SKILL.md",
+      "sha256": "167edc4c2e508ed7a8c19471619e49145164cb691ce820a8b43771aeb9f1cd8e",
+      "size": 4176
+    },
+    {
+      "path": "agent-skills/se-69-quantum-software-engineering/assets/checklist.md",
+      "sha256": "a2b836c41e49997d623a008b929ec0854168a5f553d4a57f6263fe71273474ba",
+      "size": 223
+    },
+    {
+      "path": "agent-skills/se-69-quantum-software-engineering/references/detailed-guide.md",
+      "sha256": "933a928df9d689645e502109b1d39a26d987d68221fafebafdfae559f816e241",
+      "size": 13668
+    },
+    {
+      "path": "agent-skills/se-70-digital-twin-and-simulation-engineering/SKILL.md",
+      "sha256": "5947bea01dd956f1cb705fafe12a5bb202eba4c5f2df45a552973b997fa9bf67",
+      "size": 4150
+    },
+    {
+      "path": "agent-skills/se-70-digital-twin-and-simulation-engineering/assets/checklist.md",
+      "sha256": "66c6acc0308e3a628a742dfc795c4849330e9f13c6e72210a56b9033ff403260",
+      "size": 204
+    },
+    {
+      "path": "agent-skills/se-70-digital-twin-and-simulation-engineering/references/detailed-guide.md",
+      "sha256": "5ade2017405725673aaf410b300a7a29192965aedc7a7c36264431a99c3d8d04",
+      "size": 13710
+    },
+    {
+      "path": "agent-skills/se-71-autonomous-and-robotic-system-assurance-engineering/SKILL.md",
+      "sha256": "0fcd394f184c5016c9ea053b66e29e54fe005e9e7929b375a90f5c9b6be01e51",
+      "size": 4217
+    },
+    {
+      "path": "agent-skills/se-71-autonomous-and-robotic-system-assurance-engineering/assets/checklist.md",
+      "sha256": "f74894f84645614d04edfc7e05ac62c3be8c53c0c058617a7076f228db57713b",
+      "size": 206
+    },
+    {
+      "path": "agent-skills/se-71-autonomous-and-robotic-system-assurance-engineering/references/detailed-guide.md",
+      "sha256": "8dea219ccfb288ec685f72824bc8a33b20c5b723175bdd12ae9f0649711bc0a6",
+      "size": 14375
+    },
+    {
+      "path": "agent-skills/se-72-geospatial-and-location-intelligence-engineering/SKILL.md",
+      "sha256": "f27ad5b3cdd5b40e4b58344589eee8763874f1e4ef517c49847ad55dfb5715bd",
+      "size": 4169
+    },
+    {
+      "path": "agent-skills/se-72-geospatial-and-location-intelligence-engineering/assets/checklist.md",
+      "sha256": "b964625df435773b119b159792897f10fc36af2345734b3a45eecee1a30449c5",
+      "size": 215
+    },
+    {
+      "path": "agent-skills/se-72-geospatial-and-location-intelligence-engineering/references/detailed-guide.md",
+      "sha256": "cbf35b93335397b9f3d85931b749b5963777958920a08b0ea318b5cf156d502e",
+      "size": 13958
+    },
+    {
+      "path": "agent-skills/se-73-edge-and-computing-continuum-engineering/SKILL.md",
+      "sha256": "5a977f419012ff822bcf9b1329444c14cb5ce1a57c13ca6f2de0b2d8cc4e55b8",
+      "size": 4174
+    },
+    {
+      "path": "agent-skills/se-73-edge-and-computing-continuum-engineering/assets/checklist.md",
+      "sha256": "a83c5bdebffb5f175f07b78d2eac153c6ec515f062c3ded12dcf7cbf204dabeb",
+      "size": 212
+    },
+    {
+      "path": "agent-skills/se-73-edge-and-computing-continuum-engineering/references/detailed-guide.md",
+      "sha256": "a5638135af48a761ef0597a836f271e1731e29a1488f119b96002d50e558e70b",
+      "size": 14314
+    },
+    {
+      "path": "agent-skills/se-74-high-performance-and-accelerator-computing-engineering/SKILL.md",
+      "sha256": "1a7e6c677941a447f21dc8763b753d4a0bcc47db5ee35118c143c4b9e4653011",
+      "size": 4196
+    },
+    {
+      "path": "agent-skills/se-74-high-performance-and-accelerator-computing-engineering/assets/checklist.md",
+      "sha256": "cfa5d1bea08e5dc34f26f858349d76b233df85bfdae839f648f0e3664ac7aa86",
+      "size": 187
+    },
+    {
+      "path": "agent-skills/se-74-high-performance-and-accelerator-computing-engineering/references/detailed-guide.md",
+      "sha256": "624d74eaa1fa3db94005c6d8d8727958e2e309c076c7643cc0fb825da8e902ba",
+      "size": 13965
+    },
+    {
+      "path": "agent-skills/se-75-real-time-media-and-quality-of-experience-engineering/SKILL.md",
+      "sha256": "2d196757e17738569971638f20ac732f200de5f90ac53a030587eaea26966a3a",
+      "size": 4154
+    },
+    {
+      "path": "agent-skills/se-75-real-time-media-and-quality-of-experience-engineering/assets/checklist.md",
+      "sha256": "7da30bfed22ad4dd254c5ea3465184972d369a43584634acf1706cff3ef09940",
+      "size": 200
+    },
+    {
+      "path": "agent-skills/se-75-real-time-media-and-quality-of-experience-engineering/references/detailed-guide.md",
+      "sha256": "72440c7d17e6a19cae1509f0947bfb0b3d99cf617491aa66d58ce8c65da9b2cd",
+      "size": 14478
+    },
+    {
+      "path": "agent-skills/se-76-operational-technology-and-industrial-control-engineering/SKILL.md",
+      "sha256": "0261cd97f54e1d9eb12b48cacd3d7c460aaf96d639432f885339a804dd1c82a8",
+      "size": 4228
+    },
+    {
+      "path": "agent-skills/se-76-operational-technology-and-industrial-control-engineering/assets/checklist.md",
+      "sha256": "07b55d09d553cf6b7dd25ae844a6dd76fbee051aba2b1b761e7f01bdb110ab32",
+      "size": 205
+    },
+    {
+      "path": "agent-skills/se-76-operational-technology-and-industrial-control-engineering/references/detailed-guide.md",
+      "sha256": "920f443c1ea80f3d2a0413bd2a00aa39cd2a3da3810ab32e7c0d2223a5b0b66e",
+      "size": 14165
+    },
+    {
+      "path": "agent-skills/se-77-spatial-ar-vr-and-immersive-system-engineering/SKILL.md",
+      "sha256": "e6437495f93adc1a6d42c6ed020ddfcabdbc2ca29e1592deafb864ca5f77a78b",
+      "size": 4144
+    },
+    {
+      "path": "agent-skills/se-77-spatial-ar-vr-and-immersive-system-engineering/assets/checklist.md",
+      "sha256": "34fce2913bc7fef4419ffedd60085dc8ff0e9d32e8a3a68688f19106ef39d9d6",
+      "size": 198
+    },
+    {
+      "path": "agent-skills/se-77-spatial-ar-vr-and-immersive-system-engineering/references/detailed-guide.md",
+      "sha256": "a89924c0acaf486e0cc8ac2713e15ae3de6a34b5bbe304812e003f58e580b611",
+      "size": 13915
+    },
+    {
+      "path": "agent-skills/se-78-financial-messaging-payment-and-ledger-engineering/SKILL.md",
+      "sha256": "9f583548f545c287727c4baa665379d9d8ad4ede0ac43b723e31780aa416537d",
+      "size": 4199
+    },
+    {
+      "path": "agent-skills/se-78-financial-messaging-payment-and-ledger-engineering/assets/checklist.md",
+      "sha256": "9fb9319b67f79d80b2251e847993492ee9bd9db71463dfcb41e818241a7c8f7a",
+      "size": 207
+    },
+    {
+      "path": "agent-skills/se-78-financial-messaging-payment-and-ledger-engineering/references/detailed-guide.md",
+      "sha256": "1885577470f996dd026b54dc24bb1bb1796065112e8c2613d4d6a7ec04a8e616",
+      "size": 14098
+    },
+    {
+      "path": "agent-skills/se-79-search-and-information-retrieval-engineering/SKILL.md",
+      "sha256": "244a701df32548d6cb0043d87e0d2a352736dd7505422c7c4ab4a3ca61db75d9",
+      "size": 4170
+    },
+    {
+      "path": "agent-skills/se-79-search-and-information-retrieval-engineering/assets/checklist.md",
+      "sha256": "ade800ccbe1cac2eacf7a6c0da0ca06184eebb6cf00e47eeb82eeb5f992fa365",
+      "size": 212
+    },
+    {
+      "path": "agent-skills/se-79-search-and-information-retrieval-engineering/references/detailed-guide.md",
+      "sha256": "592f2807a7b79d8e328cb20b38968e166eaa64cc5e790393ded90dd229abeadb",
+      "size": 14509
+    },
+    {
+      "path": "agent-skills/se-80-knowledge-graph-ontology-and-semantic-system-engineering/SKILL.md",
+      "sha256": "6d202f87e23e910d48fb29f66efbed7690fade413a46d3dc2d428e74cca485a5",
+      "size": 4214
+    },
+    {
+      "path": "agent-skills/se-80-knowledge-graph-ontology-and-semantic-system-engineering/assets/checklist.md",
+      "sha256": "c8c8808a6b9dbf076f89ee4cbc4a9ea12ec32eec8d785f2244dfffebf74daff6",
+      "size": 222
+    },
+    {
+      "path": "agent-skills/se-80-knowledge-graph-ontology-and-semantic-system-engineering/references/detailed-guide.md",
+      "sha256": "1f910acb15a56a1fa1080bc9de4722bcbba7fe5ce3af91531818917d2e28bc9a",
+      "size": 14517
+    },
+    {
+      "path": "agent-skills/wf-architecture-review/SKILL.md",
+      "sha256": "39108e393ce970fdabe8e03c322da09b42e5c1ec82956eaeeb59977044d105fd",
+      "size": 1427
+    },
+    {
+      "path": "agent-skills/wf-bugfix/SKILL.md",
+      "sha256": "ab5a4e54d6cdbae039181a52ca8abedcebc535eb52f6b51df74cefef6e6b60e3",
+      "size": 1516
+    },
+    {
+      "path": "agent-skills/wf-data-migration/SKILL.md",
+      "sha256": "d5a3cbfb572e23fa7a5568f591a12f3fb3e318c72ba747f3d9815a1ce8c9abbe",
+      "size": 1572
+    },
+    {
+      "path": "agent-skills/wf-dependency-update/SKILL.md",
+      "sha256": "c370b2ec2cae27f2226a87d359cc59ce1fa28b8f3057f756d46fb784ee29bc8c",
+      "size": 1530
+    },
+    {
+      "path": "agent-skills/wf-exec-plan/SKILL.md",
+      "sha256": "16e5b330bec75466bb9238587bdb9478ad19f7916adc508f37a024778dad41b3",
+      "size": 1518
+    },
+    {
+      "path": "agent-skills/wf-feature-delivery/SKILL.md",
+      "sha256": "ee8d2e4050477a31ae621ea8c46e3aa8dbadadbc26e2df125a73c49baa9262e5",
+      "size": 1556
+    },
+    {
+      "path": "agent-skills/wf-incident-response/SKILL.md",
+      "sha256": "caec1ad02cbcd50800ef7f8ca3efe3fed0ae4093ee086812690bd2977d782fd1",
+      "size": 1495
+    },
+    {
+      "path": "agent-skills/wf-performance-investigation/SKILL.md",
+      "sha256": "4650ab70b845c26d157e2ea9160b741fa011c31462352f60eaba0199612f6ed3",
+      "size": 1464
+    },
+    {
+      "path": "agent-skills/wf-project-discovery/SKILL.md",
+      "sha256": "c4b6ddc125071a8ebcc794f6cd962ac9d9584fa549cbd16c001264d74a804616",
+      "size": 1740
+    },
+    {
+      "path": "agent-skills/wf-project-retirement/SKILL.md",
+      "sha256": "0c25ad76918547f19b5eeb76fb0d90fc1a6550f66aee77fe390d74a91b7aec12",
+      "size": 1604
+    },
+    {
+      "path": "agent-skills/wf-release-readiness/SKILL.md",
+      "sha256": "50e3d9e4745025926a671bc8169c81130d388aab020e629d7aa0916ea81e2473",
+      "size": 1579
+    },
+    {
+      "path": "agent-skills/wf-security-review/SKILL.md",
+      "sha256": "2f525a714438f4cd8cda2235bc29bb77fa6edec6fb8df78a8641972f65bbfb86",
+      "size": 1589
+    },
+    {
+      "path": "checklists/feature-definition-of-done.md",
+      "sha256": "f670b82aae575565e26023bfa08a1aeead706b3d7d634da16e60bea21c552009",
+      "size": 690
+    },
+    {
+      "path": "checklists/release-readiness.md",
+      "sha256": "931a6908f5645b59ed7c7e257a60481ac26324a321db6f670f4f51bac4c2253f",
+      "size": 721
+    },
+    {
+      "path": "checklists/retirement-readiness.md",
+      "sha256": "eb0e6b4ced6c1944d05fe94e6d2f51aed33de54f7c765d1854f3b74c4ebbed10",
+      "size": 608
+    },
+    {
+      "path": "docs/agent/ADAPTIVE-QUESTION-BANK.md",
+      "sha256": "971052936d9a432a428edbe4363670e4d7725fe7e45de714c7a2cf55ef3900d7",
+      "size": 85601
+    },
+    {
+      "path": "docs/agent/CONTEXT-BUDGET.md",
+      "sha256": "5fa7d72be5f008107f186f53ca97aeeb2ee910b7998bc9901ff686c3ed0b741a",
+      "size": 1358
+    },
+    {
+      "path": "docs/agent/START-HERE.md",
+      "sha256": "26f561b5b6d946235c6ebd17b408deb551a210d7ef2b5ff80f1048a548b9b439",
+      "size": 1855
+    },
+    {
+      "path": "docs/agent/TASK-LOOP.md",
+      "sha256": "c7a4428d30179c7f4eb1ec179296c2957a8291ff80a19d8ad65f4efaaca31329",
+      "size": 2158
+    },
+    {
+      "path": "docs/assets/README.md",
+      "sha256": "4ea0a8d4cfbbc88958080225dcdb14df4cbc7895762f21a85e4404c0847b8a6e",
+      "size": 632
+    },
+    {
+      "path": "docs/assets/logo.svg",
+      "sha256": "de2bd98a8b6f74b332999d49f3b2e38cf0f073d2d1acee6d438ee5bd374f1a52",
+      "size": 1196
+    },
+    {
+      "path": "docs/assets/seforge-hero.png",
+      "sha256": "5977a5ec09d94ce92f7c4628e3177227430ff25ac9949644f43e27cd1b81f96e",
+      "size": 1544716
+    },
+    {
+      "path": "docs/assets/seforge-logo-256.png",
+      "sha256": "df63f6453fb8f38c8e50313bf4c7f8cf00cd427185978dd6c452264aba238d51",
+      "size": 72056
+    },
+    {
+      "path": "docs/assets/seforge-logo.png",
+      "sha256": "2fc908cc6a17904ef385b26d9a9e031f573a485185dd81485e876702238e5e6a",
+      "size": 338299
+    },
+    {
+      "path": "docs/assets/sepack-hero.gif",
+      "sha256": "8860caf5266f6cf7a0f7dcd760bd9d88bb5dbfa12a28a1f0098d85a6ddddfd44",
+      "size": 1775117
+    },
+    {
+      "path": "docs/assets/sepack-hero.png",
+      "sha256": "19382cb8cdaf7245f423867c588b6161f2858bd76d3395355af86b815d91eeac",
+      "size": 78948
+    },
+    {
+      "path": "docs/assets/social-preview.png",
+      "sha256": "1451e90e304e0ab4e7294a51059869a0808d51cb80ed0f62bf2731b347465d6f",
+      "size": 1097741
+    },
+    {
+      "path": "docs/guides/ARCHITECTURE.md",
+      "sha256": "2b08d84cb8b0e72f2e0757e777d6fc7cd443ed98d9d87ced6a0694b9d37e3cd9",
+      "size": 1297
+    },
+    {
+      "path": "docs/guides/QUICKSTART.md",
+      "sha256": "fe157101004c987b30645d1bc970ab10742f23a5d431b26ce5eb1951e27a8487",
+      "size": 925
+    },
+    {
+      "path": "docs/operations/QUALITY-GATES.md",
+      "sha256": "95e2276ac44e20400f35ce2d28fe53e236b715c402b2575b1a9ead7276cf184b",
+      "size": 905
+    },
+    {
+      "path": "docs/security/AGENT-SECURITY.md",
+      "sha256": "d8c3e27f9f43c645762a751d13c81c43a76473bc155b5028a5951214ee9eec41",
+      "size": 2750
+    },
+    {
+      "path": "docs/security/MCP-POLICY.md",
+      "sha256": "e22e00a1f6339931114f871b883bda2aa3197d8dde5bee21ff8e20041cf680d4",
+      "size": 1488
+    },
+    {
+      "path": "engine/__init__.py",
+      "sha256": "e8dbaee61fc71682618047d3cae1e8f4c37edaf64314d4410edf46aebf2cef81",
+      "size": 55
+    },
+    {
+      "path": "engine/cli.py",
+      "sha256": "c642fc8c93b7074975a12b3712289dbeaede2000236909d777339a38ef03caff",
+      "size": 33802
+    },
+    {
+      "path": "engine/commands.py",
+      "sha256": "95aa060fabbb62d7c10d511da7bd0f403debce8840f5a43fa36d37376566acb5",
+      "size": 16902
+    },
+    {
+      "path": "engine/common.py",
+      "sha256": "3f1227d3d585b380697f17c107ed483ee8e2d4375c94011a93b5462b278a38ef",
+      "size": 4336
+    },
+    {
+      "path": "engine/context.py",
+      "sha256": "3b8cf07b94af36a5798202884e78cff7f570002dfc4037f47930ada66618d766",
+      "size": 4043
+    },
+    {
+      "path": "engine/discovery.py",
+      "sha256": "00028a4ae086a8827b4d601ea34a3246272cc5ceaaa49c310f642efb76728e99",
+      "size": 11443
+    },
+    {
+      "path": "engine/doctor.py",
+      "sha256": "7479e5bb0344511691795a606ff9003c28d28b01244ff1d10269baead9a8270c",
+      "size": 4899
+    },
+    {
+      "path": "engine/evidence.py",
+      "sha256": "ede148ad27c5e8bf133f47845fe08ec9efa7464bfc96560ab8d6e6f87dc1d9c4",
+      "size": 9715
+    },
+    {
+      "path": "engine/gates.py",
+      "sha256": "4dd9e65c7b168e46f6bda951ce2610342dee5bc28b1ce0d40b480d218f0b2f67",
+      "size": 7563
+    },
+    {
+      "path": "engine/integrity.py",
+      "sha256": "036de212b9953a7422091c73a69fd1464394c4f095eaff165ba0e40cbf8708d5",
+      "size": 2531
+    },
+    {
+      "path": "engine/policy.py",
+      "sha256": "d2ef7189f8aff3dd94eab84c42793d3618fa04a2658900a441d4a9cc81d29385",
+      "size": 4624
+    },
+    {
+      "path": "engine/routing.py",
+      "sha256": "02c188fcd16ffad6adb5992c355ae3f8c07ab4c3b7a3087877168bbe26e50801",
+      "size": 12958
+    },
+    {
+      "path": "engine/state.py",
+      "sha256": "15c0051ca90ac8764271bdb9b76075603cf9ede04ad6ed663aa5fe0df6755455",
+      "size": 3027
+    },
+    {
+      "path": "engine/tasks.py",
+      "sha256": "4809e1540ffd1aa399e7c5110c22ab04df00ee7db9b8a9b538aec4dc1779d4e0",
+      "size": 7906
+    },
+    {
+      "path": "evals/cases/core.jsonl",
+      "sha256": "e78f3968805d7d96d637593209311b665b77753c4afdd8f89d59899976a083d8",
+      "size": 2158
+    },
+    {
+      "path": "evals/latest-e2e.json",
+      "sha256": "011b0ba84e22aeab455a8739694eb8da8f721386266723717f9ac2cb2d610f9a",
+      "size": 1736
+    },
+    {
+      "path": "evals/latest-results.json",
+      "sha256": "8e1e7e66be913516552af63d58bedabff8ebb803557797109ba225f971154f03",
+      "size": 6756
+    },
+    {
+      "path": "evals/run_evals.py",
+      "sha256": "fbf8bc8dcde89fb9cccf12b9a9278d46e9d6820825596f873727e44a3ea93402",
+      "size": 8097
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "3114974a601bd7c0e1dcd4ec86e68ca7c7dcad97dbe592296e99a57790e6c95c",
+      "size": 129485
+    },
+    {
+      "path": "profiles/ai-enabled-product.json",
+      "sha256": "bcf171263478aaf54508008adaf862351f3ecd1e1e66af2fb6c9f3f00c12621d",
+      "size": 374
+    },
+    {
+      "path": "profiles/backend-api.json",
+      "sha256": "c2d1a1f1bb9c62f190715d7b89bb4277d6265783b94c449c144e559c7c2bcf7c",
+      "size": 328
+    },
+    {
+      "path": "profiles/cloud-service.json",
+      "sha256": "899b7f7be56b01ac8fbb51adcb31d9583981d4a0f1a244d0c3377061c158f877",
+      "size": 330
+    },
+    {
+      "path": "profiles/data-platform.json",
+      "sha256": "af4fdab89211d6b4719b3408e50c565b3d51f12e28d18a71783197966a172b5d",
+      "size": 402
+    },
+    {
+      "path": "profiles/embedded-iot.json",
+      "sha256": "8d9ae8388f257820578ce0e89969d3ece6fb9e4446d787e353359b52f47e8388",
+      "size": 400
+    },
+    {
+      "path": "profiles/financial-system.json",
+      "sha256": "b4e4f6cffd9f32d82755d6de905728f0bffc200f8bc2ee1014f0056b3ea0d27f",
+      "size": 363
+    },
+    {
+      "path": "profiles/healthcare-system.json",
+      "sha256": "19f31fdd49715f779dc155e2cdd178ef258897a82fd52587d317b8a9c6947b46",
+      "size": 366
+    },
+    {
+      "path": "profiles/high-assurance.json",
+      "sha256": "b9f8a4685b4fdf77d6f65731a115c53cf4daed68e293b5bc1b2444d362439387",
+      "size": 338
+    },
+    {
+      "path": "profiles/mobile-application.json",
+      "sha256": "175bd39846dca64b1f3959943fd2762e277db343dd744ac2e897d214411e45cd",
+      "size": 296
+    },
+    {
+      "path": "profiles/multi-tenant-saas.json",
+      "sha256": "b09532ce9041692850db0be757474bd36537a10e5c335d1068d5e28f8a22d032",
+      "size": 347
+    },
+    {
+      "path": "profiles/web-application.json",
+      "sha256": "932fe916acb3627a3a59c9d15437129a13163944b215135edaf215111549c231",
+      "size": 288
+    },
+    {
+      "path": "provider-templates/claude/CLAUDE.md",
+      "sha256": "34e5992749d76312d0051c4a99bd28167738c6e438e2b416066c5b9c732d5ef5",
+      "size": 576
+    },
+    {
+      "path": "provider-templates/claude/agents/architect.md",
+      "sha256": "f7244f51b6454b41cdec6cf2322026b4faaa36e5aa0d30a91720a3d35d592f10",
+      "size": 604
+    },
+    {
+      "path": "provider-templates/claude/agents/planner.md",
+      "sha256": "df1a5c8406256b8a3fc2adeb66df25f0d699d6194602f85e5f88f59dc88b7922",
+      "size": 673
+    },
+    {
+      "path": "provider-templates/claude/agents/release-reviewer.md",
+      "sha256": "2f40384d323a7d8ed9d94137d2a41c0949a4a06e897168298dadf99a49aa4116",
+      "size": 593
+    },
+    {
+      "path": "provider-templates/claude/agents/security-reviewer.md",
+      "sha256": "c9853b70d761b64a50536eb60240a5c1e7b61c5bba6089384286eba77b5377ee",
+      "size": 626
+    },
+    {
+      "path": "provider-templates/claude/agents/test-reviewer.md",
+      "sha256": "a9965e74cf7c4ef4fc01cc38408eef83d3e45c34d7ea9a3e64bb40ea2654ffa2",
+      "size": 598
+    },
+    {
+      "path": "provider-templates/claude/settings.skill-pack.json",
+      "sha256": "000f3c8e3bf8b87a46f809088c399b837caf12e41035ce17931ea0cb882e1959",
+      "size": 311
+    },
+    {
+      "path": "provider-templates/cursor/software-engineering.mdc",
+      "sha256": "61a45df67f7ea8e4f10915c9863d6c94dc837d9b39c0c94c195715be1b90658a",
+      "size": 306
+    },
+    {
+      "path": "provider-templates/gemini/GEMINI.md",
+      "sha256": "34e5992749d76312d0051c4a99bd28167738c6e438e2b416066c5b9c732d5ef5",
+      "size": 576
+    },
+    {
+      "path": "provider-templates/github/agents/architect.agent.md",
+      "sha256": "2dcd6bc62db7510a6cd2c4de240b43a8a70e8eb8583f398f3a848e78a8d3e808",
+      "size": 484
+    },
+    {
+      "path": "provider-templates/github/agents/planner.agent.md",
+      "sha256": "aa09370504d72980e300df59f3cf07bb2cd731b56fbf28adeb99333961fc1b97",
+      "size": 553
+    },
+    {
+      "path": "provider-templates/github/agents/release-reviewer.agent.md",
+      "sha256": "615a49cc1382f5ed6246e85f3bb200750a4423c7cb75b60386f61124a90dc498",
+      "size": 473
+    },
+    {
+      "path": "provider-templates/github/agents/security-reviewer.agent.md",
+      "sha256": "fc8f191ad984370a522e5973118f30486b2d69a705d662b337df6212361e5b42",
+      "size": 506
+    },
+    {
+      "path": "provider-templates/github/agents/test-reviewer.agent.md",
+      "sha256": "2a205c48cd8fe2354e49988416c246aaafe981635771fdca3f60faee20d99847",
+      "size": 478
+    },
+    {
+      "path": "provider-templates/github/copilot-instructions.md",
+      "sha256": "0ec1897867fc2daaf85dd0933653eb62672b1e1ac8a466c77ba8d16101d784be",
+      "size": 694
+    },
+    {
+      "path": "provider-templates/github/engineering-quality-gate.yml",
+      "sha256": "66d453347a14229e18e2ec0b8b01a0e27e9cf8656bbb92aab42a0ee7c69c03e7",
+      "size": 1267
+    },
+    {
+      "path": "provider-templates/github/instructions/migrations.instructions.md",
+      "sha256": "80ad5d8d2b14937cb05b86fe0f41d233a6fe0cc1c0aa6196fbe73e1f27e655a5",
+      "size": 331
+    },
+    {
+      "path": "provider-templates/github/instructions/security.instructions.md",
+      "sha256": "25fe2ccaac563033b79841cc5e2a01bc661d5afc1e93ca344c2ee645a73080b1",
+      "size": 284
+    },
+    {
+      "path": "provider-templates/github/instructions/tests.instructions.md",
+      "sha256": "4595d90e2e5cd80e7187ca7800a6cb8e23764d6527bf4cf0caca3cb9071eae73",
+      "size": 291
+    },
+    {
+      "path": "provider-templates/github/instructions/workflows.instructions.md",
+      "sha256": "22f16409c94c4a247ee1831357c43330c2cde785365d75e0891c012d76a0eaa0",
+      "size": 250
+    },
+    {
+      "path": "provider-templates/openai/AGENTS.md",
+      "sha256": "34e5992749d76312d0051c4a99bd28167738c6e438e2b416066c5b9c732d5ef5",
+      "size": 576
+    },
+    {
+      "path": "provider-templates/windsurf/windsurfrules",
+      "sha256": "34e5992749d76312d0051c4a99bd28167738c6e438e2b416066c5b9c732d5ef5",
+      "size": 576
+    },
+    {
+      "path": "research/METHOD.md",
+      "sha256": "bec140505b612945542ff0ce4e81d03bcb4b082e249468ef8a2ed9c4aac1536e",
+      "size": 1691
+    },
+    {
+      "path": "schemas/v2/command-registry.schema.json",
+      "sha256": "ded8a1a7cb3cc28f05caf311973d9a46af5c091279acb158fa2c2259cf4351f1",
+      "size": 1112
+    },
+    {
+      "path": "schemas/v2/evidence-record.schema.json",
+      "sha256": "d38216b72c39e878d6bb0bd4c96c34bb628f36538d802e5a83f8fc21aeebe9f7",
+      "size": 965
+    },
+    {
+      "path": "schemas/v2/pack-manifest.schema.json",
+      "sha256": "3424bcfa3af54606e02888c1f19c85638af8406d7b6d6a01287612be99913ddf",
+      "size": 515
+    },
+    {
+      "path": "schemas/v2/project-context.schema.json",
+      "sha256": "4bbd8ed909876aec08e52f3d536694b226ed9fcba54cf048fbe9045bbae2835b",
+      "size": 1688
+    },
+    {
+      "path": "schemas/v2/skill-manifest.schema.json",
+      "sha256": "2ef7d962acea5e16aeabdea23554230dbf70b3f3a4a8782afbbecf16efda28e1",
+      "size": 1442
+    },
+    {
+      "path": "schemas/v2/task.schema.json",
+      "sha256": "138b6c24263c4d2b0076c0971e84808fe064ed6d97697adb20014ddcd87ba11b",
+      "size": 1373
+    },
+    {
+      "path": "schemas/validate_pack.py",
+      "sha256": "7dd4140edc077b2feef8ab01eb1468e6253c912cb207d1a974a228a11344cfcc",
+      "size": 8462
+    },
+    {
+      "path": "scripts/install.py",
+      "sha256": "78f61169c37c6054dd30644c38006906bb1ad8bc0bee837a0f3207fd8a5dc7ee",
+      "size": 24851
+    },
+    {
+      "path": "scripts/uninstall.py",
+      "sha256": "2d890c8dad1b32f116366d819c85f03e2c7ed2b1180bd762cf037037486a252c",
+      "size": 4868
+    },
+    {
+      "path": "scripts/v2/claude_pretool.py",
+      "sha256": "31b9385a6619073fcc27e6064bfcf0eeba33a9e399d95c131283c5ca84039b72",
+      "size": 1874
+    },
+    {
+      "path": "scripts/v2/python_syntax_check.py",
+      "sha256": "afed6e8632ce56856d28dc25da04609ded3e7701c18adf8ec6cea3653265045e",
+      "size": 1650
+    },
+    {
+      "path": "sepack.py",
+      "sha256": "d4583c0a00f2f13881a084d615c6ea412d3be2d651171f7311df489847e4c6bc",
+      "size": 108
+    },
+    {
+      "path": "skill-catalog.csv",
+      "sha256": "429f4a66c1ab639e331b3e04493ab203eda8d35bf29f43af0fb038e1fe8e570b",
+      "size": 62114
+    },
+    {
+      "path": "templates/decision-record.md",
+      "sha256": "47df34199e6fb4e1c9008945e426b36676d9f854c721dd604ba89d5b657ce03a",
+      "size": 453
+    },
+    {
+      "path": "templates/evidence-register.md",
+      "sha256": "0116f64fa972a515145dac2fbee6e42eebe1bca9544d4e2be25bfc62404e98f0",
+      "size": 230
+    },
+    {
+      "path": "templates/project-context.md",
+      "sha256": "ce843780b4d9fd43a11fea86d72847f1e3eacc1837bee1ffb5ff75c5ea497e3a",
+      "size": 1009
+    },
+    {
+      "path": "templates/risk-record.md",
+      "sha256": "a1df3637e695d77a6dcbb1252897072dcbe606403b7fe34261f621206dd9fe62",
+      "size": 335
+    },
+    {
+      "path": "templates/skill-tailoring.md",
+      "sha256": "bfb8fc319a5ce72c464935a421389ece85c6f9f88a162c8c4e3cc99b20fbc684",
+      "size": 255
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size": 1
+    },
+    {
+      "path": "tests/test_agent_skills.py",
+      "sha256": "b305557af413975dfb46d04c9dcc6bf238382932fef531f4bf33f0e4b1004065",
+      "size": 1823
+    },
+    {
+      "path": "tests/test_cli_errors.py",
+      "sha256": "469eb86582d1d4fead74aa252738b4ffd198916e169b8a2c6fdd0e02f10312a5",
+      "size": 1781
+    },
+    {
+      "path": "tests/test_command_execution.py",
+      "sha256": "01e71dea20cc47b467b8ff65cfaf60499620208d20bcafbe139fae04d2cf4c86",
+      "size": 2230
+    },
+    {
+      "path": "tests/test_command_security.py",
+      "sha256": "5da9dc2f2d5bde758858ad90d0267725c573cd310e6abf03755bcb47e3623fe3",
+      "size": 2313
+    },
+    {
+      "path": "tests/test_context.py",
+      "sha256": "918283768864f7f343a1fd04da2204ef08fc1c53618d7e84e940152953fc32e1",
+      "size": 2600
+    },
+    {
+      "path": "tests/test_discovery_routing.py",
+      "sha256": "98f7dfc29b9fb756cebbe5658300aa28211fd728e04660c50d030364de6c360a",
+      "size": 3173
+    },
+    {
+      "path": "tests/test_discovery_symlinks.py",
+      "sha256": "1abe8efc70eb6f68f9d416bfc41bb2211e4b7c26a43af1d83e00b1700f026306",
+      "size": 1202
+    },
+    {
+      "path": "tests/test_evidence.py",
+      "sha256": "c1fc0257e607cf822db877d0e6eee3556791ce2d657b65689f539df8e966f961",
+      "size": 3789
+    },
+    {
+      "path": "tests/test_gates.py",
+      "sha256": "f7dc409c53bfa27a4c4bf184a8a9d7a91b15d13b3c568903e7d954e9584e0197",
+      "size": 4804
+    },
+    {
+      "path": "tests/test_installer.py",
+      "sha256": "d77b36f9efe0dde60af28e3d741d2607c57a65d03430b4a9119aeabcb5bcfac2",
+      "size": 9948
+    },
+    {
+      "path": "tests/test_integrity.py",
+      "sha256": "234344d885bf44d1f6c26d845210c7a0e8492acc5c1e4d922291c0e054f42eab",
+      "size": 1153
+    },
+    {
+      "path": "tests/test_pack_immutability.py",
+      "sha256": "9161c23b6db981c89db7c08ed44e7d6bdbea14da51f74aaab1ef4f5c06837523",
+      "size": 1304
+    },
+    {
+      "path": "tests/test_policy.py",
+      "sha256": "3388759cb6ddb142d6e8004a40ba480bad463785322b9ab85cda186c4da53ff8",
+      "size": 1198
+    },
+    {
+      "path": "tests/test_provider_discovery_isolation.py",
+      "sha256": "a906fd0810ceae966ddd9b06a085f0fed0fd4eb8eecbf30afa83acc7c6b25dad",
+      "size": 1522
+    },
+    {
+      "path": "tests/test_python_command_isolation.py",
+      "sha256": "769da1c82da88fbb9b73ca3b38a850cbbb66bc7c1d7f1bef3b42bce21af5e8ba",
+      "size": 2023
+    },
+    {
+      "path": "tests/test_state_migration.py",
+      "sha256": "9a724de91c10df710468ef0537244ec326c394037afb6cc2e5db50384802ccd3",
+      "size": 1260
+    },
+    {
+      "path": "tests/test_task_transitions.py",
+      "sha256": "1bcb567ec077372a344453886f3ca8536939a5be5b941c5c54dc0adebd84f1d3",
+      "size": 4383
+    }
+  ],
+  "note": "This manifest detects modification or incomplete distribution. It is not a cryptographic signature."
+}

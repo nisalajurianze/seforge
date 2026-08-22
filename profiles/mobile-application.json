@@ -1,0 +1,22 @@
+{
+  "name": "mobile-application",
+  "description": "Android, iOS, or cross-platform mobile application.",
+  "signals": {
+    "platforms": [
+      "mobile"
+    ]
+  },
+  "required_skills": [
+    11,
+    52,
+    53,
+    62
+  ],
+  "recommended_skills": [
+    49,
+    50,
+    55,
+    61,
+    63
+  ]
+}

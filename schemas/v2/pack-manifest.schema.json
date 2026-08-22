@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEPack v2 Distribution Manifest",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "engineering_skill_count",
+    "workflow_skill_count",
+    "agent_skill_count",
+    "architecture"
+  ],
+  "properties": {
+    "version": {
+      "const": "2.0.1"
+    },
+    "engineering_skill_count": {
+      "const": 80
+    },
+    "workflow_skill_count": {
+      "const": 12
+    },
+    "agent_skill_count": {
+      "const": 92
+    }
+  }
+}

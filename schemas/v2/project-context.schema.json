@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEPack v2 Project Context",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_name",
+    "mode",
+    "autonomy",
+    "impact_level",
+    "data_sensitivity",
+    "provenance",
+    "unresolved"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 2
+    },
+    "project_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "autonomy": {
+      "type": "string"
+    },
+    "communication": {
+      "type": "string"
+    },
+    "impact_level": {
+      "enum": [
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ]
+    },
+    "data_sensitivity": {
+      "type": "string"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stakeholders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quality_priorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array"
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "materiality"
+        ]
+      }
+    }
+  }
+}

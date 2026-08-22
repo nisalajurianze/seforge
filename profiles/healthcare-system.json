@@ -1,0 +1,29 @@
+{
+  "name": "healthcare-system",
+  "description": "Clinical, hospital, patient, medical, or health-information system.",
+  "signals": {
+    "domains": [
+      "healthcare"
+    ]
+  },
+  "required_skills": [
+    12,
+    27,
+    28,
+    43,
+    49,
+    50,
+    56,
+    57,
+    60
+  ],
+  "recommended_skills": [
+    5,
+    6,
+    7,
+    29,
+    31,
+    37,
+    64
+  ]
+}

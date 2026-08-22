@@ -1,0 +1,26 @@
+{
+  "name": "multi-tenant-saas",
+  "description": "Shared SaaS platform serving separate customer tenants.",
+  "signals": {
+    "keywords": [
+      "saas",
+      "tenant",
+      "multi-tenant"
+    ]
+  },
+  "required_skills": [
+    49,
+    51,
+    12,
+    37
+  ],
+  "recommended_skills": [
+    5,
+    6,
+    7,
+    15,
+    40,
+    56,
+    57
+  ]
+}

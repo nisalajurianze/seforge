@@ -1,0 +1,42 @@
+name: Skill Pack and Engineering State
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  skill-pack:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      # For high-assurance repositories, replace major tags with reviewed immutable commit SHAs.
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Run skill-pack unit tests
+        run: python -S -m unittest discover -s .engineering/skill-pack/tests -p "test_*.py"
+
+      - name: Verify pack integrity
+        run: python -S .engineering/skill-pack/sepack.py integrity
+
+      - name: Validate project engineering state
+        run: python -S .engineering/skill-pack/sepack.py doctor --target .
+
+      - name: Verify evidence chain when evidence exists
+        shell: bash
+        run: |
+          if [ -f .engineering/evidence/ledger.jsonl ]; then
+            python -S .engineering/skill-pack/sepack.py evidence verify --target .
+          fi
+
+      # Project-native commands are intentionally not run blindly.
+      # Add reviewed commands from `.engineering/commands/registry.json`
+      # after your team confirms their behavior and dependencies.

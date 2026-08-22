@@ -1,0 +1,29 @@
+{
+  "name": "financial-system",
+  "description": "Payments, billing, banking, wallet, accounting, or monetary system.",
+  "signals": {
+    "domains": [
+      "payments"
+    ]
+  },
+  "required_skills": [
+    28,
+    37,
+    43,
+    49,
+    50,
+    54,
+    57,
+    66,
+    78
+  ],
+  "recommended_skills": [
+    5,
+    6,
+    7,
+    35,
+    40,
+    56,
+    64
+  ]
+}

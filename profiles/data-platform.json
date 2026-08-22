@@ -1,0 +1,29 @@
+{
+  "name": "data-platform",
+  "description": "Data pipelines, analytics, warehouses, streaming, search, or knowledge systems.",
+  "signals": {
+    "keywords": [
+      "data",
+      "analytics",
+      "warehouse",
+      "pipeline"
+    ]
+  },
+  "required_skills": [
+    14,
+    37,
+    38,
+    39,
+    64
+  ],
+  "recommended_skills": [
+    6,
+    7,
+    31,
+    40,
+    47,
+    54,
+    79,
+    80
+  ]
+}

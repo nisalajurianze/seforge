@@ -1,0 +1,4036 @@
+{
+  "name": "SEForge",
+  "version": "2.0.1",
+  "edition": "Agent-Native Professional — Re-audited",
+  "generated_on": "2026-08-22",
+  "engineering_skill_count": 80,
+  "workflow_skill_count": 12,
+  "agent_skill_count": 92,
+  "tier_counts": {
+    "core": 21,
+    "conditional": 36,
+    "specialized": 23
+  },
+  "architecture": {
+    "root_instructions": "AGENTS.md",
+    "agent_start": "docs/agent/START-HERE.md",
+    "execution_plans": "PLANS.md",
+    "agent_skills": "agent-skills/",
+    "engine": "engine/",
+    "profiles": "profiles/",
+    "provider_templates": "provider-templates/",
+    "tests": "tests/",
+    "evals": "evals/",
+    "integrity": "PACK-INTEGRITY.json"
+  },
+  "principles": [
+    "inspect before asking",
+    "progressive disclosure",
+    "task-specific skill selection",
+    "real project-native verification",
+    "tamper-evident evidence",
+    "least privilege and action-risk approval",
+    "user effort minimization",
+    "atomic state and reversible installation",
+    "facts separated from inference and defaults",
+    "no completion claim beyond evidence"
+  ],
+  "runtime_commands": [
+    "init",
+    "quickstart",
+    "route",
+    "commands discover",
+    "commands review",
+    "verify",
+    "task create",
+    "task list",
+    "task show",
+    "task context",
+    "task plan",
+    "task status",
+    "evidence add",
+    "evidence verify",
+    "gate task",
+    "gate release",
+    "doctor",
+    "brief",
+    "integrity",
+    "assess-command",
+    "scan-text",
+    "snapshot",
+    "approve"
+  ],
+  "providers": {
+    "openai_codex": {
+      "instructions": "AGENTS.md",
+      "skills": ".agents/skills"
+    },
+    "github_copilot": {
+      "instructions": ".github/copilot-instructions.md",
+      "skills": ".github/skills",
+      "agents": ".github/agents"
+    },
+    "claude_code": {
+      "instructions": "CLAUDE.md",
+      "skills": ".claude/skills",
+      "agents": ".claude/agents",
+      "optional_hook": ".claude/settings.json"
+    },
+    "gemini_cli": {
+      "instructions": "GEMINI.md"
+    },
+    "cursor": {
+      "instructions": ".cursor/rules/software-engineering.mdc"
+    },
+    "windsurf": {
+      "instructions": ".windsurfrules"
+    }
+  },
+  "engineering_skills": [
+    {
+      "id": 1,
+      "code": "SE-01",
+      "name": "SWEBOK and Lifecycle Alignment",
+      "slug": "swebok-and-lifecycle-alignment",
+      "tier": "core",
+      "purpose": "Tailor a complete software lifecycle by mapping project work to recognized engineering knowledge areas, lifecycle processes, roles, outcomes, and evidence.",
+      "triggers": [
+        "every software project",
+        "new project setup",
+        "lifecycle audit",
+        "governance baseline"
+      ],
+      "agent_skill_path": "agent-skills/se-01-swebok-and-lifecycle-alignment/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-01-swebok-and-lifecycle-alignment/references/detailed-guide.md",
+      "required_artifacts": [
+        "tailored lifecycle map",
+        "knowledge-area coverage matrix",
+        "process responsibility matrix",
+        "lifecycle evidence plan"
+      ],
+      "quality_gates": [
+        "all applicable stages are represented",
+        "skipped processes have written rationale",
+        "major outputs have owners",
+        "entry and exit criteria are measurable",
+        "operations and retirement are covered"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        3,
+        5,
+        18,
+        24,
+        28
+      ]
+    },
+    {
+      "id": 2,
+      "code": "SE-02",
+      "name": "Software Construction Engineering",
+      "slug": "software-construction-engineering",
+      "tier": "core",
+      "purpose": "Turn approved designs into secure, readable, testable, efficient, portable, and maintainable executable software.",
+      "triggers": [
+        "any implementation work",
+        "code generation",
+        "refactoring",
+        "performance-sensitive code"
+      ],
+      "agent_skill_path": "agent-skills/se-02-software-construction-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-02-software-construction-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "construction plan",
+        "coding standard",
+        "code-review checklist",
+        "static-analysis configuration",
+        "exception model"
+      ],
+      "quality_gates": [
+        "code builds reproducibly",
+        "critical paths are reviewed",
+        "resource cleanup is verified",
+        "errors are not silently swallowed",
+        "static findings are triaged",
+        "tests cover normal abnormal and boundary behavior"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "NIST_SSDF"
+      ],
+      "related_skill_ids": [
+        4,
+        8,
+        17,
+        36,
+        47
+      ]
+    },
+    {
+      "id": 3,
+      "code": "SE-03",
+      "name": "Architecture Engineering and Governance",
+      "slug": "architecture-engineering-and-governance",
+      "tier": "core",
+      "purpose": "Define and govern the system's fundamental structure, boundaries, responsibilities, quality trade-offs, and evolution constraints.",
+      "triggers": [
+        "new systems",
+        "major changes",
+        "distributed systems",
+        "quality-attribute conflicts",
+        "modernization"
+      ],
+      "agent_skill_path": "agent-skills/se-03-architecture-engineering-and-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-03-architecture-engineering-and-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "architecture description",
+        "context and deployment views",
+        "ADR set",
+        "quality-attribute scenarios",
+        "architecture risk register"
+      ],
+      "quality_gates": [
+        "decisions trace to requirements",
+        "interfaces and ownership are explicit",
+        "quality trade-offs are documented",
+        "critical risks have mitigations",
+        "implementation conforms to intended boundaries"
+      ],
+      "source_keys": [
+        "ISO42010",
+        "ISO25010",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        1,
+        7,
+        13,
+        15,
+        33,
+        40
+      ]
+    },
+    {
+      "id": 4,
+      "code": "SE-04",
+      "name": "Software Configuration Management",
+      "slug": "software-configuration-management",
+      "tier": "core",
+      "purpose": "Identify, version, control, audit, and restore software artifacts, configurations, environments, schemas, and baselines.",
+      "triggers": [
+        "any team project",
+        "regulated work",
+        "multi-environment delivery",
+        "parallel development",
+        "releases"
+      ],
+      "agent_skill_path": "agent-skills/se-04-software-configuration-management/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-04-software-configuration-management/references/detailed-guide.md",
+      "required_artifacts": [
+        "configuration-management plan",
+        "configuration-item inventory",
+        "baseline register",
+        "branching strategy",
+        "versioning policy",
+        "configuration audit report"
+      ],
+      "quality_gates": [
+        "all release inputs are versioned",
+        "secrets are excluded from source",
+        "dependencies are locked",
+        "artifacts are immutable",
+        "rollback target is known",
+        "configuration drift is detectable"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "GOOGLE_SRE"
+      ],
+      "related_skill_ids": [
+        9,
+        17,
+        40,
+        47,
+        55
+      ]
+    },
+    {
+      "id": 5,
+      "code": "SE-05",
+      "name": "Software Engineering Operations and SRE",
+      "slug": "software-engineering-operations-and-sre",
+      "tier": "core",
+      "purpose": "Engineer software as an operable service with explicit reliability objectives, ownership, capacity, incident response, recovery, and continual improvement.",
+      "triggers": [
+        "production services",
+        "business-critical systems",
+        "24x7 services",
+        "user-facing platforms"
+      ],
+      "agent_skill_path": "agent-skills/se-05-software-engineering-operations-and-sre/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-05-software-engineering-operations-and-sre/references/detailed-guide.md",
+      "required_artifacts": [
+        "SLO document",
+        "production-readiness review",
+        "runbook set",
+        "on-call and escalation plan",
+        "incident template",
+        "disaster-recovery plan"
+      ],
+      "quality_gates": [
+        "user-facing SLIs are measurable",
+        "alerts are actionable",
+        "restoration is tested",
+        "every service has an owner",
+        "releases respect error-budget policy"
+      ],
+      "source_keys": [
+        "GOOGLE_SRE",
+        "ISO20000",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        6,
+        7,
+        17,
+        18,
+        57,
+        58
+      ]
+    },
+    {
+      "id": 6,
+      "code": "SE-06",
+      "name": "Observability Engineering",
+      "slug": "observability-engineering",
+      "tier": "core",
+      "purpose": "Design telemetry that allows teams to understand system behavior, user impact, causal paths, and failures across components and environments.",
+      "triggers": [
+        "distributed systems",
+        "production services",
+        "asynchronous flows",
+        "hard-to-reproduce failures"
+      ],
+      "agent_skill_path": "agent-skills/se-06-observability-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-06-observability-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "observability plan",
+        "telemetry schema",
+        "dashboard set",
+        "trace map",
+        "alert catalogue",
+        "sensitive-data logging policy"
+      ],
+      "quality_gates": [
+        "critical journeys are traceable",
+        "signals correlate across services",
+        "telemetry excludes secrets",
+        "dashboards answer operational questions",
+        "sampling preserves critical evidence"
+      ],
+      "source_keys": [
+        "OTEL",
+        "GOOGLE_SRE",
+        "NIST_FORENSICS"
+      ],
+      "related_skill_ids": [
+        5,
+        7,
+        38,
+        57,
+        64
+      ]
+    },
+    {
+      "id": 7,
+      "code": "SE-07",
+      "name": "Reliability and Resilience Engineering",
+      "slug": "reliability-and-resilience-engineering",
+      "tier": "core",
+      "purpose": "Design systems to continue, degrade safely, recover predictably, and protect data when components, dependencies, or environments fail.",
+      "triggers": [
+        "networked systems",
+        "critical workflows",
+        "external dependencies",
+        "high availability",
+        "asynchronous processing"
+      ],
+      "agent_skill_path": "agent-skills/se-07-reliability-and-resilience-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-07-reliability-and-resilience-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "failure-mode register",
+        "resilience design",
+        "timeout and retry policy",
+        "RTO/RPO table",
+        "chaos-test plan",
+        "recovery evidence"
+      ],
+      "quality_gates": [
+        "retries are bounded and safe",
+        "timeouts exist at dependency boundaries",
+        "duplicates are harmless or detected",
+        "degraded modes protect core functions",
+        "recovery objectives are tested"
+      ],
+      "source_keys": [
+        "GOOGLE_SRE",
+        "ISO25010",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        5,
+        15,
+        35,
+        37,
+        38,
+        63
+      ]
+    },
+    {
+      "id": 8,
+      "code": "SE-08",
+      "name": "Modern Software Security Engineering",
+      "slug": "modern-software-security-engineering",
+      "tier": "core",
+      "purpose": "Integrate security requirements, threat analysis, secure design, implementation controls, verification, vulnerability response, and recovery into every lifecycle stage.",
+      "triggers": [
+        "every networked system",
+        "sensitive data",
+        "privileged operations",
+        "external exposure"
+      ],
+      "agent_skill_path": "agent-skills/se-08-modern-software-security-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-08-modern-software-security-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "threat model",
+        "security requirements",
+        "control matrix",
+        "security test plan",
+        "vulnerability register",
+        "security release report"
+      ],
+      "quality_gates": [
+        "requirements are traceable",
+        "least privilege is enforced",
+        "secrets are managed",
+        "high-risk findings are resolved or accepted",
+        "security tests run continuously",
+        "incident and disclosure paths exist"
+      ],
+      "source_keys": [
+        "NIST_SSDF",
+        "OWASP_ASVS",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        9,
+        12,
+        43,
+        49,
+        50,
+        55,
+        66
+      ]
+    },
+    {
+      "id": 9,
+      "code": "SE-09",
+      "name": "Software Supply-Chain Engineering",
+      "slug": "software-supply-chain-engineering",
+      "tier": "core",
+      "purpose": "Protect the integrity, transparency, provenance, licensing, and vulnerability posture of source, dependencies, builds, packages, and delivery channels.",
+      "triggers": [
+        "third-party dependencies",
+        "CI/CD",
+        "package publication",
+        "containers",
+        "external build actions"
+      ],
+      "agent_skill_path": "agent-skills/se-09-software-supply-chain-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-09-software-supply-chain-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "SBOM",
+        "provenance attestations",
+        "dependency policy",
+        "supplier risk register",
+        "license report",
+        "artifact-verification evidence"
+      ],
+      "quality_gates": [
+        "released components are inventoried",
+        "build provenance is verifiable",
+        "critical dependencies have owners",
+        "licenses are compatible",
+        "artifacts are integrity-checked"
+      ],
+      "source_keys": [
+        "CISA_SBOM",
+        "SLSA",
+        "NIST_SSDF",
+        "OPENSSF"
+      ],
+      "related_skill_ids": [
+        4,
+        8,
+        42,
+        47,
+        55,
+        59
+      ]
+    },
+    {
+      "id": 10,
+      "code": "SE-10",
+      "name": "Product Engineering and Discovery",
+      "slug": "product-engineering-and-discovery",
+      "tier": "core",
+      "purpose": "Ensure software work solves a validated user or business problem and is measured by outcomes rather than feature completion alone.",
+      "triggers": [
+        "new products",
+        "uncertain requirements",
+        "feature prioritization",
+        "MVP planning",
+        "product change"
+      ],
+      "agent_skill_path": "agent-skills/se-10-product-engineering-and-discovery/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-10-product-engineering-and-discovery/references/detailed-guide.md",
+      "required_artifacts": [
+        "problem brief",
+        "opportunity map",
+        "hypothesis backlog",
+        "prototype evidence",
+        "MVP definition",
+        "outcome metric tree"
+      ],
+      "quality_gates": [
+        "problem evidence exists",
+        "target users are explicit",
+        "hypotheses are falsifiable",
+        "MVP tests riskiest assumptions",
+        "success metrics include guardrails"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "DORA"
+      ],
+      "related_skill_ids": [
+        18,
+        24,
+        44,
+        45
+      ]
+    },
+    {
+      "id": 11,
+      "code": "SE-11",
+      "name": "UX Interaction and Accessibility Engineering",
+      "slug": "ux-interaction-and-accessibility-engineering",
+      "tier": "core",
+      "purpose": "Design interactions that are understandable, efficient, inclusive, recoverable, and usable across devices, abilities, and contexts.",
+      "triggers": [
+        "any user interface",
+        "public services",
+        "mobile or web apps",
+        "high-error-cost workflows"
+      ],
+      "agent_skill_path": "agent-skills/se-11-ux-interaction-and-accessibility-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-11-ux-interaction-and-accessibility-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "interaction model",
+        "accessibility requirements",
+        "annotated wireframes",
+        "content and error-message guide",
+        "usability test plan",
+        "accessibility conformance report"
+      ],
+      "quality_gates": [
+        "critical tasks are keyboard-operable",
+        "labels and focus are correct",
+        "error recovery is clear",
+        "accessibility criteria are tested",
+        "representative users complete tasks"
+      ],
+      "source_keys": [
+        "WCAG",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        29,
+        30,
+        61,
+        62,
+        75,
+        77
+      ]
+    },
+    {
+      "id": 12,
+      "code": "SE-12",
+      "name": "Privacy Engineering and Data Governance",
+      "slug": "privacy-engineering-and-data-governance",
+      "tier": "core",
+      "purpose": "Translate privacy obligations and individual-impact risks into data-minimizing architecture, controls, lifecycle rules, and verifiable user rights.",
+      "triggers": [
+        "personal data",
+        "telemetry",
+        "analytics",
+        "identity data",
+        "health finance education or location data"
+      ],
+      "agent_skill_path": "agent-skills/se-12-privacy-engineering-and-data-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-12-privacy-engineering-and-data-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "data inventory",
+        "processing-purpose register",
+        "privacy risk assessment",
+        "retention schedule",
+        "consent model",
+        "rights-request workflow"
+      ],
+      "quality_gates": [
+        "each data element has purpose and owner",
+        "unnecessary collection is removed",
+        "retention and deletion are executable",
+        "user rights cover replicas and exports",
+        "third-party flows are documented"
+      ],
+      "source_keys": [
+        "NIST_PRIVACY",
+        "W3C_PROV",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        8,
+        43,
+        49,
+        56,
+        60,
+        64,
+        65
+      ]
+    },
+    {
+      "id": 13,
+      "code": "SE-13",
+      "name": "API and Integration Engineering",
+      "slug": "api-and-integration-engineering",
+      "tier": "core",
+      "purpose": "Design stable, secure, observable, evolvable contracts between components, organizations, devices, and external services.",
+      "triggers": [
+        "public or internal APIs",
+        "third-party integration",
+        "service boundaries",
+        "webhooks",
+        "event interfaces"
+      ],
+      "agent_skill_path": "agent-skills/se-13-api-and-integration-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-13-api-and-integration-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "API specification",
+        "integration contract",
+        "error catalogue",
+        "compatibility policy",
+        "contract-test suite",
+        "dependency failure matrix"
+      ],
+      "quality_gates": [
+        "contracts are machine-readable",
+        "breaking changes are controlled",
+        "retry semantics are explicit",
+        "authorization is operation-specific",
+        "errors are stable",
+        "consumers are tested"
+      ],
+      "source_keys": [
+        "IETF_HTTP",
+        "OWASP_ASVS",
+        "ISO42010"
+      ],
+      "related_skill_ids": [
+        3,
+        8,
+        31,
+        35,
+        38,
+        40,
+        63
+      ]
+    },
+    {
+      "id": 14,
+      "code": "SE-14",
+      "name": "Data-Intensive Software Engineering",
+      "slug": "data-intensive-software-engineering",
+      "tier": "conditional",
+      "purpose": "Engineer reliable software around large, fast, heterogeneous, or long-lived data through explicit models, contracts, quality controls, pipelines, and recovery.",
+      "triggers": [
+        "analytics platforms",
+        "large datasets",
+        "ETL or ELT",
+        "search indexes",
+        "event data"
+      ],
+      "agent_skill_path": "agent-skills/se-14-data-intensive-software-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-14-data-intensive-software-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "data architecture",
+        "data contracts",
+        "quality rules",
+        "lineage map",
+        "pipeline runbook",
+        "reconciliation report"
+      ],
+      "quality_gates": [
+        "schema changes are compatible",
+        "quality rules run at boundaries",
+        "lineage reaches source",
+        "duplicates and late data are defined",
+        "reconciliation closes material differences"
+      ],
+      "source_keys": [
+        "ISO25010",
+        "W3C_PROV",
+        "CLOUDEVENTS"
+      ],
+      "related_skill_ids": [
+        12,
+        37,
+        38,
+        39,
+        64,
+        79,
+        80
+      ]
+    },
+    {
+      "id": 15,
+      "code": "SE-15",
+      "name": "Cloud-Native and Distributed Systems Engineering",
+      "slug": "cloud-native-and-distributed-systems-engineering",
+      "tier": "conditional",
+      "purpose": "Design software for distributed execution, elastic infrastructure, partial failure, independent deployment, and cloud operational constraints.",
+      "triggers": [
+        "cloud deployment",
+        "microservices",
+        "serverless",
+        "multi-region",
+        "container orchestration"
+      ],
+      "agent_skill_path": "agent-skills/se-15-cloud-native-and-distributed-systems-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-15-cloud-native-and-distributed-systems-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "cloud architecture",
+        "deployment topology",
+        "service dependency map",
+        "scaling policy",
+        "IaC modules",
+        "failure and consistency model"
+      ],
+      "quality_gates": [
+        "partial failures are handled",
+        "state ownership is explicit",
+        "scaling has bounds",
+        "infrastructure is versioned",
+        "multi-zone claims are tested"
+      ],
+      "source_keys": [
+        "ISO42010",
+        "GOOGLE_SRE",
+        "OTEL"
+      ],
+      "related_skill_ids": [
+        3,
+        5,
+        7,
+        13,
+        38,
+        40,
+        73
+      ]
+    },
+    {
+      "id": 16,
+      "code": "SE-16",
+      "name": "Platform Engineering and Developer Experience",
+      "slug": "platform-engineering-and-developer-experience",
+      "tier": "conditional",
+      "purpose": "Create reusable, secure, self-service engineering capabilities that reduce cognitive load and make the preferred path the easiest path.",
+      "triggers": [
+        "multiple teams",
+        "repeated setup work",
+        "inconsistent pipelines",
+        "slow onboarding",
+        "internal platforms"
+      ],
+      "agent_skill_path": "agent-skills/se-16-platform-engineering-and-developer-experience/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-16-platform-engineering-and-developer-experience/references/detailed-guide.md",
+      "required_artifacts": [
+        "platform product charter",
+        "golden-path templates",
+        "service catalogue",
+        "self-service workflow",
+        "platform SLOs",
+        "developer feedback plan"
+      ],
+      "quality_gates": [
+        "platform users are treated as customers",
+        "templates are maintained",
+        "platform reliability is measured",
+        "escape hatches are governed",
+        "onboarding time improves"
+      ],
+      "source_keys": [
+        "DORA",
+        "GOOGLE_SRE",
+        "OTEL"
+      ],
+      "related_skill_ids": [
+        4,
+        5,
+        18,
+        46,
+        48
+      ]
+    },
+    {
+      "id": 17,
+      "code": "SE-17",
+      "name": "Release Engineering and Progressive Delivery",
+      "slug": "release-engineering-and-progressive-delivery",
+      "tier": "core",
+      "purpose": "Move verified changes into user environments safely through immutable artifacts, staged exposure, compatibility controls, evidence, and rollback or roll-forward.",
+      "triggers": [
+        "any production release",
+        "frequent delivery",
+        "high-risk change",
+        "mobile or firmware release"
+      ],
+      "agent_skill_path": "agent-skills/se-17-release-engineering-and-progressive-delivery/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-17-release-engineering-and-progressive-delivery/references/detailed-guide.md",
+      "required_artifacts": [
+        "release plan",
+        "promotion record",
+        "feature-flag register",
+        "deployment strategy",
+        "rollback test",
+        "release notes",
+        "release evidence bundle"
+      ],
+      "quality_gates": [
+        "same artifact is promoted",
+        "rollback or roll-forward is tested",
+        "schema supports mixed versions",
+        "release exposure is observable",
+        "flags have owners and expiry"
+      ],
+      "source_keys": [
+        "GOOGLE_SRE",
+        "DORA",
+        "ISO12207"
+      ],
+      "related_skill_ids": [
+        4,
+        5,
+        40,
+        55,
+        61,
+        62
+      ]
+    },
+    {
+      "id": 18,
+      "code": "SE-18",
+      "name": "Engineering Measurement and Improvement",
+      "slug": "engineering-measurement-and-improvement",
+      "tier": "core",
+      "purpose": "Use balanced, contextual metrics and experiments to understand delivery, quality, reliability, flow, and team outcomes and drive continual improvement.",
+      "triggers": [
+        "team improvement",
+        "delivery bottlenecks",
+        "quality trends",
+        "process change",
+        "governance reporting"
+      ],
+      "agent_skill_path": "agent-skills/se-18-engineering-measurement-and-improvement/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-18-engineering-measurement-and-improvement/references/detailed-guide.md",
+      "required_artifacts": [
+        "measurement plan",
+        "metric definitions",
+        "baseline dashboard",
+        "value-stream map",
+        "improvement experiment",
+        "review record"
+      ],
+      "quality_gates": [
+        "metrics have decisions attached",
+        "definitions are stable",
+        "data quality is checked",
+        "outcomes are balanced",
+        "trends are reviewed",
+        "metrics are not used to rank individuals"
+      ],
+      "source_keys": [
+        "DORA",
+        "ISO25010",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        5,
+        10,
+        16,
+        44,
+        46
+      ]
+    },
+    {
+      "id": 19,
+      "code": "SE-19",
+      "name": "Software Engineering Economics and FinOps",
+      "slug": "software-engineering-economics-and-finops",
+      "tier": "conditional",
+      "purpose": "Connect architecture and engineering choices to total cost, value, delay, risk, capacity, and accountable technology spending.",
+      "triggers": [
+        "cloud systems",
+        "build-buy decisions",
+        "costly scaling",
+        "portfolio choices",
+        "migration"
+      ],
+      "agent_skill_path": "agent-skills/se-19-software-engineering-economics-and-finops/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-19-software-engineering-economics-and-finops/references/detailed-guide.md",
+      "required_artifacts": [
+        "economic decision model",
+        "TCO estimate",
+        "unit-cost metrics",
+        "cost allocation model",
+        "optimization backlog"
+      ],
+      "quality_gates": [
+        "lifecycle costs are included",
+        "unit economics are measurable",
+        "savings do not violate SLOs or security",
+        "assumptions are explicit",
+        "architecture decisions include cost impact"
+      ],
+      "source_keys": [
+        "FINOPS",
+        "ISO12207",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        10,
+        15,
+        20,
+        41,
+        69
+      ]
+    },
+    {
+      "id": 20,
+      "code": "SE-20",
+      "name": "Sustainable Software Engineering",
+      "slug": "sustainable-software-engineering",
+      "tier": "conditional",
+      "purpose": "Reduce software-induced emissions and resource waste through measurable changes in energy, hardware use, carbon intensity, data movement, and workload timing.",
+      "triggers": [
+        "large compute",
+        "data centers",
+        "AI or ML",
+        "high traffic",
+        "sustainability goals"
+      ],
+      "agent_skill_path": "agent-skills/se-20-sustainable-software-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-20-sustainable-software-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "sustainability baseline",
+        "functional unit",
+        "SCI calculation plan",
+        "optimization backlog",
+        "sustainability decision record"
+      ],
+      "quality_gates": [
+        "functional unit is defined",
+        "changes preserve reliability outcomes",
+        "measurements use real data",
+        "offsets are not counted as engineering reduction",
+        "rebound effects are considered"
+      ],
+      "source_keys": [
+        "SCI",
+        "ISO25010",
+        "FINOPS"
+      ],
+      "related_skill_ids": [
+        15,
+        19,
+        25,
+        69,
+        74
+      ]
+    },
+    {
+      "id": 21,
+      "code": "SE-21",
+      "name": "Professional Practice Law and Governance",
+      "slug": "professional-practice-law-and-governance",
+      "tier": "core",
+      "purpose": "Ensure engineering decisions are ethical, lawful, accountable, competent, transparent, and aligned with contractual and professional responsibilities.",
+      "triggers": [
+        "every project",
+        "regulated domains",
+        "open-source use",
+        "personal data",
+        "high-impact decisions"
+      ],
+      "agent_skill_path": "agent-skills/se-21-professional-practice-law-and-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-21-professional-practice-law-and-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "governance register",
+        "obligation map",
+        "ethics and harm assessment",
+        "license register",
+        "decision authority matrix",
+        "exception process"
+      ],
+      "quality_gates": [
+        "obligations have owners",
+        "estimates show uncertainty",
+        "conflicts are disclosed",
+        "harmful design is challenged",
+        "licenses are satisfied",
+        "claims are truthful"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "NIST_PRIVACY"
+      ],
+      "related_skill_ids": [
+        8,
+        12,
+        43,
+        45,
+        56
+      ]
+    },
+    {
+      "id": 22,
+      "code": "SE-22",
+      "name": "Documentation Engineering",
+      "slug": "documentation-engineering",
+      "tier": "core",
+      "purpose": "Treat documentation as versioned, tested, audience-specific product content required for use, development, operation, assurance, and change.",
+      "triggers": [
+        "every project",
+        "APIs",
+        "operations",
+        "regulated systems",
+        "handover"
+      ],
+      "agent_skill_path": "agent-skills/se-22-documentation-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-22-documentation-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "documentation plan",
+        "audience map",
+        "docs repository",
+        "reference and task guides",
+        "runbooks",
+        "freshness report"
+      ],
+      "quality_gates": [
+        "documentation is versioned with change",
+        "commands are tested",
+        "owners and review dates exist",
+        "examples are sanitized",
+        "critical operations do not depend on memory"
+      ],
+      "source_keys": [
+        "ISO12207",
+        "ISO42010",
+        "DORA"
+      ],
+      "related_skill_ids": [
+        3,
+        5,
+        13,
+        17,
+        46,
+        56
+      ]
+    },
+    {
+      "id": 23,
+      "code": "SE-23",
+      "name": "Legacy Modernization and Retirement",
+      "slug": "legacy-modernization-and-retirement",
+      "tier": "conditional",
+      "purpose": "Assess, change, migrate, or retire legacy systems while preserving business behavior, data integrity, continuity, and recoverability.",
+      "triggers": [
+        "unsupported technology",
+        "high maintenance cost",
+        "migration",
+        "rewrite proposals",
+        "decommissioning"
+      ],
+      "agent_skill_path": "agent-skills/se-23-legacy-modernization-and-retirement/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-23-legacy-modernization-and-retirement/references/detailed-guide.md",
+      "required_artifacts": [
+        "legacy assessment",
+        "modernization option analysis",
+        "dependency map",
+        "characterization suite",
+        "migration roadmap",
+        "retirement checklist"
+      ],
+      "quality_gates": [
+        "business behavior is captured",
+        "migration reconciles",
+        "rollback exists",
+        "consumers are known",
+        "retention is satisfied",
+        "retirement removes credentials and infrastructure"
+      ],
+      "source_keys": [
+        "ISO12207",
+        "ISO15288",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        4,
+        17,
+        39,
+        40,
+        59,
+        60
+      ]
+    },
+    {
+      "id": 24,
+      "code": "SE-24",
+      "name": "Specialized Project Profile Routing",
+      "slug": "specialized-project-profile-routing",
+      "tier": "core",
+      "purpose": "Classify a project and activate only the engineering skills, rigor, evidence, and domain profiles that materially apply.",
+      "triggers": [
+        "project initiation",
+        "major scope change",
+        "new domain",
+        "risk reclassification"
+      ],
+      "agent_skill_path": "agent-skills/se-24-specialized-project-profile-routing/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-24-specialized-project-profile-routing/references/detailed-guide.md",
+      "required_artifacts": [
+        "project context profile",
+        "activated-skill manifest",
+        "skipped-skill rationale",
+        "evidence-level definition",
+        "reassessment triggers"
+      ],
+      "quality_gates": [
+        "all high-impact characteristics are assessed",
+        "activated skills have owners",
+        "skipped high-risk skills have rationale",
+        "router is rerun after major changes",
+        "low-risk projects remain lightweight"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        1,
+        10,
+        21,
+        28,
+        65
+      ]
+    },
+    {
+      "id": 25,
+      "code": "SE-25",
+      "name": "Systems and System-of-Systems Engineering",
+      "slug": "systems-and-system-of-systems-engineering",
+      "tier": "conditional",
+      "purpose": "Coordinate software with hardware, people, procedures, suppliers, physical environments, and other systems across the full system lifecycle.",
+      "triggers": [
+        "hardware-software products",
+        "socio-technical systems",
+        "system-of-systems",
+        "procurement",
+        "critical infrastructure"
+      ],
+      "agent_skill_path": "agent-skills/se-25-systems-and-system-of-systems-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-25-systems-and-system-of-systems-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "operational concept",
+        "system context",
+        "requirement allocation",
+        "interface control document",
+        "integration strategy",
+        "system validation plan"
+      ],
+      "quality_gates": [
+        "software requirements trace to system needs",
+        "allocations are justified",
+        "emergent risks are analyzed",
+        "interfaces have owners",
+        "validation uses operational scenarios"
+      ],
+      "source_keys": [
+        "ISO15288",
+        "ISO12207",
+        "ISO42010"
+      ],
+      "related_skill_ids": [
+        1,
+        3,
+        27,
+        29,
+        34,
+        42
+      ]
+    },
+    {
+      "id": 26,
+      "code": "SE-26",
+      "name": "Formal Methods and Mathematical Verification",
+      "slug": "formal-methods-and-mathematical-verification",
+      "tier": "specialized",
+      "purpose": "Use mathematical specifications and analysis to prove or systematically check critical correctness properties beyond what testing alone can establish.",
+      "triggers": [
+        "safety-critical logic",
+        "protocols",
+        "security-critical algorithms",
+        "financial cores",
+        "concurrency",
+        "high assurance"
+      ],
+      "agent_skill_path": "agent-skills/se-26-formal-methods-and-mathematical-verification/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-26-formal-methods-and-mathematical-verification/references/detailed-guide.md",
+      "required_artifacts": [
+        "formal model",
+        "property catalogue",
+        "proof or model-check report",
+        "counterexample log",
+        "model-code traceability"
+      ],
+      "quality_gates": [
+        "properties are unambiguous",
+        "assumptions are explicit",
+        "model and implementation correspondence is reviewed",
+        "counterexamples are resolved",
+        "proofs rerun after change"
+      ],
+      "source_keys": [
+        "ISO15026",
+        "NASA_SAFETY",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        27,
+        28,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": 27,
+      "code": "SE-27",
+      "name": "Software Safety Engineering",
+      "slug": "software-safety-engineering",
+      "tier": "specialized",
+      "purpose": "Prevent software from contributing to unacceptable harm by identifying hazards, deriving safety constraints, designing safe behavior, and maintaining safety evidence.",
+      "triggers": [
+        "medical transport industrial aerospace energy robotics or other harm-capable systems"
+      ],
+      "agent_skill_path": "agent-skills/se-27-software-safety-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-27-software-safety-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "hazard log",
+        "safety requirements",
+        "safety architecture",
+        "FMEA or FTA",
+        "safety validation plan",
+        "residual-risk record"
+      ],
+      "quality_gates": [
+        "hazards trace to controls and tests",
+        "safe states are defined",
+        "safety monitors are independent where needed",
+        "changes trigger impact analysis",
+        "residual risk has authorized acceptance"
+      ],
+      "source_keys": [
+        "NASA_SAFETY",
+        "ISO15026",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        26,
+        28,
+        29,
+        34,
+        71,
+        76
+      ]
+    },
+    {
+      "id": 28,
+      "code": "SE-28",
+      "name": "Assurance Cases Integrity Levels and Independent V&V",
+      "slug": "assurance-cases-integrity-levels-and-independent-v-v",
+      "tier": "specialized",
+      "purpose": "Build structured claims, arguments, and independent evidence showing why a system is sufficiently trustworthy for its context and impact.",
+      "triggers": [
+        "critical systems",
+        "certification",
+        "regulated release",
+        "disputed risk",
+        "high-consequence claims"
+      ],
+      "agent_skill_path": "agent-skills/se-28-assurance-cases-integrity-levels-and-independent-v-v/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-28-assurance-cases-integrity-levels-and-independent-v-v/references/detailed-guide.md",
+      "required_artifacts": [
+        "assurance case",
+        "evidence index",
+        "integrity-level rationale",
+        "IV&V plan and report",
+        "evidence freshness register"
+      ],
+      "quality_gates": [
+        "claims are measurable",
+        "evidence directly supports claims",
+        "independence matches criticality",
+        "assumptions are validated",
+        "changes refresh affected evidence"
+      ],
+      "source_keys": [
+        "ISO15026",
+        "NASA_SAFETY",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        21,
+        25,
+        26,
+        27,
+        43
+      ]
+    },
+    {
+      "id": 29,
+      "code": "SE-29",
+      "name": "Human Factors and Socio-Technical Engineering",
+      "slug": "human-factors-and-socio-technical-engineering",
+      "tier": "conditional",
+      "purpose": "Engineer the interaction of people, software, hardware, procedures, workload, incentives, and organization to reduce human-system failure.",
+      "triggers": [
+        "operator systems",
+        "decision support",
+        "high workload",
+        "emergency use",
+        "automation",
+        "complex organizations"
+      ],
+      "agent_skill_path": "agent-skills/se-29-human-factors-and-socio-technical-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-29-human-factors-and-socio-technical-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "human-task analysis",
+        "operator journey",
+        "workload and error analysis",
+        "training plan",
+        "alarm design",
+        "human-in-the-loop validation"
+      ],
+      "quality_gates": [
+        "representative users are studied in context",
+        "authority and fallback are clear",
+        "alarms are prioritized",
+        "training matches design",
+        "likely human errors are tolerated"
+      ],
+      "source_keys": [
+        "ISO15288",
+        "WCAG",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        11,
+        25,
+        27,
+        37,
+        71,
+        76
+      ]
+    },
+    {
+      "id": 30,
+      "code": "SE-30",
+      "name": "Internationalization Localization and Culturalization",
+      "slug": "internationalization-localization-and-culturalization",
+      "tier": "conditional",
+      "purpose": "Design software, content, data, and workflows so they can be correctly adapted across languages, scripts, regions, formats, and cultures.",
+      "triggers": [
+        "multi-country or multilingual users",
+        "public products",
+        "global data exchange"
+      ],
+      "agent_skill_path": "agent-skills/se-30-internationalization-localization-and-culturalization/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-30-internationalization-localization-and-culturalization/references/detailed-guide.md",
+      "required_artifacts": [
+        "internationalization requirements",
+        "locale data model",
+        "translation-resource plan",
+        "pseudolocalization test",
+        "locale test matrix"
+      ],
+      "quality_gates": [
+        "text round-trips without loss",
+        "layout supports expansion and RTL",
+        "locale-sensitive operations are tested",
+        "identifiers do not assume Western names",
+        "translations are versioned"
+      ],
+      "source_keys": [
+        "W3C_I18N",
+        "RFC3339",
+        "WHATWG_HTML"
+      ],
+      "related_skill_ids": [
+        11,
+        31,
+        53,
+        61,
+        62,
+        79
+      ]
+    },
+    {
+      "id": 31,
+      "code": "SE-31",
+      "name": "Interoperability and Standards-Conformance Engineering",
+      "slug": "interoperability-and-standards-conformance-engineering",
+      "tier": "conditional",
+      "purpose": "Ensure systems exchange information and behavior correctly at syntactic, semantic, protocol, identity, timing, organizational, and lifecycle levels.",
+      "triggers": [
+        "cross-vendor integration",
+        "public standards",
+        "data exchange",
+        "regulated ecosystems",
+        "long-lived systems"
+      ],
+      "agent_skill_path": "agent-skills/se-31-interoperability-and-standards-conformance-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-31-interoperability-and-standards-conformance-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "standards profile",
+        "conformance matrix",
+        "interoperability test suite",
+        "deviation register",
+        "certification evidence"
+      ],
+      "quality_gates": [
+        "normative requirements are identified",
+        "deviations are explicit",
+        "independent implementations interoperate",
+        "semantics are tested",
+        "version negotiation is deterministic"
+      ],
+      "source_keys": [
+        "ISO42010",
+        "W3C_RDF",
+        "IETF_HTTP"
+      ],
+      "related_skill_ids": [
+        13,
+        30,
+        40,
+        64,
+        72,
+        78,
+        80
+      ]
+    },
+    {
+      "id": 32,
+      "code": "SE-32",
+      "name": "Software Product-Line and Variability Engineering",
+      "slug": "software-product-line-and-variability-engineering",
+      "tier": "specialized",
+      "purpose": "Manage a family of related products through reusable core assets, explicit variability, valid configurations, and product-line evolution.",
+      "triggers": [
+        "white-label products",
+        "editions",
+        "regional variants",
+        "device families",
+        "configurable platforms"
+      ],
+      "agent_skill_path": "agent-skills/se-32-software-product-line-and-variability-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-32-software-product-line-and-variability-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "product-line scope",
+        "feature model",
+        "variability rules",
+        "core-asset register",
+        "variant build plan",
+        "variant test strategy"
+      ],
+      "quality_gates": [
+        "every variant is valid by model",
+        "shared assets have ownership",
+        "incompatible features are prevented",
+        "representative combinations are tested",
+        "deprecation is controlled"
+      ],
+      "source_keys": [
+        "ISO26550",
+        "ISO42010",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        3,
+        4,
+        24,
+        40,
+        58
+      ]
+    },
+    {
+      "id": 33,
+      "code": "SE-33",
+      "name": "Domain Engineering and Bounded-Context Design",
+      "slug": "domain-engineering-and-bounded-context-design",
+      "tier": "conditional",
+      "purpose": "Capture complex business knowledge as explicit language, rules, models, ownership boundaries, and integration relationships.",
+      "triggers": [
+        "complex business rules",
+        "multiple teams",
+        "domain ambiguity",
+        "long-lived business systems"
+      ],
+      "agent_skill_path": "agent-skills/se-33-domain-engineering-and-bounded-context-design/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-33-domain-engineering-and-bounded-context-design/references/detailed-guide.md",
+      "required_artifacts": [
+        "domain glossary",
+        "context map",
+        "domain model",
+        "invariant catalogue",
+        "ownership matrix",
+        "domain event catalogue"
+      ],
+      "quality_gates": [
+        "terms have one meaning within context",
+        "invariants are enforced at ownership boundaries",
+        "cross-context translations are explicit",
+        "domain experts validate models",
+        "rules are not duplicated"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO42010",
+        "ISO12207"
+      ],
+      "related_skill_ids": [
+        3,
+        10,
+        35,
+        37,
+        58,
+        80
+      ]
+    },
+    {
+      "id": 34,
+      "code": "SE-34",
+      "name": "Real-Time Embedded and Cyber-Physical Systems Engineering",
+      "slug": "real-time-embedded-and-cyber-physical-systems-engineering",
+      "tier": "specialized",
+      "purpose": "Engineer software that interacts with hardware and physical processes under timing, resource, power, calibration, update, and safety constraints.",
+      "triggers": [
+        "firmware",
+        "sensors and actuators",
+        "devices",
+        "vehicles",
+        "control systems",
+        "IoT"
+      ],
+      "agent_skill_path": "agent-skills/se-34-real-time-embedded-and-cyber-physical-systems-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-34-real-time-embedded-and-cyber-physical-systems-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "timing requirements",
+        "hardware-software interface",
+        "resource budget",
+        "calibration plan",
+        "HIL test plan",
+        "firmware update plan"
+      ],
+      "quality_gates": [
+        "worst-case timing is measured",
+        "units are explicit",
+        "sensor failure is handled",
+        "watchdog and safe state are tested",
+        "update interruption is recoverable"
+      ],
+      "source_keys": [
+        "ISO15288",
+        "NASA_SAFETY",
+        "NIST_OT"
+      ],
+      "related_skill_ids": [
+        25,
+        27,
+        35,
+        55,
+        73,
+        76
+      ]
+    },
+    {
+      "id": 35,
+      "code": "SE-35",
+      "name": "Protocol State-Machine and Workflow Correctness",
+      "slug": "protocol-state-machine-and-workflow-correctness",
+      "tier": "conditional",
+      "purpose": "Model stateful behavior explicitly so only valid transitions occur and timeouts, retries, crashes, duplicates, and version changes remain correct.",
+      "triggers": [
+        "payments",
+        "approvals",
+        "bookings",
+        "authentication",
+        "device protocols",
+        "distributed workflows"
+      ],
+      "agent_skill_path": "agent-skills/se-35-protocol-state-machine-and-workflow-correctness/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-35-protocol-state-machine-and-workflow-correctness/references/detailed-guide.md",
+      "required_artifacts": [
+        "state model",
+        "transition table",
+        "invariant list",
+        "timeout and retry policy",
+        "workflow migration plan",
+        "model-based tests"
+      ],
+      "quality_gates": [
+        "every state is reachable or reserved",
+        "invalid transitions fail safely",
+        "repeated events are handled",
+        "persisted state survives crash",
+        "old instances are migratable"
+      ],
+      "source_keys": [
+        "IETF_HTTP",
+        "ISO15026",
+        "CLOUDEVENTS"
+      ],
+      "related_skill_ids": [
+        13,
+        26,
+        33,
+        37,
+        38,
+        78
+      ]
+    },
+    {
+      "id": 36,
+      "code": "SE-36",
+      "name": "Concurrency Parallelism and Memory-Model Engineering",
+      "slug": "concurrency-parallelism-and-memory-model-engineering",
+      "tier": "conditional",
+      "purpose": "Design and verify correct behavior when work executes concurrently across threads, tasks, processes, cores, accelerators, or machines.",
+      "triggers": [
+        "async servers",
+        "multi-threading",
+        "parallel algorithms",
+        "high throughput",
+        "shared state"
+      ],
+      "agent_skill_path": "agent-skills/se-36-concurrency-parallelism-and-memory-model-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-36-concurrency-parallelism-and-memory-model-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "concurrency model",
+        "shared-state inventory",
+        "lock-order policy",
+        "cancellation plan",
+        "stress-test suite",
+        "race-analysis report"
+      ],
+      "quality_gates": [
+        "shared mutable state has owner",
+        "cancellation cleans resources",
+        "lock ordering is documented",
+        "stress tests repeat",
+        "race detectors are used",
+        "shutdown is bounded"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO25010",
+        "MPI",
+        "OPENMP"
+      ],
+      "related_skill_ids": [
+        2,
+        7,
+        25,
+        37,
+        38,
+        74
+      ]
+    },
+    {
+      "id": 37,
+      "code": "SE-37",
+      "name": "Transaction Consistency and Data-Integrity Engineering",
+      "slug": "transaction-consistency-and-data-integrity-engineering",
+      "tier": "conditional",
+      "purpose": "Preserve business invariants and trustworthy records under concurrency, retries, partial failures, distributed execution, and recovery.",
+      "triggers": [
+        "money",
+        "inventory",
+        "bookings",
+        "identity records",
+        "concurrent updates",
+        "distributed workflows"
+      ],
+      "agent_skill_path": "agent-skills/se-37-transaction-consistency-and-data-integrity-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-37-transaction-consistency-and-data-integrity-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "integrity model",
+        "transaction boundary map",
+        "invariant catalogue",
+        "concurrency strategy",
+        "reconciliation plan",
+        "corruption recovery procedure"
+      ],
+      "quality_gates": [
+        "invariants hold under concurrency",
+        "duplicate commands are safe",
+        "constraints exist at authoritative layer",
+        "reconciliation detects gaps",
+        "restore is validated"
+      ],
+      "source_keys": [
+        "ISO25010",
+        "IETF_HTTP",
+        "ISO20022"
+      ],
+      "related_skill_ids": [
+        14,
+        35,
+        36,
+        38,
+        39,
+        78
+      ]
+    },
+    {
+      "id": 38,
+      "code": "SE-38",
+      "name": "Event-Driven Messaging and Streaming Engineering",
+      "slug": "event-driven-messaging-and-streaming-engineering",
+      "tier": "conditional",
+      "purpose": "Build dependable asynchronous systems with explicit event contracts, delivery semantics, ordering, replay, compatibility, and operational controls.",
+      "triggers": [
+        "queues",
+        "pub-sub",
+        "event sourcing",
+        "streaming analytics",
+        "async integrations"
+      ],
+      "agent_skill_path": "agent-skills/se-38-event-driven-messaging-and-streaming-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-38-event-driven-messaging-and-streaming-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "event catalogue",
+        "schema registry policy",
+        "delivery-semantics decision",
+        "retry and DLQ plan",
+        "replay procedure",
+        "consumer compatibility tests"
+      ],
+      "quality_gates": [
+        "consumers are idempotent or deduplicate",
+        "schema changes are compatible",
+        "poison messages are observable",
+        "replay is tested",
+        "ordering assumptions are explicit"
+      ],
+      "source_keys": [
+        "CLOUDEVENTS",
+        "OTEL",
+        "GOOGLE_SRE"
+      ],
+      "related_skill_ids": [
+        13,
+        14,
+        35,
+        36,
+        37,
+        64
+      ]
+    },
+    {
+      "id": 39,
+      "code": "SE-39",
+      "name": "Data Migration Conversion and Reconciliation Engineering",
+      "slug": "data-migration-conversion-and-reconciliation-engineering",
+      "tier": "conditional",
+      "purpose": "Move data between schemas, platforms, products, or owners while preserving meaning, integrity, completeness, traceability, and reversibility.",
+      "triggers": [
+        "legacy replacement",
+        "cloud migration",
+        "mergers",
+        "schema redesign",
+        "platform change"
+      ],
+      "agent_skill_path": "agent-skills/se-39-data-migration-conversion-and-reconciliation-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-39-data-migration-conversion-and-reconciliation-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "migration specification",
+        "mapping catalogue",
+        "dry-run report",
+        "reconciliation rules",
+        "cutover plan",
+        "rollback plan",
+        "post-migration audit"
+      ],
+      "quality_gates": [
+        "all in-scope data maps",
+        "rejected records are explained",
+        "totals reconcile",
+        "identifiers remain unique",
+        "rollback is feasible",
+        "source retirement waits for acceptance"
+      ],
+      "source_keys": [
+        "W3C_PROV",
+        "ISO25010",
+        "ISO12207"
+      ],
+      "related_skill_ids": [
+        14,
+        23,
+        37,
+        40,
+        60,
+        64
+      ]
+    },
+    {
+      "id": 40,
+      "code": "SE-40",
+      "name": "Performance Modelling Capacity Scalability and Compatibility",
+      "slug": "performance-modelling-capacity-scalability-and-compatibility",
+      "tier": "conditional",
+      "purpose": "Define measurable performance budgets, predict capacity, validate scaling and tail behavior, and preserve compatibility across versions and environments.",
+      "triggers": [
+        "user-facing services",
+        "high load",
+        "large data",
+        "rolling upgrades",
+        "diverse clients"
+      ],
+      "agent_skill_path": "agent-skills/se-40-performance-modelling-capacity-scalability-and-compatibility/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-40-performance-modelling-capacity-scalability-and-compatibility/references/detailed-guide.md",
+      "required_artifacts": [
+        "performance requirements",
+        "workload model",
+        "capacity model",
+        "benchmark plan",
+        "compatibility matrix",
+        "scaling and upgrade report"
+      ],
+      "quality_gates": [
+        "targets use percentiles and realistic workloads",
+        "bottlenecks are measured",
+        "capacity includes headroom",
+        "mixed-version operation is tested",
+        "deprecation windows exist"
+      ],
+      "source_keys": [
+        "ISO25010",
+        "GOOGLE_SRE",
+        "IETF_HTTP"
+      ],
+      "related_skill_ids": [
+        3,
+        7,
+        13,
+        15,
+        17,
+        41
+      ]
+    },
+    {
+      "id": 41,
+      "code": "SE-41",
+      "name": "Software Acquisition Supplier and Third-Party Service Engineering",
+      "slug": "software-acquisition-supplier-and-third-party-service-engineering",
+      "tier": "conditional",
+      "purpose": "Select, contract, accept, monitor, and exit external software, SaaS, components, vendors, and development services using engineering evidence.",
+      "triggers": [
+        "buy or subscribe decisions",
+        "outsourced development",
+        "critical SaaS",
+        "vendor integration"
+      ],
+      "agent_skill_path": "agent-skills/se-41-software-acquisition-supplier-and-third-party-service-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-41-software-acquisition-supplier-and-third-party-service-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "acquisition specification",
+        "supplier evaluation",
+        "technical due-diligence report",
+        "contract quality schedule",
+        "acceptance plan",
+        "exit plan"
+      ],
+      "quality_gates": [
+        "requirements are testable in contract",
+        "data ownership and return are clear",
+        "exit is feasible",
+        "supplier evidence is verified",
+        "acceptance tests run before dependency"
+      ],
+      "source_keys": [
+        "ISO12207",
+        "NIST_SSDF",
+        "ISO20000"
+      ],
+      "related_skill_ids": [
+        9,
+        19,
+        21,
+        31,
+        42,
+        59
+      ]
+    },
+    {
+      "id": 42,
+      "code": "SE-42",
+      "name": "Open-Source Program Governance and Community Sustainability",
+      "slug": "open-source-program-governance-and-community-sustainability",
+      "tier": "conditional",
+      "purpose": "Manage open-source use and contribution through policy, licensing, project health, security, sustainability, patching, and upstream relationships.",
+      "triggers": [
+        "open-source dependencies",
+        "internal forks",
+        "publishing projects",
+        "organizational OSS use"
+      ],
+      "agent_skill_path": "agent-skills/se-42-open-source-program-governance-and-community-sustainability/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-42-open-source-program-governance-and-community-sustainability/references/detailed-guide.md",
+      "required_artifacts": [
+        "OSS policy",
+        "component assessment",
+        "license obligations",
+        "project-health scorecard",
+        "fork register",
+        "upstream contribution plan"
+      ],
+      "quality_gates": [
+        "licenses are satisfied",
+        "critical projects have sustainability assessment",
+        "internal patches are tracked",
+        "EOL signals are monitored",
+        "forks have owners"
+      ],
+      "source_keys": [
+        "OPENSSF",
+        "CISA_SBOM",
+        "SLSA"
+      ],
+      "related_skill_ids": [
+        9,
+        21,
+        41,
+        47,
+        59
+      ]
+    },
+    {
+      "id": 43,
+      "code": "SE-43",
+      "name": "Compliance Engineering and Continuous Audit Evidence",
+      "slug": "compliance-engineering-and-continuous-audit-evidence",
+      "tier": "conditional",
+      "purpose": "Implement obligations as traceable controls, automated checks, durable evidence, owned exceptions, and continuously reviewable assurance.",
+      "triggers": [
+        "regulated sectors",
+        "contractual controls",
+        "certifications",
+        "audits",
+        "critical data"
+      ],
+      "agent_skill_path": "agent-skills/se-43-compliance-engineering-and-continuous-audit-evidence/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-43-compliance-engineering-and-continuous-audit-evidence/references/detailed-guide.md",
+      "required_artifacts": [
+        "obligation-control matrix",
+        "control implementation plan",
+        "evidence catalogue",
+        "automated compliance tests",
+        "exception register",
+        "audit package"
+      ],
+      "quality_gates": [
+        "scope is explicit",
+        "each control has owner and evidence",
+        "evidence is current",
+        "exceptions expire",
+        "technical tests verify controls",
+        "claims match deployment"
+      ],
+      "source_keys": [
+        "ISO15026",
+        "NIST_SSDF",
+        "ISO20000"
+      ],
+      "related_skill_ids": [
+        21,
+        28,
+        41,
+        49,
+        56,
+        57
+      ]
+    },
+    {
+      "id": 44,
+      "code": "SE-44",
+      "name": "Experimentation Feature Lifecycle and Product Analytics Governance",
+      "slug": "experimentation-feature-lifecycle-and-product-analytics-governance",
+      "tier": "conditional",
+      "purpose": "Evaluate product changes through controlled hypotheses, trustworthy exposure data, guardrail metrics, responsible rollout, and retirement decisions.",
+      "triggers": [
+        "A/B tests",
+        "feature flags",
+        "uncertain product changes",
+        "staged rollout",
+        "analytics-heavy products"
+      ],
+      "agent_skill_path": "agent-skills/se-44-experimentation-feature-lifecycle-and-product-analytics-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-44-experimentation-feature-lifecycle-and-product-analytics-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "experiment protocol",
+        "metric definitions",
+        "exposure schema",
+        "analysis plan",
+        "decision record",
+        "feature cleanup ticket"
+      ],
+      "quality_gates": [
+        "hypothesis is predeclared",
+        "assignment is stable",
+        "sample ratio is checked",
+        "guardrails protect users",
+        "privacy is respected",
+        "decisions include practical significance"
+      ],
+      "source_keys": [
+        "DORA",
+        "NIST_PRIVACY",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        10,
+        12,
+        17,
+        18,
+        45
+      ]
+    },
+    {
+      "id": 45,
+      "code": "SE-45",
+      "name": "AI-Assisted Software Development Governance",
+      "slug": "ai-assisted-software-development-governance",
+      "tier": "conditional",
+      "purpose": "Govern AI coding, testing, documentation, review, and analysis tools so velocity gains do not weaken confidentiality, correctness, licensing, provenance, or accountability.",
+      "triggers": [
+        "AI coding assistants",
+        "generated tests",
+        "generated documentation",
+        "agentic development"
+      ],
+      "agent_skill_path": "agent-skills/se-45-ai-assisted-software-development-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-45-ai-assisted-software-development-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "AI-use policy",
+        "tool risk assessment",
+        "generated-change review checklist",
+        "provenance record",
+        "AI quality metrics",
+        "exception register"
+      ],
+      "quality_gates": [
+        "sensitive code is protected",
+        "generated changes receive accountable review",
+        "dependencies are verified",
+        "tests have independent oracles",
+        "licenses are checked"
+      ],
+      "source_keys": [
+        "NIST_SSDF",
+        "DORA",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        2,
+        8,
+        9,
+        18,
+        21,
+        47
+      ]
+    },
+    {
+      "id": 46,
+      "code": "SE-46",
+      "name": "Engineering Knowledge Management Onboarding and Bus-Factor Reduction",
+      "slug": "engineering-knowledge-management-onboarding-and-bus-factor-reduction",
+      "tier": "core",
+      "purpose": "Preserve and transfer system, domain, operational, and decision knowledge so the project does not depend on inaccessible individuals.",
+      "triggers": [
+        "team growth",
+        "handover",
+        "critical experts",
+        "maintenance",
+        "distributed teams"
+      ],
+      "agent_skill_path": "agent-skills/se-46-engineering-knowledge-management-onboarding-and-bus-factor-reduction/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-46-engineering-knowledge-management-onboarding-and-bus-factor-reduction/references/detailed-guide.md",
+      "required_artifacts": [
+        "knowledge map",
+        "ownership catalogue",
+        "onboarding plan",
+        "critical-knowledge risk register",
+        "cross-training schedule",
+        "handover checklist"
+      ],
+      "quality_gates": [
+        "critical areas have at least two capable people",
+        "onboarding is tested by newcomers",
+        "docs have owners",
+        "decisions include rationale",
+        "departures trigger handover"
+      ],
+      "source_keys": [
+        "DORA",
+        "ISO12207",
+        "ISO20000"
+      ],
+      "related_skill_ids": [
+        5,
+        16,
+        22,
+        23,
+        47,
+        58
+      ]
+    },
+    {
+      "id": 47,
+      "code": "SE-47",
+      "name": "Reproducibility Hermetic Builds and Deterministic Environments",
+      "slug": "reproducibility-hermetic-builds-and-deterministic-environments",
+      "tier": "core",
+      "purpose": "Ensure a trusted artifact, environment, experiment, or result can be independently recreated from declared inputs and instructions.",
+      "triggers": [
+        "CI/CD",
+        "regulated builds",
+        "scientific software",
+        "supply chain",
+        "disaster recovery"
+      ],
+      "agent_skill_path": "agent-skills/se-47-reproducibility-hermetic-builds-and-deterministic-environments/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-47-reproducibility-hermetic-builds-and-deterministic-environments/references/detailed-guide.md",
+      "required_artifacts": [
+        "reproducible build specification",
+        "pinned toolchain",
+        "environment manifest",
+        "independent rebuild report",
+        "non-determinism register"
+      ],
+      "quality_gates": [
+        "all inputs are declared",
+        "independent rebuild succeeds",
+        "variance is explained",
+        "network access is controlled",
+        "locale time and randomness are fixed where relevant"
+      ],
+      "source_keys": [
+        "SLSA",
+        "CISA_SBOM",
+        "SWEBOK"
+      ],
+      "related_skill_ids": [
+        4,
+        9,
+        18,
+        22,
+        45,
+        48
+      ]
+    },
+    {
+      "id": 48,
+      "code": "SE-48",
+      "name": "Engineering Tools and CASE Automation Governance",
+      "slug": "engineering-tools-and-case-automation-governance",
+      "tier": "core",
+      "purpose": "Select and integrate engineering tools based on lifecycle value, interoperability, evidence quality, security, maintainability, and exit risk.",
+      "triggers": [
+        "tool selection",
+        "CASE tools",
+        "ALM platforms",
+        "CI",
+        "modeling",
+        "testing",
+        "documentation"
+      ],
+      "agent_skill_path": "agent-skills/se-48-engineering-tools-and-case-automation-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-48-engineering-tools-and-case-automation-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "tool evaluation matrix",
+        "integration architecture",
+        "tool data-retention plan",
+        "automation ownership",
+        "tool risk register",
+        "exit procedure"
+      ],
+      "quality_gates": [
+        "tool solves defined workflow",
+        "generated outputs are reviewable",
+        "access is least privilege",
+        "data export works",
+        "automation failures are visible",
+        "owners exist"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO12207",
+        "NIST_SSDF"
+      ],
+      "related_skill_ids": [
+        1,
+        4,
+        9,
+        16,
+        22,
+        41,
+        47
+      ]
+    },
+    {
+      "id": 49,
+      "code": "SE-49",
+      "name": "Digital Identity and Access-Lifecycle Engineering",
+      "slug": "digital-identity-and-access-lifecycle-engineering",
+      "tier": "conditional",
+      "purpose": "Engineer identity proofing, enrollment, authentication, federation, sessions, authorization, recovery, privilege, and termination as one controlled lifecycle.",
+      "triggers": [
+        "user accounts",
+        "workforce access",
+        "SSO",
+        "privileged systems",
+        "identity-sensitive services"
+      ],
+      "agent_skill_path": "agent-skills/se-49-digital-identity-and-access-lifecycle-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-49-digital-identity-and-access-lifecycle-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "identity architecture",
+        "assurance-level decision",
+        "authenticator policy",
+        "authorization model",
+        "recovery flow",
+        "access lifecycle tests"
+      ],
+      "quality_gates": [
+        "authentication and authorization are separate",
+        "recovery is not weaker than enrollment",
+        "sessions revoke",
+        "service identities rotate",
+        "terminated accounts lose access promptly"
+      ],
+      "source_keys": [
+        "NIST_ID",
+        "W3C_WEBAUTHN",
+        "OWASP_ASVS"
+      ],
+      "related_skill_ids": [
+        8,
+        12,
+        31,
+        43,
+        50,
+        51
+      ]
+    },
+    {
+      "id": 50,
+      "code": "SE-50",
+      "name": "Cryptographic Engineering Agility and Post-Quantum Migration",
+      "slug": "cryptographic-engineering-agility-and-post-quantum-migration",
+      "tier": "conditional",
+      "purpose": "Apply cryptography correctly through asset inventory, approved algorithms, key lifecycle, protocol design, agility, deprecation, and migration planning.",
+      "triggers": [
+        "sensitive data",
+        "signatures",
+        "secure channels",
+        "long-lived secrets",
+        "regulated cryptography"
+      ],
+      "agent_skill_path": "agent-skills/se-50-cryptographic-engineering-agility-and-post-quantum-migration/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-50-cryptographic-engineering-agility-and-post-quantum-migration/references/detailed-guide.md",
+      "required_artifacts": [
+        "cryptographic inventory",
+        "key-management plan",
+        "algorithm policy",
+        "certificate lifecycle",
+        "crypto-agility design",
+        "post-quantum roadmap"
+      ],
+      "quality_gates": [
+        "standard libraries are used",
+        "keys have owners and rotation",
+        "failure modes fail safely",
+        "algorithms are replaceable",
+        "long-lived confidentiality is assessed"
+      ],
+      "source_keys": [
+        "NIST_PQ",
+        "NIST_ID",
+        "IETF_TLS"
+      ],
+      "related_skill_ids": [
+        8,
+        9,
+        49,
+        55,
+        65
+      ]
+    },
+    {
+      "id": 51,
+      "code": "SE-51",
+      "name": "Multi-Tenant SaaS Isolation Engineering",
+      "slug": "multi-tenant-saas-isolation-engineering",
+      "tier": "specialized",
+      "purpose": "Prevent one tenant from accessing, influencing, exhausting, or observing another tenant's data, configuration, compute, keys, or operations.",
+      "triggers": [
+        "multi-tenant SaaS",
+        "shared databases",
+        "shared queues",
+        "per-customer configuration"
+      ],
+      "agent_skill_path": "agent-skills/se-51-multi-tenant-saas-isolation-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-51-multi-tenant-saas-isolation-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "tenancy model",
+        "isolation threat model",
+        "tenant-context propagation design",
+        "quota policy",
+        "cross-tenant test suite",
+        "tenant restore procedure"
+      ],
+      "quality_gates": [
+        "tenant context comes from trusted identity",
+        "every storage path is scoped",
+        "cache keys include tenant",
+        "admin access is audited",
+        "cross-tenant tests run"
+      ],
+      "source_keys": [
+        "OWASP_ASVS",
+        "NIST_PRIVACY",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        8,
+        12,
+        15,
+        37,
+        49,
+        64
+      ]
+    },
+    {
+      "id": 52,
+      "code": "SE-52",
+      "name": "Offline-First Replication and Conflict-Resolution Engineering",
+      "slug": "offline-first-replication-and-conflict-resolution-engineering",
+      "tier": "conditional",
+      "purpose": "Allow useful, correct operation during disconnection and safely reconcile local and remote changes after connectivity returns.",
+      "triggers": [
+        "field apps",
+        "mobile",
+        "edge",
+        "intermittent networks",
+        "collaborative editing"
+      ],
+      "agent_skill_path": "agent-skills/se-52-offline-first-replication-and-conflict-resolution-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-52-offline-first-replication-and-conflict-resolution-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "sync contract",
+        "offline capability matrix",
+        "conflict policy",
+        "replica metadata model",
+        "sync test suite",
+        "recovery runbook"
+      ],
+      "quality_gates": [
+        "offline guarantees are explicit",
+        "retries are idempotent",
+        "conflicts are visible or deterministic",
+        "deletes propagate safely",
+        "corrupted sync is recoverable"
+      ],
+      "source_keys": [
+        "CRDT",
+        "IETF_HTTP",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        7,
+        37,
+        38,
+        53,
+        62,
+        73
+      ]
+    },
+    {
+      "id": 53,
+      "code": "SE-53",
+      "name": "Temporal Calendar and Timezone Correctness Engineering",
+      "slug": "temporal-calendar-and-timezone-correctness-engineering",
+      "tier": "conditional",
+      "purpose": "Model instants, local dates, calendar periods, schedules, recurrence, expiry, and clock behavior without timezone or daylight-saving ambiguity.",
+      "triggers": [
+        "appointments",
+        "billing",
+        "expiry",
+        "scheduled jobs",
+        "global users",
+        "distributed events"
+      ],
+      "agent_skill_path": "agent-skills/se-53-temporal-calendar-and-timezone-correctness-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-53-temporal-calendar-and-timezone-correctness-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "temporal data model",
+        "timezone policy",
+        "recurrence specification",
+        "clock abstraction",
+        "temporal edge-case tests"
+      ],
+      "quality_gates": [
+        "stored values match domain meaning",
+        "future local events include zone ID",
+        "monotonic clocks measure duration",
+        "DST boundaries are tested",
+        "expiry tolerates skew"
+      ],
+      "source_keys": [
+        "RFC3339",
+        "W3C_I18N",
+        "IETF_HTTP"
+      ],
+      "related_skill_ids": [
+        2,
+        30,
+        35,
+        38,
+        52,
+        62
+      ]
+    },
+    {
+      "id": 54,
+      "code": "SE-54",
+      "name": "Numerical and Scientific Correctness Engineering",
+      "slug": "numerical-and-scientific-correctness-engineering",
+      "tier": "specialized",
+      "purpose": "Ensure calculations are mathematically appropriate, numerically stable, dimensionally correct, reproducible, and validated against trusted references.",
+      "triggers": [
+        "finance",
+        "simulation",
+        "graphics",
+        "statistics",
+        "scientific and engineering software"
+      ],
+      "agent_skill_path": "agent-skills/se-54-numerical-and-scientific-correctness-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-54-numerical-and-scientific-correctness-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "numerical requirements",
+        "precision and rounding policy",
+        "unit model",
+        "reference datasets",
+        "tolerance specification",
+        "validation report"
+      ],
+      "quality_gates": [
+        "money uses suitable decimal or integer model",
+        "units are explicit",
+        "tolerances are justified",
+        "edge magnitudes are tested",
+        "reference outputs are independent"
+      ],
+      "source_keys": [
+        "IEEE754",
+        "SWEBOK",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        26,
+        37,
+        47,
+        69,
+        74,
+        78
+      ]
+    },
+    {
+      "id": 55,
+      "code": "SE-55",
+      "name": "Secure Software Update Patch and Firmware Delivery",
+      "slug": "secure-software-update-patch-and-firmware-delivery",
+      "tier": "conditional",
+      "purpose": "Deliver trustworthy updates despite repository compromise, network attack, key loss, interruption, rollback attempts, and constrained devices.",
+      "triggers": [
+        "auto-update",
+        "package repositories",
+        "desktop apps",
+        "devices",
+        "firmware",
+        "agents"
+      ],
+      "agent_skill_path": "agent-skills/se-55-secure-software-update-patch-and-firmware-delivery/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-55-secure-software-update-patch-and-firmware-delivery/references/detailed-guide.md",
+      "required_artifacts": [
+        "update threat model",
+        "signing-key hierarchy",
+        "metadata policy",
+        "update state machine",
+        "interruption tests",
+        "key-compromise recovery plan"
+      ],
+      "quality_gates": [
+        "updates are signed and verified",
+        "root trust can rotate",
+        "rollback attacks are blocked",
+        "interrupted install is recoverable",
+        "vulnerable versions can be revoked"
+      ],
+      "source_keys": [
+        "TUF",
+        "NIST_SSDF",
+        "NIST_PQ"
+      ],
+      "related_skill_ids": [
+        4,
+        9,
+        17,
+        34,
+        50,
+        59
+      ]
+    },
+    {
+      "id": 56,
+      "code": "SE-56",
+      "name": "Records Retention Archival and Legal-Hold Engineering",
+      "slug": "records-retention-archival-and-legal-hold-engineering",
+      "tier": "conditional",
+      "purpose": "Manage authoritative records through capture, metadata, retention, legal hold, immutable history, retrieval, migration, and defensible disposal.",
+      "triggers": [
+        "government",
+        "finance",
+        "healthcare",
+        "contracts",
+        "audit records",
+        "long-term evidence"
+      ],
+      "agent_skill_path": "agent-skills/se-56-records-retention-archival-and-legal-hold-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-56-records-retention-archival-and-legal-hold-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "records inventory",
+        "retention schedule",
+        "legal-hold workflow",
+        "archive format plan",
+        "disposal authorization",
+        "authenticity evidence"
+      ],
+      "quality_gates": [
+        "records are distinguishable from working data",
+        "retention rules are executable",
+        "legal hold overrides disposal",
+        "archives remain readable",
+        "access and changes are auditable"
+      ],
+      "source_keys": [
+        "ISO15489",
+        "ISO20000",
+        "W3C_PROV"
+      ],
+      "related_skill_ids": [
+        12,
+        21,
+        43,
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "id": 57,
+      "code": "SE-57",
+      "name": "Digital Forensics and Evidence-Readiness Engineering",
+      "slug": "digital-forensics-and-evidence-readiness-engineering",
+      "tier": "conditional",
+      "purpose": "Design systems so incidents can be reconstructed using preserved, trustworthy, legally and ethically handled evidence.",
+      "triggers": [
+        "security incidents",
+        "fraud",
+        "regulated logs",
+        "high-value operations",
+        "investigations"
+      ],
+      "agent_skill_path": "agent-skills/se-57-digital-forensics-and-evidence-readiness-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-57-digital-forensics-and-evidence-readiness-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "forensic-readiness plan",
+        "evidence-source map",
+        "chain-of-custody template",
+        "log-integrity controls",
+        "investigation runbook",
+        "evidence retention policy"
+      ],
+      "quality_gates": [
+        "critical events are logged",
+        "clocks are synchronized",
+        "volatile evidence priorities are known",
+        "collection preserves integrity",
+        "key actions can be reconstructed"
+      ],
+      "source_keys": [
+        "NIST_FORENSICS",
+        "NIST_SANITIZE",
+        "OTEL"
+      ],
+      "related_skill_ids": [
+        6,
+        8,
+        43,
+        50,
+        56,
+        60
+      ]
+    },
+    {
+      "id": 58,
+      "code": "SE-58",
+      "name": "IT Service Management and Supportability Engineering",
+      "slug": "it-service-management-and-supportability-engineering",
+      "tier": "conditional",
+      "purpose": "Design software and operating processes so services can be requested, supported, changed, restored, reviewed, and continually improved.",
+      "triggers": [
+        "operational services",
+        "support desk",
+        "enterprise applications",
+        "managed services"
+      ],
+      "agent_skill_path": "agent-skills/se-58-it-service-management-and-supportability-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-58-it-service-management-and-supportability-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "service definition",
+        "support model",
+        "request and incident workflows",
+        "known-error record",
+        "service-level agreement",
+        "service improvement plan"
+      ],
+      "quality_gates": [
+        "support ownership is clear",
+        "incident and problem are distinguished",
+        "recurring causes create problem records",
+        "maintenance is communicated",
+        "support data informs product improvement"
+      ],
+      "source_keys": [
+        "ISO20000",
+        "GOOGLE_SRE",
+        "DORA"
+      ],
+      "related_skill_ids": [
+        5,
+        22,
+        41,
+        46,
+        59
+      ]
+    },
+    {
+      "id": 59,
+      "code": "SE-59",
+      "name": "IT Asset Software Inventory and End-of-Life Governance",
+      "slug": "it-asset-software-inventory-and-end-of-life-governance",
+      "tier": "conditional",
+      "purpose": "Maintain accurate ownership, version, support, dependency, cost, renewal, and end-of-life information for technology assets.",
+      "triggers": [
+        "production estates",
+        "licenses",
+        "cloud resources",
+        "devices",
+        "many dependencies",
+        "audits"
+      ],
+      "agent_skill_path": "agent-skills/se-59-it-asset-software-inventory-and-end-of-life-governance/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-59-it-asset-software-inventory-and-end-of-life-governance/references/detailed-guide.md",
+      "required_artifacts": [
+        "asset register",
+        "ownership map",
+        "EOL calendar",
+        "renewal calendar",
+        "unsupported-risk report",
+        "decommission record"
+      ],
+      "quality_gates": [
+        "production assets have owners",
+        "version and support status are known",
+        "unsupported assets have plans",
+        "inventories reconcile",
+        "decommission removes access and billing"
+      ],
+      "source_keys": [
+        "ISO19770",
+        "CISA_SBOM",
+        "ISO20000"
+      ],
+      "related_skill_ids": [
+        9,
+        19,
+        23,
+        41,
+        55,
+        58,
+        60
+      ]
+    },
+    {
+      "id": 60,
+      "code": "SE-60",
+      "name": "Data Erasure Media Sanitization and Secure Disposal",
+      "slug": "data-erasure-media-sanitization-and-secure-disposal",
+      "tier": "conditional",
+      "purpose": "Ensure data becomes infeasible to recover from active systems, replicas, backups, caches, devices, and media according to sensitivity and obligations.",
+      "triggers": [
+        "device reuse",
+        "account deletion",
+        "decommissioning",
+        "storage disposal",
+        "sensitive data"
+      ],
+      "agent_skill_path": "agent-skills/se-60-data-erasure-media-sanitization-and-secure-disposal/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-60-data-erasure-media-sanitization-and-secure-disposal/references/detailed-guide.md",
+      "required_artifacts": [
+        "erasure scope map",
+        "sanitization decision",
+        "disposal procedure",
+        "verification record",
+        "third-party certificate",
+        "deletion exception register"
+      ],
+      "quality_gates": [
+        "all copies are considered",
+        "method matches sensitivity and media",
+        "verification is performed",
+        "legal holds are checked",
+        "failed media is controlled"
+      ],
+      "source_keys": [
+        "NIST_SANITIZE",
+        "NIST_PRIVACY",
+        "ISO15489"
+      ],
+      "related_skill_ids": [
+        12,
+        23,
+        43,
+        50,
+        56,
+        59
+      ]
+    },
+    {
+      "id": 61,
+      "code": "SE-61",
+      "name": "Web Platform and Browser-Conformance Engineering",
+      "slug": "web-platform-and-browser-conformance-engineering",
+      "tier": "conditional",
+      "purpose": "Build standards-based web software that behaves securely, accessibly, progressively, and compatibly across browsers and constrained environments.",
+      "triggers": [
+        "web frontends",
+        "PWAs",
+        "browser extensions",
+        "public web apps"
+      ],
+      "agent_skill_path": "agent-skills/se-61-web-platform-and-browser-conformance-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-61-web-platform-and-browser-conformance-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "browser support policy",
+        "web architecture",
+        "compatibility matrix",
+        "progressive enhancement plan",
+        "browser test suite",
+        "performance budget"
+      ],
+      "quality_gates": [
+        "core tasks work in supported browsers",
+        "feature detection replaces browser sniffing",
+        "semantic controls are used",
+        "cross-origin policy is explicit",
+        "caching is correct"
+      ],
+      "source_keys": [
+        "WHATWG_HTML",
+        "WCAG",
+        "IETF_HTTP"
+      ],
+      "related_skill_ids": [
+        11,
+        13,
+        17,
+        30,
+        40,
+        49,
+        62
+      ]
+    },
+    {
+      "id": 62,
+      "code": "SE-62",
+      "name": "Mobile Device-Ecosystem Engineering",
+      "slug": "mobile-device-ecosystem-engineering",
+      "tier": "conditional",
+      "purpose": "Engineer native and hybrid mobile software for lifecycle interruptions, permissions, storage, networks, battery, devices, OS versions, stores, and real-device behavior.",
+      "triggers": [
+        "Android or iOS apps",
+        "mobile SDKs",
+        "field apps",
+        "device integrations"
+      ],
+      "agent_skill_path": "agent-skills/se-62-mobile-device-ecosystem-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-62-mobile-device-ecosystem-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "mobile platform matrix",
+        "lifecycle state model",
+        "permission plan",
+        "secure storage design",
+        "device test matrix",
+        "store release checklist"
+      ],
+      "quality_gates": [
+        "state survives process death where required",
+        "permissions are contextual",
+        "sensitive data uses secure storage",
+        "low-memory and network changes are tested",
+        "physical devices pass"
+      ],
+      "source_keys": [
+        "ANDROID_QUALITY",
+        "OWASP_MASVS",
+        "WCAG"
+      ],
+      "related_skill_ids": [
+        11,
+        17,
+        49,
+        52,
+        55,
+        61
+      ]
+    },
+    {
+      "id": 63,
+      "code": "SE-63",
+      "name": "Network and Transport-Protocol Engineering",
+      "slug": "network-and-transport-protocol-engineering",
+      "tier": "conditional",
+      "purpose": "Design application behavior around real transport semantics, latency, loss, intermediaries, DNS, TLS, retries, congestion, and partitions.",
+      "triggers": [
+        "distributed systems",
+        "APIs",
+        "streaming",
+        "mobile",
+        "edge",
+        "high latency"
+      ],
+      "agent_skill_path": "agent-skills/se-63-network-and-transport-protocol-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-63-network-and-transport-protocol-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "network assumptions",
+        "timeout budget",
+        "retry policy",
+        "connection strategy",
+        "protocol compatibility matrix",
+        "network fault tests"
+      ],
+      "quality_gates": [
+        "remote calls have bounded timeouts",
+        "retries respect method semantics",
+        "TLS validation is strict",
+        "DNS changes are tolerated",
+        "network faults are tested"
+      ],
+      "source_keys": [
+        "IETF_HTTP",
+        "IETF_TCP",
+        "IETF_TLS"
+      ],
+      "related_skill_ids": [
+        7,
+        13,
+        15,
+        17,
+        35,
+        38,
+        52,
+        75
+      ]
+    },
+    {
+      "id": 64,
+      "code": "SE-64",
+      "name": "Data Provenance Lineage and Origin-Tracking Engineering",
+      "slug": "data-provenance-lineage-and-origin-tracking-engineering",
+      "tier": "conditional",
+      "purpose": "Record where data came from, who or what transformed it, which versions and activities produced outputs, and how to assess trust or reverse effects.",
+      "triggers": [
+        "analytics",
+        "audit",
+        "machine learning",
+        "reports",
+        "data exchange",
+        "migrations",
+        "regulated evidence"
+      ],
+      "agent_skill_path": "agent-skills/se-64-data-provenance-lineage-and-origin-tracking-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-64-data-provenance-lineage-and-origin-tracking-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "provenance model",
+        "lineage graph",
+        "dataset version register",
+        "transformation manifest",
+        "provenance query",
+        "rollback impact analysis"
+      ],
+      "quality_gates": [
+        "critical outputs trace to source",
+        "transformations are versioned",
+        "manual corrections record actor and reason",
+        "cross-system identifiers are stable"
+      ],
+      "source_keys": [
+        "W3C_PROV",
+        "CISA_SBOM",
+        "OTEL"
+      ],
+      "related_skill_ids": [
+        6,
+        12,
+        14,
+        39,
+        57,
+        67,
+        80
+      ]
+    },
+    {
+      "id": 65,
+      "code": "SE-65",
+      "name": "Privacy-Enhancing Technology and Confidential-Computing Engineering",
+      "slug": "privacy-enhancing-technology-and-confidential-computing-engineering",
+      "tier": "specialized",
+      "purpose": "Enable useful computation while reducing data exposure through trusted execution, differential privacy, advanced cryptography, and explicit privacy-utility trade-offs.",
+      "triggers": [
+        "cross-organization analytics",
+        "highly sensitive data",
+        "encrypted computation",
+        "privacy-preserving release"
+      ],
+      "agent_skill_path": "agent-skills/se-65-privacy-enhancing-technology-and-confidential-computing-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-65-privacy-enhancing-technology-and-confidential-computing-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "PET selection analysis",
+        "threat and trust model",
+        "privacy budget",
+        "attestation design",
+        "performance benchmark",
+        "privacy validation report"
+      ],
+      "quality_gates": [
+        "technique matches threat model",
+        "trust assumptions are explicit",
+        "output leakage is analyzed",
+        "privacy budget is enforced",
+        "side channels are considered"
+      ],
+      "source_keys": [
+        "NIST_PEC",
+        "NIST_PRIVACY",
+        "NIST_PQ"
+      ],
+      "related_skill_ids": [
+        12,
+        26,
+        50,
+        66
+      ]
+    },
+    {
+      "id": 66,
+      "code": "SE-66",
+      "name": "Trust Safety Abuse and Fraud-Resistance Engineering",
+      "slug": "trust-safety-abuse-and-fraud-resistance-engineering",
+      "tier": "specialized",
+      "purpose": "Prevent and respond to harmful or fraudulent use of otherwise valid features through abuse modeling, detection, friction, investigation, appeals, and measurement.",
+      "triggers": [
+        "marketplaces",
+        "social platforms",
+        "payments",
+        "promotions",
+        "public APIs",
+        "high-abuse products"
+      ],
+      "agent_skill_path": "agent-skills/se-66-trust-safety-abuse-and-fraud-resistance-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-66-trust-safety-abuse-and-fraud-resistance-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "abuse threat model",
+        "misuse-case catalogue",
+        "detection and response policy",
+        "investigator workflow",
+        "appeal process",
+        "abuse metrics"
+      ],
+      "quality_gates": [
+        "valid-function misuse is covered",
+        "controls include false-positive analysis",
+        "enforcement is auditable",
+        "appeals exist when impact is material",
+        "controls adapt to adversaries"
+      ],
+      "source_keys": [
+        "OWASP_ASVS",
+        "NIST_PRIVACY",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        8,
+        12,
+        21,
+        44,
+        49,
+        78
+      ]
+    },
+    {
+      "id": 67,
+      "code": "SE-67",
+      "name": "Digital-Content Authenticity and Media-Provenance Engineering",
+      "slug": "digital-content-authenticity-and-media-provenance-engineering",
+      "tier": "specialized",
+      "purpose": "Attach and verify cryptographic provenance for media and documents while preserving edit history, trust context, revocation, interoperability, and privacy.",
+      "triggers": [
+        "publishing",
+        "cameras",
+        "media editing",
+        "generated content",
+        "evidence media"
+      ],
+      "agent_skill_path": "agent-skills/se-67-digital-content-authenticity-and-media-provenance-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-67-digital-content-authenticity-and-media-provenance-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "content provenance profile",
+        "signing and verification design",
+        "trust-store policy",
+        "metadata preservation tests",
+        "user trust UX",
+        "revocation plan"
+      ],
+      "quality_gates": [
+        "provenance survives supported transformations",
+        "verification failures are clear",
+        "signer trust is contextual",
+        "missing provenance is not labeled false",
+        "revocation works"
+      ],
+      "source_keys": [
+        "C2PA",
+        "W3C_PROV",
+        "NIST_PQ"
+      ],
+      "related_skill_ids": [
+        21,
+        50,
+        64,
+        80
+      ]
+    },
+    {
+      "id": 68,
+      "code": "SE-68",
+      "name": "Blockchain Distributed-Ledger and Smart-Contract Engineering",
+      "slug": "blockchain-distributed-ledger-and-smart-contract-engineering",
+      "tier": "specialized",
+      "purpose": "Determine when a distributed ledger is justified and engineer consensus, contracts, keys, finality, governance, privacy, upgrade, and off-chain integration correctly.",
+      "triggers": [
+        "multi-party shared state without one trusted operator",
+        "smart contracts",
+        "tokenized workflows"
+      ],
+      "agent_skill_path": "agent-skills/se-68-blockchain-distributed-ledger-and-smart-contract-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-68-blockchain-distributed-ledger-and-smart-contract-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "DLT decision record",
+        "trust and threat model",
+        "contract specification",
+        "key-custody plan",
+        "upgrade governance",
+        "oracle risk plan",
+        "audit report"
+      ],
+      "quality_gates": [
+        "non-DLT alternative is compared",
+        "finality assumptions are explicit",
+        "upgrades are governed",
+        "oracle data is validated",
+        "key compromise is handled",
+        "economic attacks are considered"
+      ],
+      "source_keys": [
+        "ISO_TC307",
+        "NIST_PQ",
+        "ISO15026"
+      ],
+      "related_skill_ids": [
+        26,
+        31,
+        37,
+        43,
+        50,
+        78
+      ]
+    },
+    {
+      "id": 69,
+      "code": "SE-69",
+      "name": "Quantum-Software Engineering",
+      "slug": "quantum-software-engineering",
+      "tier": "specialized",
+      "purpose": "Engineer hybrid quantum-classical software with justified quantum suitability, resource estimates, noisy execution, probabilistic validation, portability, and classical baselines.",
+      "triggers": [
+        "quantum algorithms",
+        "quantum SDKs",
+        "research prototypes",
+        "hybrid optimization"
+      ],
+      "agent_skill_path": "agent-skills/se-69-quantum-software-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-69-quantum-software-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "quantum suitability assessment",
+        "classical baseline",
+        "circuit specification",
+        "noise assumptions",
+        "resource estimate",
+        "validation protocol",
+        "portability plan"
+      ],
+      "quality_gates": [
+        "quantum benefit is compared to classical",
+        "uncertainty is reported",
+        "repeated runs support claims",
+        "simulator results are not equated to hardware",
+        "resource assumptions are explicit"
+      ],
+      "source_keys": [
+        "SWEBOK",
+        "ISO15026",
+        "NIST_PQ"
+      ],
+      "related_skill_ids": [
+        26,
+        47,
+        54,
+        74
+      ]
+    },
+    {
+      "id": 70,
+      "code": "SE-70",
+      "name": "Digital-Twin and Simulation Engineering",
+      "slug": "digital-twin-and-simulation-engineering",
+      "tier": "specialized",
+      "purpose": "Create trustworthy synchronized representations of physical assets or processes with calibrated models, uncertainty, lifecycle identity, and controlled decision or actuation boundaries.",
+      "triggers": [
+        "industrial assets",
+        "buildings",
+        "logistics",
+        "equipment",
+        "predictive maintenance",
+        "simulation"
+      ],
+      "agent_skill_path": "agent-skills/se-70-digital-twin-and-simulation-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-70-digital-twin-and-simulation-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "twin scope and identity",
+        "synchronization contract",
+        "model validation plan",
+        "uncertainty model",
+        "drift monitoring",
+        "control-authority design",
+        "scenario library"
+      ],
+      "quality_gates": [
+        "state freshness is known",
+        "model error is measured",
+        "uncertainty accompanies predictions",
+        "actuation has safety controls",
+        "simulation is validated against reality"
+      ],
+      "source_keys": [
+        "NIST_TWINS",
+        "ISO15288",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        14,
+        25,
+        27,
+        34,
+        64,
+        71
+      ]
+    },
+    {
+      "id": 71,
+      "code": "SE-71",
+      "name": "Autonomous and Robotic-System Assurance Engineering",
+      "slug": "autonomous-and-robotic-system-assurance-engineering",
+      "tier": "specialized",
+      "purpose": "Constrain and assure autonomous behavior under uncertain perception, changing environments, component faults, and human takeover requirements.",
+      "triggers": [
+        "robots",
+        "drones",
+        "autonomous vehicles",
+        "decision agents",
+        "adaptive control"
+      ],
+      "agent_skill_path": "agent-skills/se-71-autonomous-and-robotic-system-assurance-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-71-autonomous-and-robotic-system-assurance-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "ODD specification",
+        "autonomy hazard analysis",
+        "runtime monitor design",
+        "scenario catalogue",
+        "fallback and takeover plan",
+        "assurance case",
+        "field monitoring"
+      ],
+      "quality_gates": [
+        "autonomy operates only inside declared ODD",
+        "uncertainty affects decisions",
+        "safe fallback is tested",
+        "takeover time is realistic",
+        "field incidents update scenarios"
+      ],
+      "source_keys": [
+        "NASA_AUTONOMY",
+        "NASA_SAFETY",
+        "ISO15026"
+      ],
+      "related_skill_ids": [
+        27,
+        28,
+        29,
+        34,
+        70,
+        76
+      ]
+    },
+    {
+      "id": 72,
+      "code": "SE-72",
+      "name": "Geospatial and Location-Intelligence Engineering",
+      "slug": "geospatial-and-location-intelligence-engineering",
+      "tier": "specialized",
+      "purpose": "Ensure coordinate, projection, geometry, accuracy, privacy, spatial indexing, and interoperable geospatial services are correct.",
+      "triggers": [
+        "maps",
+        "routing",
+        "geofencing",
+        "earth observation",
+        "location analytics",
+        "GIS"
+      ],
+      "agent_skill_path": "agent-skills/se-72-geospatial-and-location-intelligence-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-72-geospatial-and-location-intelligence-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "CRS policy",
+        "spatial data model",
+        "accuracy requirements",
+        "geometry-validation rules",
+        "map service specification",
+        "location privacy assessment",
+        "spatial test suite"
+      ],
+      "quality_gates": [
+        "CRS accompanies data",
+        "transformations are tested",
+        "distance uses correct geometry",
+        "invalid shapes are handled",
+        "accuracy is communicated",
+        "location access is minimized"
+      ],
+      "source_keys": [
+        "OGC",
+        "NIST_PRIVACY",
+        "W3C_PROV"
+      ],
+      "related_skill_ids": [
+        12,
+        30,
+        31,
+        53,
+        64,
+        73
+      ]
+    },
+    {
+      "id": 73,
+      "code": "SE-73",
+      "name": "Edge and Computing-Continuum Engineering",
+      "slug": "edge-and-computing-continuum-engineering",
+      "tier": "specialized",
+      "purpose": "Place and move workloads across device, edge, and cloud while managing latency, mobility, disconnection, constrained resources, fleet security, and data consistency.",
+      "triggers": [
+        "low-latency local processing",
+        "IoT fleets",
+        "mobile edge",
+        "remote sites",
+        "data residency"
+      ],
+      "agent_skill_path": "agent-skills/se-73-edge-and-computing-continuum-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-73-edge-and-computing-continuum-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "placement decision",
+        "edge topology",
+        "synchronization design",
+        "resource budget",
+        "fleet update plan",
+        "edge security model",
+        "offline recovery plan"
+      ],
+      "quality_gates": [
+        "placement is justified",
+        "disconnected behavior is defined",
+        "fleet updates are secure",
+        "edge identity is managed",
+        "local data reconciles",
+        "diagnostics preserve privacy"
+      ],
+      "source_keys": [
+        "ETSI_MEC",
+        "NIST_OT",
+        "TUF"
+      ],
+      "related_skill_ids": [
+        15,
+        34,
+        52,
+        55,
+        62,
+        63,
+        72
+      ]
+    },
+    {
+      "id": 74,
+      "code": "SE-74",
+      "name": "High-Performance and Accelerator-Computing Engineering",
+      "slug": "high-performance-and-accelerator-computing-engineering",
+      "tier": "specialized",
+      "purpose": "Engineer parallel software for distributed memory, shared memory, GPUs, or accelerators with scalable decomposition, reproducible numerics, profiling, and recovery.",
+      "triggers": [
+        "HPC clusters",
+        "GPU workloads",
+        "simulations",
+        "scientific computing",
+        "large-scale analytics"
+      ],
+      "agent_skill_path": "agent-skills/se-74-high-performance-and-accelerator-computing-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-74-high-performance-and-accelerator-computing-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "parallel architecture",
+        "scaling model",
+        "resource and topology assumptions",
+        "benchmark suite",
+        "profiling report",
+        "checkpoint plan",
+        "numerical reproducibility report"
+      ],
+      "quality_gates": [
+        "speedup is measured across scales",
+        "communication costs are included",
+        "load is balanced",
+        "numerical differences are bounded",
+        "checkpoints restore"
+      ],
+      "source_keys": [
+        "MPI",
+        "OPENMP",
+        "IEEE754"
+      ],
+      "related_skill_ids": [
+        20,
+        25,
+        36,
+        47,
+        54,
+        69
+      ]
+    },
+    {
+      "id": 75,
+      "code": "SE-75",
+      "name": "Real-Time Media and Quality-of-Experience Engineering",
+      "slug": "real-time-media-and-quality-of-experience-engineering",
+      "tier": "specialized",
+      "purpose": "Deliver audio and video with controlled startup, latency, buffering, synchronization, adaptation, accessibility, and perceived quality across networks and devices.",
+      "triggers": [
+        "live streaming",
+        "conferencing",
+        "video-on-demand",
+        "audio apps",
+        "remote learning"
+      ],
+      "agent_skill_path": "agent-skills/se-75-real-time-media-and-quality-of-experience-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-75-real-time-media-and-quality-of-experience-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "media profile",
+        "latency budget",
+        "adaptive-bitrate strategy",
+        "playback telemetry",
+        "device matrix",
+        "accessibility plan",
+        "QoE test report"
+      ],
+      "quality_gates": [
+        "QoE metrics reflect users",
+        "bitrate adapts without oscillation",
+        "captions remain synchronized",
+        "loss and jitter are tested",
+        "startup and stall budgets are met"
+      ],
+      "source_keys": [
+        "IETF_HTTP",
+        "IETF_TCP",
+        "OTEL"
+      ],
+      "related_skill_ids": [
+        11,
+        25,
+        30,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "id": 76,
+      "code": "SE-76",
+      "name": "Operational-Technology and Industrial-Control Engineering",
+      "slug": "operational-technology-and-industrial-control-engineering",
+      "tier": "specialized",
+      "purpose": "Engineer software for physical industrial operations where safety, deterministic behavior, long asset life, legacy protocols, restricted change, and continuity dominate.",
+      "triggers": [
+        "PLC SCADA or DCS",
+        "factories",
+        "utilities",
+        "industrial control",
+        "critical infrastructure"
+      ],
+      "agent_skill_path": "agent-skills/se-76-operational-technology-and-industrial-control-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-76-operational-technology-and-industrial-control-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "OT system context",
+        "safety and control boundaries",
+        "network zoning",
+        "patch and change plan",
+        "manual fallback",
+        "field validation",
+        "OT incident runbook"
+      ],
+      "quality_gates": [
+        "safe manual mode exists",
+        "changes are authorized and field-tested",
+        "segmentation is verified",
+        "patch risk balances safety and exposure",
+        "interlocks are independent"
+      ],
+      "source_keys": [
+        "NIST_OT",
+        "NASA_SAFETY",
+        "ISO15288"
+      ],
+      "related_skill_ids": [
+        25,
+        27,
+        34,
+        43,
+        55,
+        57,
+        73
+      ]
+    },
+    {
+      "id": 77,
+      "code": "SE-77",
+      "name": "Spatial AR VR and Immersive-System Engineering",
+      "slug": "spatial-ar-vr-and-immersive-system-engineering",
+      "tier": "specialized",
+      "purpose": "Build immersive systems that correctly manage coordinate spaces, tracking, latency, environment understanding, comfort, privacy, accessibility, and physical safety.",
+      "triggers": [
+        "AR",
+        "VR",
+        "mixed reality",
+        "spatial interfaces",
+        "headsets"
+      ],
+      "agent_skill_path": "agent-skills/se-77-spatial-ar-vr-and-immersive-system-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-77-spatial-ar-vr-and-immersive-system-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "spatial interaction model",
+        "coordinate-space specification",
+        "comfort budget",
+        "privacy assessment",
+        "device capability matrix",
+        "safety and accessibility test plan"
+      ],
+      "quality_gates": [
+        "coordinate transforms are tested",
+        "latency meets comfort target",
+        "boundaries prevent unsafe movement",
+        "tracking loss is handled",
+        "spatial maps are protected"
+      ],
+      "source_keys": [
+        "W3C_WEBXR",
+        "WCAG",
+        "NIST_PRIVACY"
+      ],
+      "related_skill_ids": [
+        11,
+        25,
+        29,
+        62,
+        70,
+        71
+      ]
+    },
+    {
+      "id": 78,
+      "code": "SE-78",
+      "name": "Financial Messaging Payment and Ledger Engineering",
+      "slug": "financial-messaging-payment-and-ledger-engineering",
+      "tier": "specialized",
+      "purpose": "Preserve monetary correctness through explicit payment states, decimal precision, idempotency, double-entry records, reconciliation, settlement, disputes, and provider failure handling.",
+      "triggers": [
+        "payments",
+        "wallets",
+        "banking",
+        "billing",
+        "marketplace payouts",
+        "financial reports"
+      ],
+      "agent_skill_path": "agent-skills/se-78-financial-messaging-payment-and-ledger-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-78-financial-messaging-payment-and-ledger-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "payment state model",
+        "ledger design",
+        "idempotency key policy",
+        "reconciliation rules",
+        "provider integration contract",
+        "dispute workflow",
+        "financial audit report"
+      ],
+      "quality_gates": [
+        "every movement balances",
+        "duplicates do not double-charge",
+        "timeouts lead to reconciliation",
+        "amounts use correct precision",
+        "provider and internal ledgers reconcile"
+      ],
+      "source_keys": [
+        "ISO20022",
+        "IETF_HTTP",
+        "NIST_ID"
+      ],
+      "related_skill_ids": [
+        35,
+        37,
+        43,
+        49,
+        54,
+        66
+      ]
+    },
+    {
+      "id": 79,
+      "code": "SE-79",
+      "name": "Search and Information-Retrieval Engineering",
+      "slug": "search-and-information-retrieval-engineering",
+      "tier": "specialized",
+      "purpose": "Build search systems with controlled ingestion, indexing, query understanding, ranking, freshness, access filtering, relevance evaluation, and regression protection.",
+      "triggers": [
+        "site search",
+        "document discovery",
+        "product search",
+        "logs",
+        "enterprise knowledge"
+      ],
+      "agent_skill_path": "agent-skills/se-79-search-and-information-retrieval-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-79-search-and-information-retrieval-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "search requirements",
+        "document and query schema",
+        "ranking strategy",
+        "relevance judgment set",
+        "offline evaluation",
+        "access-filter design",
+        "search-quality dashboard"
+      ],
+      "quality_gates": [
+        "evaluation set represents real queries",
+        "permissions apply before results",
+        "index freshness is measured",
+        "ranking changes run regression",
+        "zero-result causes are analyzed"
+      ],
+      "source_keys": [
+        "NIST_TREC",
+        "W3C_I18N",
+        "ISO25010"
+      ],
+      "related_skill_ids": [
+        14,
+        25,
+        30,
+        31,
+        64,
+        80
+      ]
+    },
+    {
+      "id": 80,
+      "code": "SE-80",
+      "name": "Knowledge-Graph Ontology and Semantic-System Engineering",
+      "slug": "knowledge-graph-ontology-and-semantic-system-engineering",
+      "tier": "specialized",
+      "purpose": "Represent and reason over entities, relationships, vocabularies, provenance, and semantics with governed identity, ontology evolution, constraints, and interoperability.",
+      "triggers": [
+        "complex relationship data",
+        "semantic integration",
+        "enterprise knowledge",
+        "research data",
+        "inference"
+      ],
+      "agent_skill_path": "agent-skills/se-80-knowledge-graph-ontology-and-semantic-system-engineering/SKILL.md",
+      "detailed_reference_path": "agent-skills/se-80-knowledge-graph-ontology-and-semantic-system-engineering/references/detailed-guide.md",
+      "required_artifacts": [
+        "semantic model",
+        "ontology",
+        "identity policy",
+        "constraint rules",
+        "mapping specification",
+        "provenance design",
+        "ontology version and migration plan"
+      ],
+      "quality_gates": [
+        "identifiers are stable",
+        "source provenance is preserved",
+        "inference rules are tested",
+        "ontology changes are versioned",
+        "constraints catch invalid data",
+        "performance is measured"
+      ],
+      "source_keys": [
+        "W3C_RDF",
+        "W3C_PROV",
+        "NIST_TREC"
+      ],
+      "related_skill_ids": [
+        31,
+        33,
+        64,
+        67,
+        79
+      ]
+    }
+  ],
+  "workflow_skills": [
+    {
+      "name": "wf-project-discovery",
+      "title": "Project Discovery and Zero-Friction Intake",
+      "description": "Use at the start of a new or unfamiliar repository to inspect first, infer project facts, minimize user questions, and create a concise project brief.",
+      "path": "agent-skills/wf-project-discovery/SKILL.md",
+      "triggers": [
+        "new repository",
+        "unknown codebase",
+        "user asks to make project professional",
+        "project context missing"
+      ],
+      "outputs": [
+        "project fact sheet",
+        "initial skill manifest",
+        "command registry",
+        "concierge brief",
+        "initial risk list"
+      ],
+      "gates": [
+        "repository inspected before questions",
+        "facts and assumptions separated",
+        "no more than three initial questions",
+        "high-impact unknowns remain visible"
+      ]
+    },
+    {
+      "name": "wf-exec-plan",
+      "title": "Execution Plan for Long-Horizon Work",
+      "description": "Use for multi-file, multi-hour, risky, or milestone-based work that needs a self-contained execution plan and continuous progress tracking.",
+      "path": "agent-skills/wf-exec-plan/SKILL.md",
+      "triggers": [
+        "multi-file change",
+        "migration",
+        "large refactor",
+        "multi-hour task",
+        "high-risk implementation"
+      ],
+      "outputs": [
+        "approved ExecPlan",
+        "milestone checklist",
+        "decision log",
+        "validation log",
+        "final outcome summary"
+      ],
+      "gates": [
+        "plan is self-contained",
+        "milestones are testable",
+        "progress is current",
+        "validation commands are real",
+        "known issues are explicit"
+      ]
+    },
+    {
+      "name": "wf-feature-delivery",
+      "title": "Professional Feature Delivery",
+      "description": "Use to deliver a user-facing feature from clarified outcome through design, implementation, tests, documentation, evidence, and release readiness.",
+      "path": "agent-skills/wf-feature-delivery/SKILL.md",
+      "triggers": [
+        "new feature",
+        "behavior change",
+        "user workflow",
+        "API capability"
+      ],
+      "outputs": [
+        "task packet",
+        "acceptance criteria",
+        "implementation",
+        "tests",
+        "evidence record",
+        "progress card"
+      ],
+      "gates": [
+        "acceptance criteria pass",
+        "relevant active-skill gates pass",
+        "no hidden critical findings",
+        "rollback or recovery is defined"
+      ]
+    },
+    {
+      "name": "wf-bugfix",
+      "title": "Evidence-Driven Bug Fix",
+      "description": "Use for defects, regressions, failing tests, incidents, or incorrect behavior; requires reproduction, root cause, minimal fix, regression proof, and impact review.",
+      "path": "agent-skills/wf-bugfix/SKILL.md",
+      "triggers": [
+        "bug report",
+        "failing test",
+        "regression",
+        "incorrect result",
+        "production defect"
+      ],
+      "outputs": [
+        "reproduction record",
+        "root-cause analysis",
+        "regression test",
+        "minimal fix",
+        "verification evidence"
+      ],
+      "gates": [
+        "problem is reproduced or bounded",
+        "root cause is supported",
+        "regression test passes",
+        "adjacent behavior is checked"
+      ]
+    },
+    {
+      "name": "wf-security-review",
+      "title": "Security Review and Threat Validation",
+      "description": "Use for authentication, authorization, sensitive data, external exposure, dependencies, AI tools, or a requested security review.",
+      "path": "agent-skills/wf-security-review/SKILL.md",
+      "triggers": [
+        "auth change",
+        "sensitive data",
+        "public endpoint",
+        "dependency change",
+        "security review",
+        "AI agent or MCP integration"
+      ],
+      "outputs": [
+        "threat model",
+        "security findings",
+        "test evidence",
+        "risk dispositions",
+        "security release note"
+      ],
+      "gates": [
+        "trust boundaries are explicit",
+        "least privilege is verified",
+        "critical findings are resolved or accepted",
+        "evidence is current"
+      ]
+    },
+    {
+      "name": "wf-dependency-update",
+      "title": "Safe Dependency and Toolchain Update",
+      "description": "Use to update libraries, runtimes, frameworks, actions, plugins, or toolchains while controlling compatibility, provenance, licenses, security, and rollback.",
+      "path": "agent-skills/wf-dependency-update/SKILL.md",
+      "triggers": [
+        "dependency update",
+        "runtime upgrade",
+        "framework upgrade",
+        "security patch",
+        "CI action update"
+      ],
+      "outputs": [
+        "update decision",
+        "locked dependency change",
+        "compatibility evidence",
+        "security evidence",
+        "rollback note"
+      ],
+      "gates": [
+        "source identity is verified",
+        "lockfiles are updated",
+        "affected tests pass",
+        "breaking changes are handled",
+        "rollback is known"
+      ]
+    },
+    {
+      "name": "wf-data-migration",
+      "title": "Data Migration and Reconciliation",
+      "description": "Use for database, schema, storage, data ownership, import, export, or platform migration with dry runs, reconciliation, rollback, and cutover controls.",
+      "path": "agent-skills/wf-data-migration/SKILL.md",
+      "triggers": [
+        "database migration",
+        "schema change",
+        "legacy data move",
+        "cloud migration",
+        "data import or export"
+      ],
+      "outputs": [
+        "migration specification",
+        "mapping catalogue",
+        "dry-run evidence",
+        "reconciliation report",
+        "cutover and rollback plan"
+      ],
+      "gates": [
+        "mapping is complete",
+        "dry run succeeds",
+        "reconciliation closes material gaps",
+        "rollback is feasible",
+        "retirement waits for acceptance"
+      ]
+    },
+    {
+      "name": "wf-incident-response",
+      "title": "Incident Response and Recovery",
+      "description": "Use during operational failures, security incidents, data issues, or severe degradation to stabilize, preserve evidence, communicate, recover, and learn.",
+      "path": "agent-skills/wf-incident-response/SKILL.md",
+      "triggers": [
+        "outage",
+        "security incident",
+        "data corruption",
+        "severe degradation",
+        "customer-impacting failure"
+      ],
+      "outputs": [
+        "incident record",
+        "timeline",
+        "evidence set",
+        "recovery validation",
+        "post-incident actions"
+      ],
+      "gates": [
+        "service is stabilized",
+        "evidence is preserved",
+        "recovery is validated",
+        "owners and follow-ups exist"
+      ]
+    },
+    {
+      "name": "wf-performance-investigation",
+      "title": "Performance Investigation",
+      "description": "Use for latency, throughput, resource, scaling, cost-performance, or responsiveness problems; requires measurement before optimization.",
+      "path": "agent-skills/wf-performance-investigation/SKILL.md",
+      "triggers": [
+        "slow system",
+        "latency regression",
+        "capacity concern",
+        "resource spike",
+        "scaling problem"
+      ],
+      "outputs": [
+        "performance baseline",
+        "profile",
+        "hypothesis log",
+        "benchmark evidence",
+        "capacity recommendation"
+      ],
+      "gates": [
+        "measurement is representative",
+        "bottleneck is demonstrated",
+        "improvement is repeatable",
+        "quality trade-offs are acceptable"
+      ]
+    },
+    {
+      "name": "wf-architecture-review",
+      "title": "Architecture Review",
+      "description": "Use for a new system, major redesign, service decomposition, platform choice, or architectural risk review.",
+      "path": "agent-skills/wf-architecture-review/SKILL.md",
+      "triggers": [
+        "new architecture",
+        "major redesign",
+        "service split",
+        "platform change",
+        "architecture review"
+      ],
+      "outputs": [
+        "architecture views",
+        "quality scenarios",
+        "option analysis",
+        "ADRs",
+        "risk register",
+        "fitness checks"
+      ],
+      "gates": [
+        "drivers trace to decisions",
+        "ownership and boundaries are explicit",
+        "major risks have responses",
+        "conformance can be tested"
+      ]
+    },
+    {
+      "name": "wf-release-readiness",
+      "title": "Release Readiness",
+      "description": "Use before production or customer release to prove scope, quality, security, operations, migration, rollback, documentation, and residual-risk acceptance.",
+      "path": "agent-skills/wf-release-readiness/SKILL.md",
+      "triggers": [
+        "production release",
+        "customer rollout",
+        "mobile store submission",
+        "firmware release",
+        "major deployment"
+      ],
+      "outputs": [
+        "release report",
+        "evidence index",
+        "rollback plan",
+        "release notes",
+        "post-release validation plan"
+      ],
+      "gates": [
+        "required checks pass",
+        "artifacts are identifiable",
+        "rollback is tested",
+        "ownership is assigned",
+        "residual risk is accepted"
+      ]
+    },
+    {
+      "name": "wf-project-retirement",
+      "title": "Project Retirement and Decommissioning",
+      "description": "Use to retire, replace, or decommission a system while preserving required records, migrating users and data, revoking access, and closing costs and risk.",
+      "path": "agent-skills/wf-project-retirement/SKILL.md",
+      "triggers": [
+        "system retirement",
+        "product shutdown",
+        "legacy replacement",
+        "service decommission"
+      ],
+      "outputs": [
+        "retirement plan",
+        "dependency closure record",
+        "data disposition evidence",
+        "access revocation evidence",
+        "final acceptance"
+      ],
+      "gates": [
+        "users and dependencies are handled",
+        "data obligations are satisfied",
+        "access is revoked",
+        "costs and assets are closed",
+        "evidence is retained"
+      ]
+    }
+  ],
+  "verification": {
+    "validator": "schemas/validate_pack.py",
+    "unit_test_files": 17,
+    "unit_test_cases": 39,
+    "behavioral_eval_cases": 9,
+    "end_to_end_test": "passed: evals/latest-e2e.json",
+    "integrity_algorithm": "SHA-256",
+    "evidence_chain": "SHA-256 hash chain",
+    "validation_report": "VALIDATION-REPORT.md",
+    "re_audit": "2026-08-22: runtime, docs, release-gate, eval immutability, installer restore, and command isolation",
+    "re_audit_report": "RE-AUDIT-REPORT.md"
+  },
+  "execution_security": {
+    "project_defined_command_risk_floor": "R2",
+    "requires_persisted_definition_review": true,
+    "requires_per_invocation_trust": true,
+    "os_filesystem_sandbox_provided": false,
+    "os_network_egress_sandbox_provided": false,
+    "note": "Use an external sandbox, container, VM, or restricted runner when project code is not trusted."
+  },
+  "display_name": "SEForge — Agent-Native Software Engineering Operating System",
+  "brand": {
+    "name": "SEForge",
+    "tagline": "Turn AI agents into disciplined software engineering teams.",
+    "logo": "docs/assets/seforge-logo.png",
+    "hero": "docs/assets/seforge-hero.png",
+    "social_preview": "docs/assets/social-preview.png",
+    "cli": "sepack"
+  }
+}

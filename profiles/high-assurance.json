@@ -1,0 +1,26 @@
+{
+  "name": "high-assurance",
+  "description": "Safety-critical, regulated, irreversible, or independently assured system.",
+  "signals": {
+    "impact": [
+      "L4"
+    ]
+  },
+  "required_skills": [
+    25,
+    26,
+    27,
+    28,
+    43,
+    57
+  ],
+  "recommended_skills": [
+    7,
+    8,
+    21,
+    29,
+    47,
+    50,
+    56
+  ]
+}

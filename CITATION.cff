@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it using the metadata below."
+title: "SEForge: Agent-Native Software Engineering Operating System"
+version: "2.0.1"
+type: software
+date-released: "2026-08-22"
+authors:
+  - name: "SEForge contributors"
+license: MIT
+abstract: >-
+  An agent-native, evidence-driven software-engineering operating system with
+  80 engineering-area skills, 12 workflow skills, project-native verification,
+  tamper-evident evidence, safety gates, and provider adapters.
+keywords:
+  - software engineering
+  - AI agents
+  - agent skills
+  - quality engineering
+  - secure software development
+  - SRE
