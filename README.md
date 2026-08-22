@@ -325,9 +325,10 @@ See [Validation Report](VALIDATION-REPORT.md), [Re-Audit Report](RE-AUDIT-REPORT
 Original repository content is released under the [MIT License](LICENSE). External standards, specifications, trademarks, and source publications remain owned by their respective holders. No source lecture PDF, textbook, or proprietary standard is redistributed. See [Notice](NOTICE.md) and [Source Map](SOURCE-MAP.md).
 
 ---
-
 <p align="center">
   <img src="docs/assets/seforge-hero.png" alt="SEForge — forging disciplined AI-powered software engineering" width="20%">
+</p>
+<p align="center">
   <strong>Forge professional software with disciplined AI agents—without turning the user into the process.</strong><br>
   <sub>Agent-native · Evidence-driven · Re-audited · GitHub-ready</sub>
 </p>
