@@ -327,7 +327,7 @@ Original repository content is released under the [MIT License](LICENSE). Extern
 ---
 
 <p align="center">
-  <img src="docs/assets/seforge-logo-256.png" width="96" alt="SEForge logo"><br>
+  <img src="docs/assets/seforge-hero.png" alt="SEForge — forging disciplined AI-powered software engineering" width="25%">
   <strong>Forge professional software with disciplined AI agents—without turning the user into the process.</strong><br>
   <sub>Agent-native · Evidence-driven · Re-audited · GitHub-ready</sub>
 </p>
